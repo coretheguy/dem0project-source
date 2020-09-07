@@ -13,7 +13,7 @@ if ((sprite_index == spr_bombpep_intro) && (floor(image_index) == (image_number 
     sprite_index = spr_bombpep_run
 if ((sprite_index == spr_bombpep_run) || (sprite_index == spr_bombpep_runabouttoexplode))
 {
-    if (movespeed <= 8)
+    if (movespeed <= 12)
         movespeed += 0.2
     hsp = floor((xscale * movespeed))
 }
@@ -41,7 +41,7 @@ if (bombpephitwall == 3)
 }
 if (place_meeting((x + 1), y, obj_collisionparent) && ((xscale == 1) && ((hsp != 0) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))))
 {
-    scr_sound(14)
+    scr_sound(sfx_bump)
     instance_create((x + 10), (y + 10), obj_bumpeffect)
     vsp = -3
     bombpephitwall += 1
@@ -49,7 +49,7 @@ if (place_meeting((x + 1), y, obj_collisionparent) && ((xscale == 1) && ((hsp !=
 }
 if (place_meeting((x - 1), y, obj_collisionparent) && ((xscale == -1) && ((hsp != 0) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))))
 {
-    scr_sound(14)
+    scr_sound(sfx_bump)
     instance_create((x - 10), (y + 10), obj_bumpeffect)
     vsp = -3
     bombpephitwall += 1
