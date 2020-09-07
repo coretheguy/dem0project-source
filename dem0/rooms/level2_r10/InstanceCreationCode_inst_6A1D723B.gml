@@ -1,3 +1,3 @@
-targetRoom = level2_r6
-target_x = 2896
-target_y = 230
+targetRoom = level2_r9
+target_x = 400
+target_y = 261

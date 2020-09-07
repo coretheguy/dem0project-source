@@ -1,3 +1,3 @@
 targetRoom = level2_r6
-target_x = 3569
-target_y = 680
+target_x = 2895
+target_y = 230
