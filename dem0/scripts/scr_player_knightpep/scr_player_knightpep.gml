@@ -15,7 +15,7 @@ if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && ((xscale == -1) &&
     movespeed = 0
 if (((sprite_index == spr_knightpep_idle) || (sprite_index == spr_knightpep_walk)) && key_attack)
 {
-    scr_sound(6)
+    scr_sound(sfx_swordswing)
     instance_create(x, y, obj_swordhitbox)
     instance_create((x + ((-xscale) * 10)), y, obj_slidecloud)
     sprite_index = spr_knightpep_attack
@@ -37,7 +37,7 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((sprite_inde
 }
 if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep_jumpstart))
 {
-    scr_sound(20)
+    scr_sound(sfx_jump)
     vsp = -7
     if key_right
         hsp = 4
@@ -49,7 +49,7 @@ if (((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpe
     sprite_index = spr_knightpep_fall
 if ((sprite_index == spr_knightpep_fall) && place_meeting(x, (y + 1), obj_collisionparent))
 {
-    scr_sound(1)
+    scr_sound(sfx_landmetal)
     with (obj_baddie)
     {
         if point_in_rectangle(x, y, view_xview[0], view_yview[0], (view_xview[0] + view_wview[0]), (view_yview[0] + view_hview[0]))
@@ -82,8 +82,8 @@ if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep
 if (move != 0)
     xscale = move
 image_speed = 0.35
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((hsp != 0) && (!audio_is_playing(sfx_land))))
-    scr_sound(24)
+if (place_meeting(x, (y + 1), obj_collisionparent) && ((hsp != 0) && (!audio_is_playing(sfx_footsteps))))
+    scr_sound(sfx_footsteps)
 if (move != 0)
 {
     if (movespeed < 4)
