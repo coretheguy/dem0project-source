@@ -16,7 +16,8 @@
         "1a3424eb-b490-425b-9409-0f8d2146481c",
         "8556efbe-140b-4ad8-ac66-1f8e120913a7",
         "0eb93737-db84-4077-8f01-8a35fba6051f",
-        "393156be-dfbe-4e23-a7cf-2299c4da4124"
+        "393156be-dfbe-4e23-a7cf-2299c4da4124",
+        "b8cb9b65-be20-4116-933c-e9f0dd356f55"
     ],
     "filterType": "GMObject",
     "folderName": "hazard",
