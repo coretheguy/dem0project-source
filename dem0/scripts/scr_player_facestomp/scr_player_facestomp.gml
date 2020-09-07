@@ -26,7 +26,10 @@ if (vsp > 15)
 }
 if (place_meeting(x, (y + 1), obj_collisionparent) && ((!place_meeting(x, (y + 1), obj_destructibles)) && (vsp > 0)))
 {
+	if global.machsound = 1
     scr_sound(sfx_facestomp)
+	else
+	scr_sound(sfx_newimpact)
     state = 55
     jumpAnim = 1
     jumpstop = 0

@@ -52,8 +52,8 @@ if ((global.panic == 1) && (global.minutes >= 1) && (global.minutes < 3))
 }
 else if ((global.panic == 1) && (global.minutes < 1))
 {
-    shake_mag = 4
-    shake_mag_acc = (6 / room_speed)
+    shake_mag = 3
+    shake_mag_acc = (5 / room_speed)
 
 }
 if (shake_mag > 0)

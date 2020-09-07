@@ -70,6 +70,7 @@ with (obj_player)
 	bubble = 0
 	depth = -6
 	combotimer = 0
+	global.machsound = 1
 }
 
 

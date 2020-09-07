@@ -4,7 +4,10 @@ mach2 = 0
 hsp = 0
 if (place_meeting(x, (y + 1), obj_bumpable) && (!place_meeting(x, (y + 1), obj_destructibles)))
 {
-    scr_sound(46)
+	if global.machsound = 1
+    scr_sound(sfx_superimpact)
+	else
+	scr_sound(sfx_newimpact)
     state = 55
     jumpAnim = 1
     jumpstop = 0
@@ -26,7 +29,7 @@ if (place_meeting(x, (y + 1), obj_bumpable) && (!place_meeting(x, (y + 1), obj_d
         audio_play_sound(sfx_land, 1, false)
     with (obj_baddie)
     {
-        if point_in_rectangle(x, y, view_xview[0], view_yview[0], (view_xview[0] + view_wview[0]), (view_yview[0] + view_hview[0]))
+        if point_in_rectangle(x, y, __view_get(0, 0), __view_get(1, 0), (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)))
         {
             image_index = 0
             state = 81

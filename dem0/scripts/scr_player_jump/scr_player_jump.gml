@@ -60,8 +60,10 @@ if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && (key_attack
         instance_create(x, y, obj_landcloud)
     freefallstart = 0
     audio_sound_gain(sfx_land, 0.7, 0)
-    if (!audio_is_playing(sfx_land))
+    if (!audio_is_playing(sfx_land) && global.machsound = 1)
         audio_play_sound(sfx_land, 1, false)
+	if (!audio_is_playing(sfx_newstep) && global.machsound != 1)
+	    audio_play_sound(sfx_newstep, 1, false)
 }
 if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && ((!key_attack) || (momemtum == 0)))
 {
@@ -75,8 +77,10 @@ if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && ((!key_atta
         instance_create(x, y, obj_landcloud)
     freefallstart = 0
     audio_sound_gain(sfx_land, 0.7, 0)
-    if (!audio_is_playing(sfx_land))
+    if (!audio_is_playing(sfx_land) && global.machsound = 1)
         audio_play_sound(sfx_land, 1, false)
+	if (!audio_is_playing(sfx_newstep) && global.machsound != 1)
+	    audio_play_sound(sfx_newstep, 1, false)
 }
 if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
 {
@@ -89,7 +93,10 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) &
     if (!place_meeting(x, y, obj_water2))
         instance_create(x, y, obj_landcloud)
     freefallstart = 0
+	if global.machsound = 1
     audio_play_sound(sfx_jump, 1, false)
+	else
+	audio_play_sound(sfx_golfjump, 1, false)
 }
 if key_jump
     input_buffer_jump = 0

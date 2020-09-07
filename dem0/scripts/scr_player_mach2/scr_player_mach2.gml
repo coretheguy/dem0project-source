@@ -42,28 +42,40 @@ if key_jump
     input_buffer_jump = 0
 if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
 {
-    scr_sound(13)
+    if global.machsound = 1
+    scr_sound(sfx_slide)
+	else
+	scr_sound(sfx_newslide)
     state = 49
     image_index = 0
     mach2 = 35
 }
 if (((move == -1) && (xscale == 1)) && place_meeting(x, (y + 1), obj_collisionparent))
 {
-    scr_sound(13)
+    if global.machsound = 1
+    scr_sound(sfx_slide)
+	else
+	scr_sound(sfx_newslide)
     state = 49
     image_index = 0
     mach2 = 35
 }
 if (((move == 1) && (xscale == -1)) && place_meeting(x, (y + 1), obj_collisionparent))
 {
-    scr_sound(13)
+    if global.machsound = 1
+    scr_sound(sfx_slide)
+	else
+	scr_sound(sfx_newslide)
     state = 49
     image_index = 0
     mach2 = 35
 }
 if (key_down && place_meeting(x, (y + 1), obj_collisionparent))
 {
-    scr_sound(13)
+    if global.machsound = 1
+    scr_sound(sfx_slide)
+	else
+	scr_sound(sfx_newslide)
     machhitAnim = 0
     state = 46
 }
@@ -99,8 +111,10 @@ else if ((place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)) && (!place_
     image_index = 0
     instance_create((x - 10), (y + 10), obj_bumpeffect)
     audio_sound_gain(sfx_bump, 0.7, 0)
-    if (!audio_is_playing(sfx_bump))
+    if (!audio_is_playing(sfx_bump) && global.machsound = 1)
         audio_play_sound(sfx_bump, 1, false)
+	else if (!audio_is_playing(sfx_newbump) && global.machsound != 1)
+        audio_play_sound(sfx_newbump, 1, false)
 }
 if place_meeting(x, (y + 1), obj_onewaywatersolid)
 {
@@ -111,11 +125,31 @@ if place_meeting(x, (y + 1), obj_onewaywatersolid)
 }
 if place_meeting(x, (y + 1), obj_collisionparent)
 {
+	if global.machsound = 1
+	{
     audio_sound_gain(sfx_mach2, 0.7, 0)
     if (!audio_is_playing(sfx_mach2))
         audio_play_sound(sfx_mach2, 1, false)
+	}
+	else if global.machsound = 2
+	{
+    if (!audio_is_playing(sfx_golfmach2))
+        audio_play_sound(sfx_golfmach2, 1, false)
+	}
+	else if global.machsound = 3
+	{
+    if (!audio_is_playing(sfx_sagemach2))
+        audio_play_sound(sfx_sagemach2, 10, false)
+	}
 }
-else if (!audio_is_playing(sfx_spin))
+
+if state != 48 && sprite_index != spr_player_mach2jump && sprite_index != spr_player_machslidestart && (audio_is_playing(sfx_golfmach2) || audio_is_playing(sfx_sagemach2))
+{
+	audio_stop_sound(sfx_golfmach2)
+	audio_stop_sound(sfx_sagemach2)
+}
+
+else if (!audio_is_playing(sfx_spin) && global.machsound = 1)
     audio_play_sound(sfx_spin, 1, false)
 if place_meeting(x, (y + 1), obj_collisionparent)
 {

@@ -10,5 +10,8 @@ instance_create((x + 16), y, obj_debris)
     var data = tilemap_get_at_pixel(map_id, x, y)
     data = tile_set_empty(data)
     tilemap_set_at_pixel(map_id, data, x, y)
+if global.machsound = 1
 scr_sound(sfx_break)
+else
+scr_sound(sfx_sagebreak)
 }

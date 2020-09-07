@@ -25,7 +25,10 @@ if key_jump
     input_buffer_jump = 0
 if key_up // comment this out until superjump is fixed
 {
+	if global.machsound = 1
     audio_play_sound(sfx_supermove, 1, false)
+	else
+		audio_play_sound(sfx_sjumpprep, 1, false)
     vsp = -4
     sprite_index = spr_player_superjumpprep
     instance_create(x, y, obj_machsuperjump1)
@@ -44,7 +47,10 @@ if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
 }
 if (((move == -1) && (xscale == 1)) && place_meeting(x, (y + 1), obj_collisionparent))
 {
+	if global.machsound = 1
     scr_sound(sfx_slide)
+	else
+	scr_sound(sfx_newslide)
     flash = 0
     state = 49
     image_index = 0
@@ -52,7 +58,10 @@ if (((move == -1) && (xscale == 1)) && place_meeting(x, (y + 1), obj_collisionpa
 }
 if (((move == 1) && (xscale == -1)) && place_meeting(x, (y + 1), obj_collisionparent))
 {
+    if global.machsound = 1
     scr_sound(sfx_slide)
+	else
+	scr_sound(sfx_newslide)
     flash = 0
     state = 49
     image_index = 0
@@ -67,7 +76,10 @@ if (key_down && place_meeting(x, (y + 1), obj_collisionparent))
 if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
 {
     state = 50
+    if global.machsound = 1
     scr_sound(sfx_superimpact)
+	else
+	scr_sound(sfx_newimpact)
     with (obj_camera)
     {
         shake_mag = 20
@@ -100,7 +112,10 @@ if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) && (!place_meetin
 if ((place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
 {
     state = 50
+	if global.machsound = 1
     scr_sound(sfx_superimpact)
+	else
+	scr_sound(sfx_newimpact)
     with (obj_camera)
     {
         shake_mag = 20
@@ -117,8 +132,10 @@ if ((place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)) && (!place_meeti
     image_index = 0
     instance_create((x - 10), (y + 10), obj_bumpeffect)
     audio_sound_gain(sfx_bump, 0.7, 0)
-    if (!audio_is_playing(sfx_bump))
+    if (!audio_is_playing(sfx_bump) && global.machsound = 1)
         audio_play_sound(sfx_bump, 1, false)
+	if (!audio_is_playing(sfx_newbump) && global.machsound != 1)
+        audio_play_sound(sfx_newbump, 1, false)
 }
 if place_meeting(x, (y + 1), obj_onewaywatersolid)
 {
@@ -128,10 +145,21 @@ if place_meeting(x, (y + 1), obj_onewaywatersolid)
     instance_create((x - (xscale * 30)), (y + 40), obj_waterdrop)
 }
 audio_sound_gain(sfx_mach2, 0.7, 0)
-if (!audio_is_playing(sfx_mach2))
+if (!audio_is_playing(sfx_mach2) && global.machsound == 1)
     audio_play_sound(sfx_mach2, 2, false)
-if (!audio_is_playing(sfx_woop))
+if (!audio_is_playing(sfx_golfmach3) && global.machsound == 2)
+    audio_play_sound(sfx_golfmach3, 2, false)
+if (!audio_is_playing(sfx_sagemach3) && global.machsound == 3)
+    audio_play_sound(sfx_sagemach3, 2, false)
+if (!audio_is_playing(sfx_woop) && global.machsound == 1)
     audio_play_sound(sfx_woop, 1, false)
+	
+if state != 68 && (audio_is_playing(sfx_golfmach3) || audio_is_playing(sfx_sagemach3))
+{
+	audio_stop_sound(sfx_golfmach3)
+	audio_stop_sound(sfx_sagemach3)
+}
+
 sprite_index = spr_player_mach4
 if (!instance_exists(obj_chargeeffect))
     instance_create(x, y, obj_chargeeffect)

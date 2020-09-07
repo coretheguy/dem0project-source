@@ -5,9 +5,9 @@ if ((stun == 0) && (ministun == 0))
 {
     hsp = (image_xscale * movespeed)
     sprite_index = spr_pepgoblin
-    if (place_meeting((x + 10), y, obj_bumpable) && (image_xscale == 1))
+    if ((place_meeting((x + 10), y, obj_bumpable) || place_meeting((x + 10), y, obj_destructibles)) && (image_xscale == 1))
         image_xscale = -1
-    if (place_meeting((x - 10), y, obj_bumpable) && (image_xscale == -1))
+    if ((place_meeting((x - 10), y, obj_bumpable) || place_meeting((x - 10), y, obj_destructibles)) && (image_xscale == -1))
         image_xscale = 1
     if (!place_meeting((x + 15), (y + 3), obj_bumpable))
         image_xscale = -1

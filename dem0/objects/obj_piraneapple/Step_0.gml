@@ -7,13 +7,13 @@ if (attack == 0)
 {
     movespeed = 2
     //hsp = (image_xscale * movespeed)
-    if (place_meeting((x + 15), y, obj_wall) && (image_xscale == 1))
+    if (place_meeting((x + 15), y, obj_bumpable) && (image_xscale == 1))
 	{
         image_xscale = -1
 		hsp = -2
 		x -= 6
 	}
-    if (place_meeting((x - 15), y, obj_wall) && (image_xscale == -1))
+    if (place_meeting((x - 15), y, obj_bumpable) && (image_xscale == -1))
 	{
         image_xscale = 1
 		hsp = 2

@@ -41,8 +41,10 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1)
         instance_create(x, y, obj_landcloud)
     freefallstart = 0
     audio_sound_gain(sfx_land, 0.7, 0)
-    if (!audio_is_playing(sfx_land))
+    if (!audio_is_playing(sfx_land) && global.machsound = 1)
         audio_play_sound(sfx_land, 1, false)
+	if (!audio_is_playing(sfx_newstep) && global.machsound != 1)
+        audio_play_sound(sfx_newstep, 1, false)
 }
 sprite_index = spr_player_freefall
 image_speed = 0.35

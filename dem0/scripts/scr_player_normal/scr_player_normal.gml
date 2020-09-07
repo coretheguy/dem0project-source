@@ -41,7 +41,10 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && (key_up && ((
     image_index = 0
     machslideAnim = 1
     jumpAnim = 1
+	if global.machsound == 1
     audio_play_sound(sfx_jump, 1, false)
+	else
+	audio_play_sound(sfx_golfjump, 1, false)
 }
 if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && ((sprite_index != spr_player_Sjumpprep) && (input_buffer_jump >= 8)))))
 {
@@ -50,7 +53,10 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) 
     image_index = 0
     machslideAnim = 1
     jumpAnim = 1
+    if global.machsound == 1
     audio_play_sound(sfx_jump, 1, false)
+	else
+	audio_play_sound(sfx_golfjump, 1, false)
 }
 if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
 {
@@ -63,7 +69,10 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) &
     if (!place_meeting(x, y, obj_water2))
         instance_create(x, y, obj_landcloud)
     freefallstart = 0
+    if global.machsound == 1
     audio_play_sound(sfx_jump, 1, false)
+	else
+	audio_play_sound(sfx_golfjump, 1, false)
 }
 if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meeting(x, (y - 3), obj_collisionparent))
 {
@@ -215,8 +224,10 @@ if (!(key_up && (move == 0)))
     else
         image_speed = 0.35
 }
-if ((hsp != 0) && (!audio_is_playing(sfx_footsteps)))
+if ((hsp != 0) && (!audio_is_playing(sfx_footsteps) && global.machsound == 1))
     scr_sound(sfx_footsteps)
+else if ((hsp != 0) && (!audio_is_playing(sfx_newstep) && global.machsound != 1))
+	scr_sound(sfx_newstep)
 if ((!instance_exists(obj_cloudeffect)) && ((!place_meeting(x, y, obj_water2)) && (place_meeting(x, (y + 1), obj_collisionparent) && ((move != 0) && ((floor(image_index) == 4) || (floor(image_index) == 10))))))
     instance_create(x, (y + 43), obj_cloudeffect)
 if ((movespeed == 9) && (dashdust == 0))

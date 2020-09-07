@@ -1,5 +1,5 @@
 image_speed = 0.5
-if level = "sewer"
+if global.level = "sewer"
 {
 	if (global.collect >= 2800)
     sprite_index = spr_rankS

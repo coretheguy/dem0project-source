@@ -14,7 +14,10 @@ crouchslideAnim = 1
 crouchAnim = 1
 if (floor(image_index) == 6)
 {
+	if global.machsound == 1
     audio_play_sound(sfx_plane, 1, false)
+	else
+	audio_play_sound(sfx_sjump, 1, false)
     state = 41
     vsp = -15
 }

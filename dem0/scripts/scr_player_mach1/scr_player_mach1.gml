@@ -73,8 +73,19 @@ if key_down
     mach2 = 0
 }
 audio_sound_gain(sfx_mach1, 0.7, 0)
-if (!audio_is_playing(sfx_mach1))
+if (!audio_is_playing(sfx_mach1) && global.machsound == 1)
     audio_play_sound(sfx_mach1, 1, false)
+else if (!audio_is_playing(sfx_golfmach1) && global.machsound == 2)
+    audio_play_sound(sfx_golfmach1, 1, false)
+else if (!audio_is_playing(sfx_sagemach1) && global.machsound == 3)
+    audio_play_sound(sfx_sagemach1, 1, false)
+	
+if state != 47 && (audio_is_playing(sfx_golfmach1) || audio_is_playing(sfx_sagemach1))
+{
+	audio_stop_sound(sfx_golfmach1)
+	audio_stop_sound(sfx_sagemach1)
+}
+
 if (momemtum == 0)
     sprite_index = spr_player_mach1
 else

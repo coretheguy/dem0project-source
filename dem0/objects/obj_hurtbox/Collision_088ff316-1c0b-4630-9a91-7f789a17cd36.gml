@@ -50,7 +50,10 @@ with (obj_player)
 	}
     else if ((state != 51) && ((hurted == 0) && (state != 50)) && (barrel != 1))
     {
+		if global.machsound = 1
         scr_sound(va_hurt1, va_hurt2, va_hurt3)
+		else
+		scr_sound(sfx_newhurt)
         instance_create(x, y, obj_spikehurteffect)
         state = 51
         image_index = 0

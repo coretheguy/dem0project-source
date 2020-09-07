@@ -19,7 +19,10 @@ instance_create((x + 16), y, obj_metaldebris)
     tilemap_set_at_pixel(map_id, data2, (x + 33), y)
     tilemap_set_at_pixel(map_id, data3, x, (y + 33))
     tilemap_set_at_pixel(map_id, data4, (x + 33), (y + 33))
+if global.machsound = 1
 scr_sound(sfx_metaldestroy)
+else
+scr_sound(sfx_sagemetalbreak)
 with (obj_camera)
 {
     shake_mag = 20

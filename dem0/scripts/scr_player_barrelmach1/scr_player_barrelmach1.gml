@@ -27,7 +27,7 @@ if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
     image_index = 0
     mach2 = 0
 }
-if (place_meeting((x + 1), y, obj_collisionparent) && (image_xscale == 1))
+if (place_meeting((x + 1), y, obj_collisionparent) && (image_xscale == 1) && !place_meeting(x + (sign(hsp)), y, obj_slopes))
 {
     state = 61
     hsp = -2
@@ -36,7 +36,7 @@ if (place_meeting((x + 1), y, obj_collisionparent) && (image_xscale == 1))
     image_index = 0
     instance_create((x + 10), (y + 10), obj_bumpeffect)
 }
-if (place_meeting((x - 1), y, obj_collisionparent) && (image_xscale == -1))
+if (place_meeting((x - 1), y, obj_collisionparent) && (image_xscale == -1) && !place_meeting(x + (sign(hsp)), y, obj_slopes))
 {
     state = 61
     hsp = 2

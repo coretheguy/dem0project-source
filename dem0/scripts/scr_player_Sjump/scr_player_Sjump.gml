@@ -46,8 +46,10 @@ if (place_meeting(x, (y - 1), obj_collisionparent) && (!place_meeting(x, (y - 1)
     with (instance_create(x, y, obj_bangeffect))
         xscale = obj_player.xscale
     audio_sound_gain(sfx_freefallland, 0.7, 0)
-    if (!audio_is_playing(sfx_freefallland))
+    if (!audio_is_playing(sfx_freefallland) && global.machsound = 1)
         audio_play_sound(sfx_freefallland, 1, false)
+	if (!audio_is_playing(sfx_newimpact) && global.machsound != 1)
+        audio_play_sound(sfx_newimpact, 1, false)
 }
 sprite_index = spr_player_superjump
 image_speed = 0.5
