@@ -1,0 +1,1 @@
+text = "WELCOME TO TEST WORLD!"

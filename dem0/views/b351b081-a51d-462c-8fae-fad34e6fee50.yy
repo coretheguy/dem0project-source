@@ -1,0 +1,30 @@
+{
+    "id": "b351b081-a51d-462c-8fae-fad34e6fee50",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "b351b081-a51d-462c-8fae-fad34e6fee50",
+    "children": [
+        "f65a79bd-ed0d-4f91-ba62-691bd05572c1",
+        "38528ad0-e379-4d85-9817-28d70b7bcc39",
+        "4534520e-6d08-49f6-afe0-6364dd8b93db",
+        "f9994e17-ac3f-4c30-84a3-c2a638435ff6",
+        "f3e48fa3-0878-43eb-9243-a9f0b499edf1",
+        "26115ff9-13f6-4e99-9a2b-75de26f7b61d",
+        "1aafc5b4-5f20-48d6-bf33-d61a0f4bac10",
+        "376d7147-d3e6-48e9-b9a7-4fe13fa4d8c4",
+        "47eed3cb-2678-4b22-a9a8-95c92c3ce307",
+        "d5e01d9a-0f91-4edf-88c6-4337dd2ca22d",
+        "7f77eec3-9060-467e-93c0-91bf0e76af9d",
+        "c5cf9990-34a7-4741-aa12-d824cefca9ce",
+        "48ceb232-4afa-458e-b3e3-f93d7762a46b",
+        "b0fdcfc7-1d3b-450b-adf4-b85087299dcf",
+        "0c28c984-1930-422c-8ec5-2ae68daeec54",
+        "a55a3262-4adf-424d-8cf6-ff19ce694880",
+        "6a2db667-576e-4a3f-8890-bce42b05f270",
+        "cd0d0916-30c6-487c-948c-327657c0d61b"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "sausageman",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
