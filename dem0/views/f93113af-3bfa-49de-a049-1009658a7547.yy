@@ -10,7 +10,8 @@
         "4bb78eb4-a0c8-4b18-9fbe-fb943a80f903",
         "d21d6b79-8cb8-4f3f-8d73-5674b35ac8a1",
         "126ad67b-2f72-4f4e-8f75-371b3d6d4436",
-        "efab4b37-6edb-48bb-88bc-33d8e85c9d04"
+        "efab4b37-6edb-48bb-88bc-33d8e85c9d04",
+        "02a9e2c5-f135-4793-9a16-0e4fafccaacc"
     ],
     "filterType": "GMSprite",
     "folderName": "hazard",

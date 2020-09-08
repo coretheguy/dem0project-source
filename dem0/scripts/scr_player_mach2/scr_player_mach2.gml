@@ -87,7 +87,13 @@ if ((!key_jump2) && ((jumpstop == 0) && ((vsp < 0.5) && (stompAnim == 0))))
 if (place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0))
     jumpstop = 0
 if ((input_buffer_jump < 8) && (place_meeting(x, (y + 1), obj_collisionparent) && ((!((move == 1) && (xscale == -1))) && ((!((move == -1) && (xscale == 1))) && key_attack))))
+{
+	if !audio_is_playing(sfx_spin) && global.machsound = 1
+		scr_sound(sfx_spin)
     vsp = -9
+	audio_stop_sound(sfx_golfmach2)
+	audio_stop_sound(sfx_sagemach2)
+}
 if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
 {
     machhitAnim = 0
@@ -149,8 +155,8 @@ if state != 48 && sprite_index != spr_player_mach2jump && sprite_index != spr_pl
 	audio_stop_sound(sfx_sagemach2)
 }
 
-else if (!audio_is_playing(sfx_spin) && global.machsound = 1)
-    audio_play_sound(sfx_spin, 1, false)
+//else if (!audio_is_playing(sfx_spin) && global.machsound = 1 && vsp != 0)
+//    audio_play_sound(sfx_spin, 1, false)
 if place_meeting(x, (y + 1), obj_collisionparent)
 {
     if (machpunchAnim == 0)
