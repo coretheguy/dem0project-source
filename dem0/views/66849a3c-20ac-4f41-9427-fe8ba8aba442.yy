@@ -10,7 +10,8 @@
         "0092838f-1648-4e6e-84d4-384d09e966d6",
         "74fa8b61-a7a4-4662-a8bd-a87339e972b8",
         "6be80feb-5f02-4bd3-824d-44587da1b481",
-        "1037e815-e519-40fb-b936-44674169ba84"
+        "1037e815-e519-40fb-b936-44674169ba84",
+        "8bcccfea-238a-44ba-97a6-b05d71dc549e"
     ],
     "filterType": "GMObject",
     "folderName": "gamesettings",

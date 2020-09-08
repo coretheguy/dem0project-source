@@ -6,8 +6,7 @@
     "children": [
         "3d4be23a-ae7b-48d8-9714-1b014a4417f8",
         "88ac6bc1-f8ab-4dc6-9d27-a76b84c7901d",
-        "3e550a4d-ecef-451e-83c0-2ae01344ad1c",
-        "8bcccfea-238a-44ba-97a6-b05d71dc549e"
+        "3e550a4d-ecef-451e-83c0-2ae01344ad1c"
     ],
     "filterType": "GMObject",
     "folderName": "liighting",

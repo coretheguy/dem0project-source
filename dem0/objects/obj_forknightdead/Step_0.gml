@@ -38,6 +38,8 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 27)
@@ -54,6 +56,8 @@ if (grabbed == 1)
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
             vsp = -20
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 26)
@@ -72,6 +76,8 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 28)
@@ -90,6 +96,8 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 29)
@@ -107,6 +115,8 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 20)
@@ -124,6 +134,8 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 21)
@@ -141,6 +153,8 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
     if (obj_player.state == 19)
@@ -159,6 +173,8 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
+										instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
 }

@@ -44,7 +44,7 @@ else if (fadein == 1)
     fadealpha -= 0.1
 with (obj_player)
 {
-    if ((other.fadein == 1) && place_meeting(x, y, obj_door) || place_meeting(x, y, obj_doorblocked))
+    if ((other.fadein == 1) && place_meeting(x, y, obj_door) || place_meeting(x, y, obj_doorblocked) || place_meeting(x, y, obj_keydoor))
     {
         state = 39
         image_index = 0

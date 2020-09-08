@@ -105,6 +105,9 @@ if ((stun == 0) && ((obj_player.attacking == 1) && ((obj_player.state != 51) && 
 }
 if ((obj_player.attacking == 1) && ((!((obj_player.state == 48) && ((obj_player.y < y) && (stun == 1)))) && ((stun == 1) && (!(obj_player.state == 35) || obj_player.state == 64))))
 {
+				if (ds_list_find_index(global.saveroom, id) == -1)
+{
+	ds_list_add(global.saveroom, id)
     if ((obj_player.y < y) && ((obj_player.instakillmove == 0) && (stun == 0)))
         obj_player.vsp = -5.5
     if ((obj_player.machpunchAnim == 0) && (obj_player.state == 48))
@@ -133,8 +136,17 @@ if ((obj_player.attacking == 1) && ((!((obj_player.state == 48) && ((obj_player.
     audio_sound_gain(sfx_enemyhit, 0.7, 0)
     audio_play_sound(sfx_enemyhit, 1, false)
 }
+}
 if (obj_player.instakillmove == 1)
 {
+				if (ds_list_find_index(global.saveroom, id) == -1)
+{
+	ds_list_add(global.saveroom, id)
+	with (instance_create(x, y, obj_forknightdead))
+		{
+			hsp = obj_player.hsp
+			vsp = -10
+		}
     instance_destroy()
     instance_create(x, y, obj_explosioneffect)
     instance_create(x, y, obj_baddiegibs)
@@ -146,6 +158,11 @@ if (obj_player.instakillmove == 1)
     instance_create(x, y, obj_baddiegibs)
     audio_sound_gain(sfx_enemyhit, 0.7, 0)
     audio_play_sound(sfx_enemyhit, 1, false)
+		    audio_sound_gain(sfx_punch1, 0.7, 0)
+    audio_play_sound(sfx_punch1, 1, false)
+		instance_create(x, y, obj_40)
+global.collect += 40
+}
 }
 with (obj_player)
 {

@@ -767,14 +767,6 @@
             }
         },
         {
-            "Key": "1d72fa39-c675-4bf2-a160-0cc984391844",
-            "Value": {
-                "id": "5bbddb8c-000b-4034-9443-32b00769e353",
-                "resourcePath": "scripts\\script115\\script115.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1d97abb7-5503-4a21-9fba-9ac33bbca895",
             "Value": {
                 "id": "45be2a75-78df-4615-ab47-3eeb9ee871db",
@@ -1807,6 +1799,14 @@
             }
         },
         {
+            "Key": "479a36e1-7523-42da-b5e5-e2816a32758c",
+            "Value": {
+                "id": "18c78216-5af1-4609-9e05-4b03c784e28a",
+                "resourcePath": "rooms\\medieval_1\\medieval_1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "47eed3cb-2678-4b22-a9a8-95c92c3ce307",
             "Value": {
                 "id": "5f7635bb-2f99-40e0-9e9d-4c45a5cf7480",
@@ -2151,6 +2151,14 @@
             }
         },
         {
+            "Key": "553cea7c-320c-4708-a421-01fa2bb8092a",
+            "Value": {
+                "id": "96c8cc99-d91b-4257-8113-522b7aa2db51",
+                "resourcePath": "views\\553cea7c-320c-4708-a421-01fa2bb8092a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5576a147-b3a8-45bd-91da-6fcdde5733b4",
             "Value": {
                 "id": "c134baa0-55f9-4eb7-b335-ef4209f92214",
@@ -2268,6 +2276,14 @@
                 "id": "a528110f-91d0-4b71-af6f-8a1fee58779b",
                 "resourcePath": "scripts\\scr_player_mach1\\scr_player_mach1.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "57995e89-f6a3-4bd4-b604-75b4ca4bd75a",
+            "Value": {
+                "id": "eef46a30-ed94-46ce-963f-ad72829d5bbb",
+                "resourcePath": "sprites\\tileset_medieval\\tileset_medieval.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2423,6 +2439,14 @@
             }
         },
         {
+            "Key": "5d81c0d0-f36e-4b6f-a711-429738eea447",
+            "Value": {
+                "id": "3062389c-65e1-469e-ac55-2c6ec611e250",
+                "resourcePath": "sprites\\bg_medievallibrairy1\\bg_medievallibrairy1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5da1e171-353d-413f-9137-66f5cf9e1c3b",
             "Value": {
                 "id": "16fc904a-be26-4e87-b3f5-b84ed0dc0af3",
@@ -2564,6 +2588,14 @@
                 "id": "f5613b46-3499-4a20-a267-924013ab4eb9",
                 "resourcePath": "views\\66849a3c-20ac-4f41-9427-fe8ba8aba442.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "66a23b8a-065a-4aa3-86d9-15db55b3a0e0",
+            "Value": {
+                "id": "516b1fa4-da1a-43d6-a896-5ec558f011d3",
+                "resourcePath": "sprites\\bg_medieval1\\bg_medieval1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2911,6 +2943,14 @@
             }
         },
         {
+            "Key": "72b083ac-5af6-49c4-8930-b480e78561ab",
+            "Value": {
+                "id": "36d878e3-77cf-44f6-b4d4-0c301cda96e6",
+                "resourcePath": "sprites\\bg_medievallibrairy2\\bg_medievallibrairy2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72d804e4-fde9-4225-bbde-67e3caebb0b9",
             "Value": {
                 "id": "747b2ce6-0a64-4386-8ade-24230001b30a",
@@ -3204,6 +3244,14 @@
                 "id": "8c1f0ee1-c9c7-4a92-8fc5-7c69855ce69a",
                 "resourcePath": "scripts\\scr_enemy_stun\\scr_enemy_stun.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7d749b37-b1bb-4719-8744-51eda2bbdda8",
+            "Value": {
+                "id": "8ffe5d5f-1e08-4949-9d0c-4ffb4b31375b",
+                "resourcePath": "tilesets\\medieval1\\medieval1.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -4239,14 +4287,6 @@
             }
         },
         {
-            "Key": "aa048382-eb9f-463e-b03a-f2a5bd8097bd",
-            "Value": {
-                "id": "f2ad6f4c-75c4-422c-825e-821e452a43b0",
-                "resourcePath": "scripts\\scr_solid_player\\scr_solid_player.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "aa2b243a-408d-4438-9c75-1ba719168d10",
             "Value": {
                 "id": "b715cb62-7ae2-4d49-be12-888ee7fff7d3",
@@ -4487,6 +4527,14 @@
             }
         },
         {
+            "Key": "b1c9d5a0-c91e-45e6-95aa-4ae50548de29",
+            "Value": {
+                "id": "9e82dc16-f639-46a5-9655-60cf694a3791",
+                "resourcePath": "sprites\\tileset_medieval2\\tileset_medieval2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b2660e8c-883a-4752-b1e6-e5cdd8936dac",
             "Value": {
                 "id": "e972493d-56e1-47c2-bde3-7837d3caeee3",
@@ -4532,6 +4580,14 @@
                 "id": "683c25f5-9f34-4fc2-a937-41d5865284ac",
                 "resourcePath": "scripts\\scr_player_normal\\scr_player_normal.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b3134a49-442c-48c6-9a48-ca8ae046f627",
+            "Value": {
+                "id": "1f83138b-e27c-4a18-85e8-9ceaf47fc6af",
+                "resourcePath": "sprites\\bg_medieval3\\bg_medieval3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4623,6 +4679,14 @@
             }
         },
         {
+            "Key": "b526d32b-15f4-4b99-b75e-9101dd482876",
+            "Value": {
+                "id": "f135c180-d1ad-4c84-96de-853e9f0d8664",
+                "resourcePath": "views\\b526d32b-15f4-4b99-b75e-9101dd482876.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b530b9f3-bb98-4acb-a30c-6bc22046ef95",
             "Value": {
                 "id": "7e5e7b1d-ee57-4158-b38b-5f7cae881ae7",
@@ -4692,6 +4756,14 @@
                 "id": "3006e341-9a5e-48e2-ad0f-f513c05cc9e8",
                 "resourcePath": "sprites\\spr_trash_dead\\spr_trash_dead.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b87d32ca-4efc-4c9e-b201-8c51950527f5",
+            "Value": {
+                "id": "70589204-735d-408b-ada8-0e14e24fe1db",
+                "resourcePath": "views\\b87d32ca-4efc-4c9e-b201-8c51950527f5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4983,6 +5055,14 @@
             }
         },
         {
+            "Key": "c2c2f27f-a8ce-4ab3-9295-804d246c541f",
+            "Value": {
+                "id": "713c8c7f-a296-4dd1-92b2-76224b36e81d",
+                "resourcePath": "sprites\\bg_medieval2\\bg_medieval2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2d7b782-c73a-4506-ad78-6b0504113f4c",
             "Value": {
                 "id": "83f8be46-1a21-4599-94fa-80fd87142bb2",
@@ -5212,6 +5292,14 @@
                 "id": "ddfe72a0-8d4a-4a5f-96c4-fe8ae9977638",
                 "resourcePath": "scripts\\pal_swap_enable_override\\pal_swap_enable_override.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c9c8d950-63ec-4a8e-a6c7-38b0114ef27b",
+            "Value": {
+                "id": "97078f1d-5034-47dd-9caa-267a22cf9ede",
+                "resourcePath": "sprites\\tileset_medieval3\\tileset_medieval3.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5559,6 +5647,14 @@
             }
         },
         {
+            "Key": "d6c42843-fee6-443c-b872-3bb645ecbd49",
+            "Value": {
+                "id": "9f247c2f-fcf7-45bc-8b78-0d176215f691",
+                "resourcePath": "views\\d6c42843-fee6-443c-b872-3bb645ecbd49.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d6f31a90-6ae3-4afb-ba28-40ef7ca0d67f",
             "Value": {
                 "id": "b56d96ab-6c35-4416-b8af-08fb152e5c44",
@@ -5803,6 +5899,14 @@
             "Value": {
                 "id": "88abfa2a-af00-44ba-83b0-5af89227b85c",
                 "resourcePath": "sprites\\spr_pizzakincheese_panic\\spr_pizzakincheese_panic.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e16004bd-81e6-48fa-aa61-f0acc4009cb8",
+            "Value": {
+                "id": "b03bb4be-ac1f-47e2-bc3b-315e5af3633e",
+                "resourcePath": "sprites\\bg_medievaltreasure1\\bg_medievaltreasure1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6391,6 +6495,14 @@
             }
         },
         {
+            "Key": "f5fa9cb7-99f0-460f-8f88-a69fd7a9d770",
+            "Value": {
+                "id": "10d6696b-02b5-4b1e-8b0c-0169dfeac197",
+                "resourcePath": "sprites\\bg_medievalinterior\\bg_medievalinterior.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f62391b1-4db5-44e5-98c8-fef709690187",
             "Value": {
                 "id": "5909be89-f853-4333-b66b-d1a983b1082e",
@@ -6615,6 +6727,14 @@
             }
         },
         {
+            "Key": "fe2356f6-e838-4a55-97f4-dc564a657320",
+            "Value": {
+                "id": "abd9c4fb-98e2-4c50-9e4f-dea2152334d0",
+                "resourcePath": "sprites\\bg_medievaltreasure2\\bg_medievaltreasure2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fe26830e-ceb8-49ca-a247-0759a49178bf",
             "Value": {
                 "id": "0ead2ef2-3b56-4473-9f8c-12df94dd18c0",
@@ -6791,11 +6911,9 @@
         "4eaf769c-c8de-4114-969c-e67229646416",
         "75f98979-7ff9-4410-be38-932dfa65c557",
         "2147453c-c26c-43f4-b0d2-2d2a1b237426",
-        "aa048382-eb9f-463e-b03a-f2a5bd8097bd",
         "833a2279-f0bf-4209-bf6d-53308145ad32",
         "e2c23c84-cc5a-4195-8a05-de6ac573d9e4",
-        "f933366f-940a-4651-a69c-6d89c09ffea9",
-        "1d72fa39-c675-4bf2-a160-0cc984391844"
+        "f933366f-940a-4651-a69c-6d89c09ffea9"
     ],
     "tutorial": ""
 }
