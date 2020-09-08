@@ -154,7 +154,7 @@ if (!audio_is_playing(sfx_sagemach3) && global.machsound == 3)
 if (!audio_is_playing(sfx_woop) && global.machsound == 1)
     audio_play_sound(sfx_woop, 1, false)
 	
-if state != 68 && (audio_is_playing(sfx_golfmach3) || audio_is_playing(sfx_sagemach3))
+if state != 68 || sprite_index != spr_player_mach4 && (audio_is_playing(sfx_golfmach3) || audio_is_playing(sfx_sagemach3))
 {
 	audio_stop_sound(sfx_golfmach3)
 	audio_stop_sound(sfx_sagemach3)

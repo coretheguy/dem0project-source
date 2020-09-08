@@ -9,7 +9,8 @@
         "3b92663f-4800-422a-842d-445ec7feba83",
         "71faf112-59dd-4a38-8e64-2ec455b8ac3e",
         "24e416b5-9d5b-45a8-b8e1-8d6d681a7766",
-        "9d7185f3-cdf5-4332-b443-c1773abc056d"
+        "9d7185f3-cdf5-4332-b443-c1773abc056d",
+        "ea0b2287-8d99-4ffb-9670-bb187c38d862"
     ],
     "filterType": "GMSound",
     "folderName": "SAGE",

@@ -149,7 +149,7 @@ if place_meeting(x, (y + 1), obj_collisionparent)
 	}
 }
 
-if state != 48 && sprite_index != spr_player_mach2jump && sprite_index != spr_player_machslidestart && (audio_is_playing(sfx_golfmach2) || audio_is_playing(sfx_sagemach2))
+if state != 48 || (sprite_index == spr_player_mach2jump || sprite_index == spr_player_machslidestart) && (audio_is_playing(sfx_golfmach2) || audio_is_playing(sfx_sagemach2))
 {
 	audio_stop_sound(sfx_golfmach2)
 	audio_stop_sound(sfx_sagemach2)

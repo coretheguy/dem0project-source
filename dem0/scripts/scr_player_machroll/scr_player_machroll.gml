@@ -71,8 +71,18 @@ if (floor(image_index) == 0)
     flash = 1
 else
     flash = 0
-if (!audio_is_playing(sfx_roll))
+if (!audio_is_playing(sfx_roll) && global.machsound = 1)
     audio_play_sound(sfx_roll, 1, false)
+if (!audio_is_playing(sfx_golfroll) && global.machsound = 2)
+    audio_play_sound(sfx_golfroll, 1, false)
+if (!audio_is_playing(sfx_sageroll) && global.machsound = 3)
+    audio_play_sound(sfx_sageroll, 1, false)
+	
+if sprite_index != spr_player_machroll && (audio_is_playing(sfx_golfroll) || audio_is_playing(sfx_sageroll))
+{
+	audio_stop_sound(sfx_golfroll)
+	audio_stop_sound(sfx_sageroll)
+}
 if ((!instance_exists(obj_cloudeffect)) && (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1), obj_water))))
     instance_create(x, (y + 43), obj_cloudeffect)
 image_speed = 0.6

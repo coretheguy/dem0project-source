@@ -4903,6 +4903,14 @@
             }
         },
         {
+            "Key": "bf17c28d-74ab-4764-bf2a-ebc13c92f521",
+            "Value": {
+                "id": "0fa3f87c-cae4-4758-ae6f-d5fb737ac65c",
+                "resourcePath": "sounds\\sfx_golfroll\\sfx_golfroll.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "bf399844-53c0-4bbb-ac97-982d7bc6ba9a",
             "Value": {
                 "id": "66e8469d-9bf1-4b11-a3e4-e758ca673a73",
@@ -6020,6 +6028,14 @@
                 "id": "463c78ee-851c-4a8d-ad0b-12561a694eac",
                 "resourcePath": "objects\\obj_flyingenemy\\obj_flyingenemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ea0b2287-8d99-4ffb-9670-bb187c38d862",
+            "Value": {
+                "id": "1503f0f4-e625-455d-87a7-16ac7537341a",
+                "resourcePath": "sounds\\sfx_sageroll\\sfx_sageroll.yy",
+                "resourceType": "GMSound"
             }
         },
         {
