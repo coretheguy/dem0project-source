@@ -23,13 +23,13 @@ if (key_attack && place_meeting(x, (y + 1), obj_collisionparent))
 }
 if (key_attack && (!place_meeting(x, (y + 1), obj_collisionparent)))
 {
-    scr_sound(3)
+    scr_sound(sfx_woosh)
     image_index = 0
     state = 19
 }
 if (key_jump && (!place_meeting(x, (y + 1), obj_collisionparent)))
 {
-    scr_sound(2)
+    scr_sound(sfx_spin)
     vsp = -11
     state = 20
     image_index = 0
@@ -48,7 +48,7 @@ if (move != 0)
 }
 if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && (!key_attack))))
 {
-    scr_sound(20)
+    scr_sound(sfx_jump)
     vsp = -9
     image_index = 0
     sprite_index = spr_player_grabbingjump
@@ -61,7 +61,7 @@ if ((sprite_index == spr_player_grabbingjump) && (floor(image_index) == 2))
 if ((!place_meeting(x, (y + 1), obj_collisionparent)) && (vsp > 0))
     sprite_index = spr_player_grabbingfall
 if ((hsp != 0) && ((!audio_is_playing(sfx_footsteps)) && place_meeting(x, (y + 1), obj_collisionparent)))
-    scr_sound(47)
+    scr_sound(sfx_footsteps)
 if (move != 0)
 {
     if (movespeed < 6)

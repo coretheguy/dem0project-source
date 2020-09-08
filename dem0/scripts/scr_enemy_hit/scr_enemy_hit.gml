@@ -2,7 +2,7 @@ if (place_meeting(x, (y - 1), obj_enemiesbumpable) && ((sprite_index == flyingsp
 {
     image_index = 0
     state = 75
-    scr_sound(48)
+    scr_sound(sfx_facestomp)
 }
 if (straightthrow == 1)
     vsp = 0
@@ -14,11 +14,12 @@ else if (sprite_index == flyingspr)
     sprite_index = stunfalltransspr
 else if ((floor(image_index) == 4) && (sprite_index == stunfalltransspr))
     sprite_index = stunfallspr
-if (place_meeting(x, (y + 1), obj_enemiesbumpable) && (floor(vsp) > 0))
+if (place_meeting(x, (y + 1), obj_enemiesbumpable) && sprite_index != flyingspr && sprite_index != hitspr && vsp != 0)
 {
     instance_create(x, y, obj_landcloud)
     state = 82
     image_index = 0
+	sprite_index = stunlandspr
 }
 if (collectdrop != 0)
 {
