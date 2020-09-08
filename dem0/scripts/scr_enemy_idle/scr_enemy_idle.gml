@@ -1,6 +1,6 @@
 if ((sprite_index == fallspr) && place_meeting(x, (y + 1), obj_enemiesbumpable))
 {
-    scr_sound(24)
+    scr_sound(sfx_land)
     instance_create(x, y, obj_landcloud)
     state = 80
     sprite_index = landspr

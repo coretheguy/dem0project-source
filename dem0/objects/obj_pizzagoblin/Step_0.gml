@@ -64,4 +64,5 @@ if ((x != obj_player.x) && ((state != 73) && (thrown == 0)))
     }
 }
 
-
+if collectdrop = 0
+	ds_list_add(global.saveroom, id)

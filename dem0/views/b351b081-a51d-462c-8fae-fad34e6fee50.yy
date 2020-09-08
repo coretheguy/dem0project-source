@@ -21,7 +21,8 @@
         "0c28c984-1930-422c-8ec5-2ae68daeec54",
         "a55a3262-4adf-424d-8cf6-ff19ce694880",
         "6a2db667-576e-4a3f-8890-bce42b05f270",
-        "cd0d0916-30c6-487c-948c-327657c0d61b"
+        "cd0d0916-30c6-487c-948c-327657c0d61b",
+        "d929aa52-e2d7-4826-b1b9-389ae6a978a5"
     ],
     "filterType": "GMSprite",
     "folderName": "sausageman",

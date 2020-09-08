@@ -28,3 +28,4 @@ stunspr = spr_sausageman_stun
 recoveryspr = spr_sausageman_recovery
 stompedspr = spr_sausageman_stomped
 grabbedspr = spr_sausageman_grabbed
+depth = -3

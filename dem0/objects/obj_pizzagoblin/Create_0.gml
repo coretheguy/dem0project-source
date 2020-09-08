@@ -26,4 +26,5 @@ stunspr = spr_pizzagoblin_stun
 recoveryspr = spr_pizzagoblin_recovery
 stompedspr = spr_pizzagoblin_stomped
 grabbedspr = spr_pizzagoblin_grabbed
+depth = -3
 

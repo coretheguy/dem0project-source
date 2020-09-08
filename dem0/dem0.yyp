@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "0d884b99-f156-404b-a244-b1048a755dff",
+            "Value": {
+                "id": "93e5a6b2-202c-4bfe-a3b2-0c85fdba227d",
+                "resourcePath": "sprites\\spr_cigar_walk\\spr_cigar_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d8ceeed-955a-4318-aed4-016e88d567ee",
             "Value": {
                 "id": "d0594c17-538c-4320-9ec1-72eb5e698102",
@@ -1227,6 +1235,14 @@
             "Value": {
                 "id": "25269a0e-8fee-4939-bc5e-bf1981ba252a",
                 "resourcePath": "sprites\\spr_player_move\\spr_player_move.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "34ff6977-a6fa-4fad-ab4e-24785ca2205c",
+            "Value": {
+                "id": "2aa4bd53-8569-4ca1-a0d1-56fd2bdc5085",
+                "resourcePath": "sprites\\spr_cigar_idle\\spr_cigar_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2751,6 +2767,14 @@
             }
         },
         {
+            "Key": "6eeca94f-3ae8-4af9-ba45-b9f97aa11626",
+            "Value": {
+                "id": "44c96325-b409-493d-826d-64ebf0124da9",
+                "resourcePath": "sprites\\spr_cigar_land\\spr_cigar_land.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6efd3535-9699-4cdf-84c0-9e97a831f48b",
             "Value": {
                 "id": "b50d2aa8-cffc-4ff6-8fe6-54325872622f",
@@ -4119,6 +4143,14 @@
             }
         },
         {
+            "Key": "a9f4bcb1-ee53-4ebf-92b3-3ad6a75cf10e",
+            "Value": {
+                "id": "a5b6a673-e119-422a-829c-65736881fbbf",
+                "resourcePath": "sprites\\spr_cigar_fall\\spr_cigar_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9f6ee5c-d938-417f-9496-b13f3d46fb6a",
             "Value": {
                 "id": "e5d85c1c-0796-47d4-b659-fd36053910ae",
@@ -4140,6 +4172,14 @@
                 "id": "b715cb62-7ae2-4d49-be12-888ee7fff7d3",
                 "resourcePath": "scripts\\__init_view\\__init_view.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aa353fa5-614e-4545-ad03-6a45f927ef65",
+            "Value": {
+                "id": "301b0bea-cbd9-4e5b-9b9b-b0794e9a84e4",
+                "resourcePath": "sprites\\spr_cigar_turn\\spr_cigar_turn.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5460,6 +5500,14 @@
                 "id": "c4492518-dd92-4d5d-98bc-99623c2a759d",
                 "resourcePath": "sprites\\spr_100\\spr_100.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d929aa52-e2d7-4826-b1b9-389ae6a978a5",
+            "Value": {
+                "id": "e55508df-fde7-4029-8323-b27d54a695c9",
+                "resourcePath": "views\\d929aa52-e2d7-4826-b1b9-389ae6a978a5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

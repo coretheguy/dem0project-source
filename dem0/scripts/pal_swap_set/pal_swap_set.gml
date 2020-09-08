@@ -1,3 +1,4 @@
+pal_swap_init_system(shd_pal_swapper)
 var _pal_sprite, _pal_index, tex, UVs, texel_x, texel_y, texel_hx, texel_hy;
 shader_set(global.Pal_Shader)
 _pal_sprite = argument[0]

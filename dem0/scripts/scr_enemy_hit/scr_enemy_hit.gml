@@ -37,7 +37,7 @@ image_speed = 0.35
 scr_collideandmove()
 if (((place_meeting((x + 1), y, obj_enemiesbumpable) && (image_xscale == -1)) || (place_meeting((x - 1), y, obj_enemiesbumpable) && (image_xscale == 1))) && ((floor(vsp) <= 0) && (!place_meeting((x + sign(hsp)), y, obj_slopes))))
 {
-    scr_sound(48)
+    scr_sound(sfx_facestomp)
     image_index = 0
     sprite_index = hitwallspr
     state = 76

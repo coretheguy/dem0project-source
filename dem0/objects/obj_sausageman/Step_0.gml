@@ -52,5 +52,9 @@ if (state != 81)
     straightthrow = 0
 if (state != 85)
     depth = 0
+	
+if collectdrop = 0
+	ds_list_add(global.saveroom, id)
+	
 
 
