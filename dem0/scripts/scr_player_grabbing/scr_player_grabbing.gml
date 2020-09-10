@@ -1,5 +1,5 @@
 scr_getinput()
-if (!place_meeting(x, y, obj_baddie))
+if (!place_meeting(x, y, obj_newbaddie) && !place_meeting(x, y, obj_baddie))
     state = 0
 move = (key_left + key_right)
 hsp = (move * movespeed)

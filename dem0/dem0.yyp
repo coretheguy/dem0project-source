@@ -3079,6 +3079,14 @@
             }
         },
         {
+            "Key": "76a786b3-ea26-46b2-ac05-cf1ee539480a",
+            "Value": {
+                "id": "bfc83d15-ff91-4f94-9be8-0ebd03523697",
+                "resourcePath": "objects\\obj_newbaddie\\obj_newbaddie.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "76e1544f-ac60-4b39-a5fb-8d3a3e180ef7",
             "Value": {
                 "id": "bc452747-c789-4e06-9465-8ca3084ae7c4",
