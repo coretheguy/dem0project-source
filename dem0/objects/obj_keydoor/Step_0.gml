@@ -1,4 +1,4 @@
-if ((obj_player.state == 0) && (obj_player.key_up && ((global.key_inv == 1) && place_meeting(x, y, obj_player))))
+if ((obj_player.state == 0) && (obj_player.key_up && (((global.key_inv == 1) || visited = 1) && place_meeting(x, y, obj_player))))
 {
 	ds_list_add(global.saveroom, id)
     scr_sound(24)
