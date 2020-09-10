@@ -16,5 +16,6 @@ zoomw = 960
 global.level = ""
 global.maxwave = 0
 global.wave = 0
-
-
+amplitude = 0
+freq = 0
+wavel = 0

@@ -2,23 +2,18 @@
 //The vertex source may have your answer
 
 varying vec2 v_vPosition;
-varying vec4 v_vColour;
-varying vec2 v_vTexcoord;
 
-uniform float time;
-uniform float panic;
-vec2 Size = vec2(256,6);
-vec2 Wave = vec2(500,1);
-#define WAVELENGTH 48.0
-#define AMPLITUDE 0.005
-
-void main()
-{
-	vec2 uv = v_vTexcoord;
-    uv.x += sin(WAVELENGTH * uv.y + 3.0 * time * panic) * AMPLITUDE * panic;
-	
-    //vec2 Coord = v_vTexcoord + vec2(cos((v_vPosition.y/Wave.x+Time)*6.2831)*Wave.y,0)/Size*(1.0-v_vTexcoord.y);
-    //gl_FragColor = v_vColour * texture2D( gm_BaseTexture, Coord);
-	
-	// i have no idea what any of this does
-}
+    varying vec2 v_vTexcoord;
+    varying vec4 v_vColour;
+    uniform float time;
+	uniform float amp;
+	uniform float freq;
+	uniform float wave;
+    #define A 0.02  //(A)mplitude
+    #define W 32.0  //(W)avelength
+    #define F 0.1  //(F)requency
+    void main() {
+        float D = amp * sin(wave * v_vTexcoord.y + freq * time);  //(D)isplacement
+        vec2 T = v_vTexcoord + vec2(D, 0.0); //new (T)exture coordinates
+        gl_FragColor = v_vColour * texture2D( gm_BaseTexture, T );
+    }
