@@ -2,7 +2,7 @@ var layers;
 var layernum = 0
 for (i = 0; i < 3; i++)
 {
-    var layername = ("Backgrounds_" + string((i + 1)))
+    var layername = ("Backgrounds_" + string((i)))
     if layer_exists(layername)
         layers[layernum++] = layername
 }

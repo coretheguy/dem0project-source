@@ -231,7 +231,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Background",
+            "name": "Backgrounds_1",
             "id": "10f300a1-1e58-4ce0-9f5e-3cebd2b8b089",
             "animationFPS": 15,
             "animationSpeedType": "0",

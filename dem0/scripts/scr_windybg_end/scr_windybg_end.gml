@@ -1,14 +1,14 @@
 if ((event_type == 8) && (event_number == 0))
 {
     surface_reset_target()
-	if instance_exists(obj_camera)
+	if instance_exists(obj_camera) && instance_exists(obj_wavybg)
 	{
     shader_set(shdr_wind)
 	
-	obj_camera.angle += 0.1
-	obj_camera.amplitude = 0.02
-	obj_camera.freq = 0.5
-	obj_camera.wavel = 2
+	obj_camera.angle += obj_wavybg.time
+	obj_camera.amplitude = obj_wavybg.amp
+	obj_camera.freq = obj_wavybg.freq
+	obj_camera.wavel = obj_wavybg.wave
 	
     var time_id = shader_get_uniform(2, "time")
     shader_set_uniform_f(time_id, obj_camera.angle)
