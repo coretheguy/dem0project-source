@@ -6215,6 +6215,14 @@
             }
         },
         {
+            "Key": "ede530c7-28a6-4c0a-909a-e08ff3124663",
+            "Value": {
+                "id": "9f04fc91-c62b-4bb9-9d3f-6517595a66b2",
+                "resourcePath": "objects\\obj_wavybg\\obj_wavybg.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ee152b3b-5fdb-48a8-a1b5-4c41599e0c98",
             "Value": {
                 "id": "8842f331-b28c-4eab-b00e-8481a4790890",
