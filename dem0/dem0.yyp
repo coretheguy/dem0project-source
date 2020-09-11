@@ -5199,6 +5199,14 @@
             }
         },
         {
+            "Key": "c6a42e1e-a4a8-43a5-a65f-bc80bc8e0821",
+            "Value": {
+                "id": "58a83453-7d91-4c0a-bae1-1e5120ac61a0",
+                "resourcePath": "rooms\\castle_2\\castle_2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c77c8659-a662-4cbb-8391-0e6f65655878",
             "Value": {
                 "id": "eeff00bf-3d51-49f7-ad60-47041fd1da99",
