@@ -11,6 +11,8 @@ if ((!((obj_player.state == 24) || ((obj_player.state == 19) || ((obj_player.sta
     instance_create(x, y, obj_baddiegibs)
     instance_create(x, y, obj_baddiegibs)
     instance_create(x, y, obj_baddiegibs)
+	instance_create(x, y, obj_40)
+	global.collect += 40
 }
 if (grabbed == 1)
 {
@@ -173,8 +175,8 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
-										instance_create(x, y, obj_40)
-	global.collect += 40
+			instance_create(x, y, obj_40)
+			global.collect += 40
         }
     }
 }

@@ -1,1 +1,0 @@
-text = "The Ogre says, 'GRR. PAUSE AND RETRY TO GO BACK.'"
