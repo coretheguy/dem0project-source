@@ -1367,6 +1367,14 @@
             }
         },
         {
+            "Key": "383939e2-1053-46d4-a356-088d1e874981",
+            "Value": {
+                "id": "258b0da1-a543-4032-8e4d-54e648d40f42",
+                "resourcePath": "rooms\\castle_7\\castle_7.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "38528ad0-e379-4d85-9817-28d70b7bcc39",
             "Value": {
                 "id": "43c6eba8-4265-4daa-ab78-ccf97e4a8d5f",
@@ -2599,6 +2607,14 @@
             }
         },
         {
+            "Key": "64b07b38-8cbe-496d-8b4a-6862f501f039",
+            "Value": {
+                "id": "02fe3154-22e7-4000-b604-20814a237f81",
+                "resourcePath": "rooms\\castle_5\\castle_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "64c46bb3-af33-4a70-8393-573e91272ae4",
             "Value": {
                 "id": "c98a5092-7c44-4d79-ad60-a3c6d1bfb964",
@@ -3180,6 +3196,14 @@
                 "id": "83af640a-7452-4076-a598-d8d3c1ae214f",
                 "resourcePath": "sprites\\spr_hungrypillar_angry\\spr_hungrypillar_angry.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "78c7e910-dff9-4849-b43f-8150943c879e",
+            "Value": {
+                "id": "62ad7d5d-b6d6-459c-adf2-68fc299bcef3",
+                "resourcePath": "rooms\\castle_4\\castle_4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -6255,6 +6279,14 @@
             }
         },
         {
+            "Key": "eb17708a-c4b4-4238-8a1f-6e46489096ef",
+            "Value": {
+                "id": "a0387a66-d194-4ab0-b5fa-b069d9ef7eaf",
+                "resourcePath": "rooms\\castle_6\\castle_6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "eb2c6601-0c80-454c-99da-8338a2f8613e",
             "Value": {
                 "id": "aa76cc98-f2ba-4522-97e9-7eae6e080e27",
@@ -6580,6 +6612,14 @@
                 "id": "7e8f12be-4c02-48cb-b4df-ad75d836a417",
                 "resourcePath": "scripts\\scr_player_pistol\\scr_player_pistol.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f468d9db-8626-4bc8-924d-fb4a1335b940",
+            "Value": {
+                "id": "2844efcd-e067-4433-8153-0fa27090c3b4",
+                "resourcePath": "rooms\\castle_3\\castle_3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
