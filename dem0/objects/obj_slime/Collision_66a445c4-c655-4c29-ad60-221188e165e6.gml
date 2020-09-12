@@ -7,3 +7,5 @@ global.collect += 10
 		hsp = obj_player.hsp
 		vsp = -10
 	}
+	    audio_sound_gain(sfx_enemyhit, 0.7, 0)
+    audio_play_sound(sfx_enemyhit, 1, false)

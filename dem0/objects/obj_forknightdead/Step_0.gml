@@ -1,3 +1,6 @@
+ //yes, this uses pepgoblin code for a quick fix
+ //did the fix work? we'll see...
+
 if (vsp < 30)
     vsp += grav
 if ((!((obj_player.state == 24) || ((obj_player.state == 19) || ((obj_player.state == 21) || ((obj_player.state == 20) || ((obj_player.state == 25) || ((obj_player.state == 26) || ((obj_player.state == 27) || ((obj_player.state == 28) || (obj_player.state == 29)))))))))) && (grabbed == 1))
@@ -11,8 +14,7 @@ if ((!((obj_player.state == 24) || ((obj_player.state == 19) || ((obj_player.sta
     instance_create(x, y, obj_baddiegibs)
     instance_create(x, y, obj_baddiegibs)
     instance_create(x, y, obj_baddiegibs)
-	instance_create(x, y, obj_40)
-	global.collect += 40
+	
 }
 if (grabbed == 1)
 {
@@ -40,7 +42,7 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -58,7 +60,7 @@ if (grabbed == 1)
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
             vsp = -20
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -78,7 +80,7 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -98,7 +100,7 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -117,7 +119,7 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -136,7 +138,7 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -155,7 +157,7 @@ if (grabbed == 1)
             grabbed = 0
             vsp = -4
             hsp = (obj_player.image_xscale * 4)
-										instance_create(x, y, obj_40)
+				instance_create(x, y, obj_40)
 	global.collect += 40
         }
     }
@@ -175,8 +177,8 @@ if (grabbed == 1)
             vsp = -5
             instance_create(x, y, obj_bangeffect)
             grabbed = 0
-			instance_create(x, y, obj_40)
-			global.collect += 40
+				instance_create(x, y, obj_40)
+	global.collect += 40
         }
     }
 }
@@ -200,5 +202,3 @@ if (grabbed == 0)
     }
     y += floor(vsp)
 }
-
-
