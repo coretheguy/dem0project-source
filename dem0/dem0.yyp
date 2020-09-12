@@ -4087,6 +4087,14 @@
             }
         },
         {
+            "Key": "9d4e804d-6331-4202-b5cb-22d31bc0228e",
+            "Value": {
+                "id": "ef7fdfde-2132-4df1-bbaa-894966716ee3",
+                "resourcePath": "sprites\\spr_player_entergate\\spr_player_entergate.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9d7185f3-cdf5-4332-b443-c1773abc056d",
             "Value": {
                 "id": "2c3f6489-3959-4533-9a02-8ab6fea4522e",

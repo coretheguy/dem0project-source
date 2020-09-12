@@ -10,6 +10,7 @@ stopAnim = 1
 crouchslideAnim = 1
 crouchAnim = 1
 machhitAnim = 0
-sprite_index = spr_player_lookdoor
-if (floor(image_index) == 4)
+if !place_meeting(x, y, obj_startgate)
+	sprite_index = spr_player_lookdoor
+if (floor(image_index) == 4 && sprite_index != spr_player_entergate)
     image_speed = 0

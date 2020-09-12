@@ -1,1 +1,0 @@
-text = "MORE COMING SOON"
