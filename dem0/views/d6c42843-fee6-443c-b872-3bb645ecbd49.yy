@@ -13,7 +13,7 @@
         "383939e2-1053-46d4-a356-088d1e874981"
     ],
     "filterType": "GMRoom",
-    "folderName": "medievil",
+    "folderName": "castle",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -73,7 +73,10 @@ if (pause == 1)
 	}
 	
     if (key_jump && (obj_retry.selected == 1))
-        game_restart()
+	{
+		pause = 0
+        scr_resetplayer()
+	}
     //if (key_jump && (obj_exit.selected == 1))
     //{
     //    instance_destroy(obj_exit)

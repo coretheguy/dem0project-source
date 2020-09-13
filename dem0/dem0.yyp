@@ -1167,6 +1167,14 @@
             }
         },
         {
+            "Key": "2fe57e34-015d-4721-89b6-774ec9722679",
+            "Value": {
+                "id": "09348ec7-8a6e-4778-89a1-bfd694a7abdd",
+                "resourcePath": "rooms\\hubroom2\\hubroom2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2fefecd8-eb5d-4962-a5fb-6932249bfc75",
             "Value": {
                 "id": "f9dcaa78-e42e-46a7-a34a-7188e6188a47",
@@ -3276,6 +3284,14 @@
                 "id": "925eb308-58da-434b-a332-3b0f66b67e6b",
                 "resourcePath": "sprites\\spr_player_machfreefall\\spr_player_machfreefall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7b36ef6a-3e4d-49e6-854a-ef5e4d0b0d16",
+            "Value": {
+                "id": "b882397d-13c6-4313-803a-f1dc53bc7522",
+                "resourcePath": "scripts\\scr_resetplayer\\scr_resetplayer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7121,7 +7137,8 @@
         "2147453c-c26c-43f4-b0d2-2d2a1b237426",
         "833a2279-f0bf-4209-bf6d-53308145ad32",
         "e2c23c84-cc5a-4195-8a05-de6ac573d9e4",
-        "f933366f-940a-4651-a69c-6d89c09ffea9"
+        "f933366f-940a-4651-a69c-6d89c09ffea9",
+        "7b36ef6a-3e4d-49e6-854a-ef5e4d0b0d16"
     ],
     "tutorial": ""
 }
