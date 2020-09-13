@@ -34,7 +34,9 @@
         "bb997f63-0565-431b-85ab-504b0fece5ab",
         "327d4055-e41c-427d-94b4-1db026ad4710",
         "71797343-90fd-420f-9416-940b1d099444",
-        "cccd473a-be3c-4d1e-81ff-df5830b00674"
+        "cccd473a-be3c-4d1e-81ff-df5830b00674",
+        "132f7932-33ee-4aff-8a6d-b70f0d71b260",
+        "9c3e1ea2-f5a1-4dcf-84b1-6ed145ad9d35"
     ],
     "filterType": "GMObject",
     "folderName": "effect",

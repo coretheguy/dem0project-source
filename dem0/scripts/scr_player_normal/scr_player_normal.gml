@@ -83,6 +83,19 @@ if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meetin
     image_index = 0
     idle = 0
 }
+
+if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent)))
+{
+	state = 11
+	idle = 0
+	landAnim = 0
+	machslideAnim = 1
+	crouchAnim = 1
+	image_index = 0
+	sprite_index = spr_player_chainsaw
+	instance_create(x, y, obj_chainsawhitbox)
+}
+
 if (move != 0)
 {
 	if !place_meeting(x, y, obj_water2)

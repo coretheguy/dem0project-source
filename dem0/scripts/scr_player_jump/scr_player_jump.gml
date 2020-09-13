@@ -126,5 +126,17 @@ if (stompAnim == 1)
 }
 if (move != 0)
     xscale = move
+	
+if ((key_chainsaw))
+{
+	state = 11
+	idle = 0
+	landAnim = 0
+	machslideAnim = 1
+	crouchAnim = 1
+	image_index = 0
+	sprite_index = spr_player_chainsaw
+	instance_create(x, y, obj_chainsawhitbox)
+}
 image_speed = 0.35
 scr_collideandmove()
