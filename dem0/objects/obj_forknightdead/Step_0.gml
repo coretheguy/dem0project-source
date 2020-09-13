@@ -1,5 +1,4 @@
- //yes, this uses pepgoblin code for a quick fix
- //did the fix work? we'll see...
+//test
 
 if (vsp < 30)
     vsp += grav

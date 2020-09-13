@@ -116,6 +116,8 @@ if ((obj_player.attacking == 1) && ((!((obj_player.state == 48) && ((obj_player.
         obj_player.image_index = 0
     }
     instance_destroy()
+		instance_create(x, y, obj_40)
+global.collect += 40
     if (obj_player.state == 12)
     {
         obj_player.vsp = -6
