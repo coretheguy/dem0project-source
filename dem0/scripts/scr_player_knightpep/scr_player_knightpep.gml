@@ -38,7 +38,7 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((sprite_inde
 if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep_jumpstart))
 {
     scr_sound(sfx_jump)
-    vsp = -7
+    vsp = -9
     if key_right
         hsp = 4
     if (-key_left)
