@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "0d328f9a-3871-4c1c-b9fb-3ce06c7d3e95",
+            "Value": {
+                "id": "ba23b34d-610b-4177-ade7-5125e6899ba9",
+                "resourcePath": "objects\\obj_crashplaneblock\\obj_crashplaneblock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d433f34-ea2f-468a-b672-ef4903ed5a8c",
             "Value": {
                 "id": "ff32aadb-aae9-4f92-9871-e45fa8c80e31",
@@ -2531,6 +2539,14 @@
             "Value": {
                 "id": "42086061-1911-4b13-bc27-7976e65e999a",
                 "resourcePath": "objects\\obj_boulderspawner\\obj_boulderspawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5dc93e57-cb93-4b1c-a5a6-6e2936b07289",
+            "Value": {
+                "id": "ee57c5d0-5706-4553-9bfc-542777c5725e",
+                "resourcePath": "objects\\obj_crashingplane\\obj_crashingplane.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -5252,6 +5268,14 @@
                 "id": "d103bf07-3f9a-4994-9e5c-277c3f012beb",
                 "resourcePath": "scripts\\pal_swap_set\\pal_swap_set.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c24741b6-01aa-48ff-a632-afe719a23511",
+            "Value": {
+                "id": "d8976abe-7677-4b7e-9edd-115760f7c8fc",
+                "resourcePath": "sprites\\spr_crashingplane\\spr_crashingplane.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

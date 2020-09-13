@@ -74,8 +74,13 @@ if (pause == 1)
 	
     if (key_jump && (obj_retry.selected == 1))
 	{
+		if room != hubroom1
+		{
 		pause = 0
         scr_resetplayer()
+		}
+		if room = hubroom1
+			game_restart()
 	}
     //if (key_jump && (obj_exit.selected == 1))
     //{

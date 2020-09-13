@@ -8,7 +8,8 @@
         "b716e9c2-fc27-4a4b-9b42-cafd80c0b481",
         "a0847d4e-c59d-4e20-b0e1-85beccd8918e",
         "ce9df707-b5b1-4bd3-8647-8cf18636c57a",
-        "e467c925-6b7a-49ec-9616-d2f20a916e94"
+        "e467c925-6b7a-49ec-9616-d2f20a916e94",
+        "c24741b6-01aa-48ff-a632-afe719a23511"
     ],
     "filterType": "GMSprite",
     "folderName": "hubroom",
