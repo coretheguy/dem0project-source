@@ -12,6 +12,9 @@ machslideAnim = 1
 move2 = (key_right2 + key_left2)
 move = (key_right + key_left)
 
+if mach2 < 100
+	mach2 += 2
+
 if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) || (place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)))
 {
     hsp = 5 * xscale
@@ -23,6 +26,13 @@ if movespeed > 2
 	sprite_index = spr_player_chainsaw
 }
 
+if movespeed > 8 && !instance_exists(obj_mach3effect) && !instance_exists(obj_mach3effect1) && !instance_exists(obj_mach3effect2)
+{
+	instance_create(x, y, obj_mach3effect)
+	instance_create(x, y, obj_mach3effect1)
+    instance_create(x, y, obj_mach3effect2)
+}
+
 if key_chainsaw
 {
 	if movespeed < 14
@@ -32,6 +42,8 @@ if key_chainsaw
 
 if !key_chainsaw
 {
+	if mach2 > 0
+		mach2 = 0
 	if movespeed > 0
 		movespeed -= 0.2
 	if movespeed < 0
@@ -40,7 +52,10 @@ if !key_chainsaw
 		sprite_index = spr_player_chainsawend
 }
 if movespeed = 0
+{
 	state = 0
+	mach2 = 0
+}
 
 if key_jump && place_meeting(x, y + 1, obj_collisionparent)
 {
@@ -58,6 +73,7 @@ if key_down && place_meeting(x, y + 1, obj_collisionparent)
 if key_down && !place_meeting(x, y + 1, obj_collisionparent)
 {
 	state = 7
+	mach2 = 0
 	sprite_index = spr_player_chainsawpogo1
 	instance_destroy(obj_chainsawhitbox)
 }
@@ -70,7 +86,8 @@ if place_meeting(x, (y + 1), obj_onewaywatersolid)
     instance_create((x - (xscale * 30)), (y + 40), obj_waterdrop)
 }
 
-
+if ((!instance_exists(obj_dashcloud)) && ((!place_meeting(x, y, obj_water2)) && place_meeting(x, (y + 1), obj_collisionparent)))
+    instance_create(x, y, obj_dashcloud)
 
 image_speed = 0.6
 scr_collideandmove()

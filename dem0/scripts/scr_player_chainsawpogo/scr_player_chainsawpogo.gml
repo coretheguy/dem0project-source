@@ -8,8 +8,8 @@ hsp = (xscale * movespeed)
 move = (key_right + key_left)
 if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) || (place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)))
     movespeed = 0
-//if (move == 0)
-//    movespeed = 0
+if (move == 0 && movespeed > 0)
+    movespeed -= 0.25
 if ((move != 0) && (movespeed < 13))
     movespeed += 0.5
 if ((xscale == 1) && (move == -1))
