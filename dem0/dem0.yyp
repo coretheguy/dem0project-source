@@ -242,7 +242,7 @@
             "Key": "086cac04-14f7-4185-bb36-c500a4ba2a71",
             "Value": {
                 "id": "809a2e25-84aa-4f0d-9080-e5c6f7fa39c5",
-                "resourcePath": "sprites\\sprite368\\sprite368.yy",
+                "resourcePath": "sprites\\tile_skyprops\\tile_skyprops.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -655,10 +655,26 @@
             }
         },
         {
+            "Key": "1760a7a0-c43b-4dd7-a127-b7f6270cc019",
+            "Value": {
+                "id": "380be7ab-de5c-45f3-b2fa-61b3f3ae15d7",
+                "resourcePath": "sprites\\bg_sky1\\bg_sky1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "176b4dd0-1431-43b7-8d11-12c39939b6af",
             "Value": {
                 "id": "07efec2d-3ea7-45be-86be-453927b79a14",
                 "resourcePath": "views\\176b4dd0-1431-43b7-8d11-12c39939b6af.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "185d95e5-0798-4604-8063-0b4329fdc14b",
+            "Value": {
+                "id": "15c71a54-fda8-4126-8a22-faca1c60e635",
+                "resourcePath": "views\\185d95e5-0798-4604-8063-0b4329fdc14b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1099,6 +1115,14 @@
             "Value": {
                 "id": "25ea87dc-1e4d-48a8-9fb5-d873e86a9ba9",
                 "resourcePath": "views\\2ab91675-224a-4989-ba6e-3df3454b304c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2b599b4f-6b2d-4452-ace9-348ad6e32245",
+            "Value": {
+                "id": "a8ca78f5-989a-4c0f-a781-b3bc3568a6e6",
+                "resourcePath": "views\\2b599b4f-6b2d-4452-ace9-348ad6e32245.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2442,7 +2466,7 @@
             "Key": "58a6ea51-0f4d-43c9-a930-5d1d10082b99",
             "Value": {
                 "id": "18a6420a-bb00-4ac8-92c1-e83b404d895e",
-                "resourcePath": "sprites\\sprite367\\sprite367.yy",
+                "resourcePath": "sprites\\tile_sky\\tile_sky.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4827,6 +4851,14 @@
             "Value": {
                 "id": "d96e4556-81eb-42ae-8b94-0351dc34db4d",
                 "resourcePath": "sprites\\spr_sausageman_stunland\\spr_sausageman_stunland.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b1048645-bd87-47f9-885f-ca1049077eb0",
+            "Value": {
+                "id": "71311e49-8157-4475-bd52-04b3b0efd108",
+                "resourcePath": "sprites\\bg_sky2\\bg_sky2.yy",
                 "resourceType": "GMSprite"
             }
         },
