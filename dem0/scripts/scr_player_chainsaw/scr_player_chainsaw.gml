@@ -37,7 +37,7 @@ if movespeed > 12 && !instance_exists(obj_mach3effect) && !instance_exists(obj_m
 
 if key_chainsaw
 {
-	if movespeed < 14 && move != 1
+	if movespeed < 14
 		movespeed += 0.2
 	if movespeed < 0
 		sprite_index = spr_player_chainsawend

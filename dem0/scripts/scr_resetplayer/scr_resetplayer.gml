@@ -10,6 +10,7 @@ global.seconds = 59
 global.minutes = 2
 obj_player.state = 0
 obj_player.visible = 1
+obj_camera.visible = 1
 ds_list_clear(global.saveroom)
 with (obj_player)
 {
