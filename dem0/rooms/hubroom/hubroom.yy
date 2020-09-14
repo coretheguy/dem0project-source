@@ -537,7 +537,7 @@
             "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
-            "hspeed": 1,
+            "hspeed": 0.3,
             "htiled": true,
             "inheritLayerDepth": false,
             "inheritLayerSettings": false,
@@ -562,7 +562,7 @@
         },
         {
             "__type": "GMRBackgroundLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Backgrounds_3",
+            "name": "Backgrounds_1",
             "id": "df9ab744-5acb-4eed-8075-a1fcb7db5fd2",
             "animationFPS": 5,
             "animationSpeedType": "0",

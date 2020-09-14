@@ -58,5 +58,8 @@ else if (floor(image_index) == 4)
 image_speed = 0.35
 if (move != 0)
     xscale = move
+	
+if movespeed < 0
+	movespeed += 0.1
 image_speed = 0.35
 scr_collideandmove()
