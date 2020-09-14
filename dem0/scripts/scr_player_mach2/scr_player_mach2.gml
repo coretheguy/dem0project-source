@@ -186,6 +186,9 @@ if place_meeting(x, (y + 1), obj_collisionparent)
 }
 else
     sprite_index = spr_player_mach2jump
+	
+
+
 if (!place_meeting(x, (y + 1), obj_collisionparent))
     machpunchAnim = 0
 if ((!instance_exists(obj_dashcloud)) && (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1), obj_water))))

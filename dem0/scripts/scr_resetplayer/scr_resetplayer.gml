@@ -89,5 +89,5 @@ with (obj_player)
     bombpephitwall = 0
     idleanim = 0
     momemtum = 0
-	global.machsound = 0
+	global.machsound = 1
 }

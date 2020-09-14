@@ -160,6 +160,10 @@ if state != 68 || sprite_index != spr_player_mach4 && (audio_is_playing(sfx_golf
 	audio_stop_sound(sfx_sagemach3)
 }
 
+
+
+
+
 sprite_index = spr_player_mach4
 if (!instance_exists(obj_chargeeffect))
     instance_create(x, y, obj_chargeeffect)
