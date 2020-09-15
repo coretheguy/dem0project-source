@@ -2,7 +2,7 @@
 {
     "name": "castle_1",
     "id": "479a36e1-7523-42da-b5e5-e2816a32758c",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

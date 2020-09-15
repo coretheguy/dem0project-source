@@ -6031,6 +6031,14 @@
             }
         },
         {
+            "Key": "d16f4c72-006a-4131-85d1-4b1aea9ef46e",
+            "Value": {
+                "id": "3a635ff3-6136-41c1-92c9-da99683c41a7",
+                "resourcePath": "sounds\\music_castle\\music_castle.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "d17cf7d5-878a-42a4-8e34-93c18bc9d062",
             "Value": {
                 "id": "dca33e1e-1068-40dc-afad-ae50edc36efb",
