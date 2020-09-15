@@ -14,7 +14,8 @@
         "64c46bb3-af33-4a70-8393-573e91272ae4",
         "e636f3c0-fcc1-48ce-8076-40bb5e1754ab",
         "f1ca4824-30b1-4e33-adb7-b10c98d99944",
-        "13572143-b58a-47d1-aa54-f08f4ae68cd1"
+        "13572143-b58a-47d1-aa54-f08f4ae68cd1",
+        "d979ce0c-87c6-4c0d-8c76-50998dec0827"
     ],
     "filterType": "GMSprite",
     "folderName": "castle",
