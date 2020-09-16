@@ -36,7 +36,8 @@
         "71797343-90fd-420f-9416-940b1d099444",
         "cccd473a-be3c-4d1e-81ff-df5830b00674",
         "132f7932-33ee-4aff-8a6d-b70f0d71b260",
-        "9c3e1ea2-f5a1-4dcf-84b1-6ed145ad9d35"
+        "9c3e1ea2-f5a1-4dcf-84b1-6ed145ad9d35",
+        "f37fd932-2de2-4dca-ab3b-bca5dd13e078"
     ],
     "filterType": "GMObject",
     "folderName": "effect",
