@@ -10,8 +10,7 @@
         "fe7bdf8b-9af5-49f4-8d8c-6356b727c1ed",
         "d9c174c3-051d-4717-acbd-ad5c8ea1ea08",
         "1a3424eb-b490-425b-9409-0f8d2146481c",
-        "0eb93737-db84-4077-8f01-8a35fba6051f",
-        "393156be-dfbe-4e23-a7cf-2299c4da4124"
+        "0eb93737-db84-4077-8f01-8a35fba6051f"
     ],
     "filterType": "GMObject",
     "folderName": "sewer",
