@@ -18,8 +18,6 @@ else
 scr_collideandmove()
 
 
-if !instance_exists(obj_balldetail)
-	instance_create(x, y, obj_balldetail)
 
 
 
