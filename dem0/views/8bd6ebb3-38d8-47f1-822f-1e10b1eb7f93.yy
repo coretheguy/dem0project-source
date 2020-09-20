@@ -12,7 +12,8 @@
         "9e514e89-a5fc-4662-b5d2-30fa2d06d825",
         "845f558c-5d70-4170-9b80-20365dfbeedc",
         "bd18085c-0b2c-4fe7-baee-80c5ea8b2ca7",
-        "58eba161-2757-4594-a04c-a9677e031deb"
+        "58eba161-2757-4594-a04c-a9677e031deb",
+        "28965455-2d1d-4750-9802-291891337f7a"
     ],
     "filterType": "GMObject",
     "folderName": "sky",

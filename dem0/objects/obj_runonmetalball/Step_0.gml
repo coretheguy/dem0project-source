@@ -15,6 +15,12 @@ else
     hsp = 0
 	rolling = 0
 }
+
+if !instance_exists(obj_metalballdetail)
+{
+	instance_create(x, y, obj_metalballdetail)
+}
+
 scr_collideandmove()
 
 

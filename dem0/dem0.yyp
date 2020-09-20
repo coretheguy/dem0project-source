@@ -1079,6 +1079,14 @@
             }
         },
         {
+            "Key": "28965455-2d1d-4750-9802-291891337f7a",
+            "Value": {
+                "id": "09888dc3-078b-4077-b98a-5e594e514670",
+                "resourcePath": "objects\\obj_metalballdetail\\obj_metalballdetail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2898834c-7e05-43f6-af79-ea5c4b901e1f",
             "Value": {
                 "id": "77af69fe-344c-4a26-9aed-3a6fcb85516f",
@@ -3911,6 +3919,14 @@
             }
         },
         {
+            "Key": "87bfee6e-6a93-4bcf-810d-8413484eef47",
+            "Value": {
+                "id": "6b454d26-1515-4582-8a9f-67ff724d5af4",
+                "resourcePath": "rooms\\sky_4\\sky_4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "87d670f8-64ea-43b4-8bb6-b4ba5e5812aa",
             "Value": {
                 "id": "768c1b3e-18c7-471a-ae7a-17cb9322a146",
@@ -4891,6 +4907,14 @@
             "Value": {
                 "id": "3d471170-81f1-4d5e-9069-f0856fde9f91",
                 "resourcePath": "sprites\\spr_pizzagoblin_hit\\spr_pizzagoblin_hit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ac15c9c1-abc7-46d7-8864-da83e3cf13c3",
+            "Value": {
+                "id": "8276d1c9-7a92-4b95-9eb0-f9d7e4509c78",
+                "resourcePath": "sprites\\sprite384\\sprite384.yy",
                 "resourceType": "GMSprite"
             }
         },

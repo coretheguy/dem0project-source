@@ -6,7 +6,8 @@
     "children": [
         "0177e706-a7ee-4c03-b813-b12fc1cc008e",
         "389e0b82-d310-4fc1-8e79-5cec7b6bedcf",
-        "937b9e35-91bc-4234-a229-f04173eb638c"
+        "937b9e35-91bc-4234-a229-f04173eb638c",
+        "87bfee6e-6a93-4bcf-810d-8413484eef47"
     ],
     "filterType": "GMRoom",
     "folderName": "sky",
