@@ -8,7 +8,8 @@
         "086cac04-14f7-4185-bb36-c500a4ba2a71",
         "1760a7a0-c43b-4dd7-a127-b7f6270cc019",
         "b1048645-bd87-47f9-885f-ca1049077eb0",
-        "17221b1d-ba17-45d8-ba9d-f29d0f47dd53"
+        "17221b1d-ba17-45d8-ba9d-f29d0f47dd53",
+        "deda203c-fa6c-456b-85be-2ce3fb8bc21e"
     ],
     "filterType": "GMSprite",
     "folderName": "sky",

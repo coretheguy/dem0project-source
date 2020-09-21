@@ -3343,6 +3343,14 @@
             }
         },
         {
+            "Key": "73c614a5-ed25-4d8e-b539-18f08c7722f2",
+            "Value": {
+                "id": "20152ab4-d3c9-41b0-8c46-204f1112239f",
+                "resourcePath": "rooms\\sky_5\\sky_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "73fe4090-b50f-439b-8fd7-83a338008170",
             "Value": {
                 "id": "b1939d3c-d432-4794-9747-e433b5f867c3",
@@ -4884,6 +4892,14 @@
                 "id": "aa9864c6-4a74-40ff-9814-38be3f50369a",
                 "resourcePath": "scripts\\scr_player_barrelcrouch\\scr_player_barrelcrouch.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ab862aa1-6e7c-4b1e-b7e4-f7e3dea3d7cb",
+            "Value": {
+                "id": "bea04e66-df68-42d3-9404-48fa63f56ba7",
+                "resourcePath": "tilesets\\skyanimprops\\skyanimprops.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -6596,6 +6612,14 @@
                 "id": "13365868-9992-42f9-a4c8-00148bbc8b1d",
                 "resourcePath": "scripts\\scr_player_crouchjump\\scr_player_crouchjump.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "deda203c-fa6c-456b-85be-2ce3fb8bc21e",
+            "Value": {
+                "id": "2af6ea89-b8b8-4a2e-b9be-0385b5e1242e",
+                "resourcePath": "sprites\\tile_skyanimprops\\tile_skyanimprops.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

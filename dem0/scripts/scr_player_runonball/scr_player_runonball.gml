@@ -14,8 +14,19 @@ if (!place_meeting(x, (y + 1), obj_runonball) || !place_meeting(x, (y + 1), obj_
 }
 if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && (!key_attack))))
 {
-    vsp = -7
+    vsp = -9
     state = 36
+    image_index = 0
+    machslideAnim = 1
+    jumpAnim = 1
+    audio_sound_gain(sfx_jump, 0.7, 0)
+    if (!audio_is_playing(sfx_jump))
+        audio_play_sound(sfx_jump, 1, false)
+}
+if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && (!key_attack)) && key_up))
+{
+    vsp = -12
+    state = 10
     image_index = 0
     machslideAnim = 1
     jumpAnim = 1
@@ -56,6 +67,15 @@ if move = 0 && !key_attack
 	
 
 sprite_index = spr_player_idle
+if (key_up && (move == 0))
+{
+    landAnim = 0
+    sprite_index = spr_player_Sjumpprep
+    if (floor(image_index) == 5)
+        image_speed = 0
+	else
+		image_speed = 0.35
+}
 if (key_attack && place_meeting(x, (y + 1), obj_collisionparent))
 {
 	sprite_index = spr_player_running
