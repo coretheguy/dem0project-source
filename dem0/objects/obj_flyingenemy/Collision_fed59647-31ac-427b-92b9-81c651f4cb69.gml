@@ -8,7 +8,7 @@ if ((obj_player.y < y) && ((obj_player.state != 51) && (obj_player.attacking == 
         if (!audio_is_playing(sfx_superjump))
             audio_play_sound(sfx_superjump, 1, false)
         if (!obj_player.key_up)
-            obj_player.vsp = -11
+            obj_player.vsp = -12
         if obj_player.key_up
         {
             obj_player.state = 10
@@ -18,7 +18,7 @@ if ((obj_player.y < y) && ((obj_player.state != 51) && (obj_player.attacking == 
     }
     else
     {
-        obj_player.vsp = -5.5
+        obj_player.vsp = -9
         bounce = 1
         image_index = 0
         audio_sound_gain(sfx_superjump, 0.7, 0)
@@ -30,13 +30,13 @@ if ((obj_player.mach2 >= 35) || (obj_player.attacking == 1))
 {
     if (obj_player.state == 12)
     {
-        obj_player.vsp = -6
+        obj_player.vsp = -10
         obj_player.image_index = 0
         obj_player.facestompAnim = 1
     }
     instance_destroy()
     if (obj_player.state != 41)
-        obj_player.vsp = -6
+        obj_player.vsp = -10
     instance_create(x, y, obj_bangeffect)
     with (instance_create(x, y, obj_flyingenemydead))
     {

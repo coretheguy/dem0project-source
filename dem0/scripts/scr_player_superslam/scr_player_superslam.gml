@@ -2,7 +2,7 @@ scr_getinput()
 movespeed = 0
 mach2 = 0
 hsp = 0
-if (place_meeting(x, (y + 1), obj_bumpable) && (!place_meeting(x, (y + 1), obj_destructibles)))
+if (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1), obj_destructibles)))
 {
 	if global.machsound = 1
     scr_sound(sfx_superimpact)

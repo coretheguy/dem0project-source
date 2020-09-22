@@ -202,7 +202,7 @@
             "Key": "0690aab5-760e-4301-8414-a866d4400fe9",
             "Value": {
                 "id": "00abdff3-470b-48dc-9495-57684cc2b431",
-                "resourcePath": "rooms\\sky_8\\sky_8.yy",
+                "resourcePath": "rooms\\sky_9\\sky_9.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -2884,6 +2884,14 @@
                 "id": "ea84474a-ce61-4240-89ed-ea6b52a78bda",
                 "resourcePath": "fonts\\font0\\font0.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "6382a666-0da9-4624-bb1f-8619f7ef6cf9",
+            "Value": {
+                "id": "3a29d319-1dee-4ba2-a7a4-06af549854b6",
+                "resourcePath": "rooms\\sky_8\\sky_8.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
