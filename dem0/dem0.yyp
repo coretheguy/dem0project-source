@@ -1415,6 +1415,14 @@
             }
         },
         {
+            "Key": "3342e859-ab79-43fe-86eb-cd3b2050ae32",
+            "Value": {
+                "id": "0bc63cec-b96b-4283-9eae-3c303db2563e",
+                "resourcePath": "sprites\\sprite393\\sprite393.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "338619f7-944b-479f-b0db-7a9ee974e489",
             "Value": {
                 "id": "b3936ead-bacb-4789-9b37-0cdfdef1b112",
@@ -7692,6 +7700,14 @@
                 "id": "1aba5030-22ae-4139-ba05-17ef67671f44",
                 "resourcePath": "rooms\\sky_7\\sky_7.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "fdd65c18-b5b8-457a-8a8c-bf7fa2228a60",
+            "Value": {
+                "id": "8036a7e0-8394-4841-b4c2-dd712f28e7c9",
+                "resourcePath": "tilesets\\skyprops2\\skyprops2.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

@@ -35,6 +35,12 @@ if ((obj_player.mach2 >= 35) || (obj_player.attacking == 1))
         obj_player.facestompAnim = 1
     }
     instance_destroy()
+	if (ds_list_find_index(global.saveroom, id) == -1)
+	{
+		instance_create(x, y, obj_10)
+		global.collect += 10
+				ds_list_add(global.saveroom, id)
+	}
     if (obj_player.state != 41)
         obj_player.vsp = -10
     instance_create(x, y, obj_bangeffect)
