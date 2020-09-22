@@ -4,17 +4,17 @@ if (createdfadeout == 0)
 	instance_create(x, y, obj_fadeout)
 }
 
-if createdfadeout = 1
-{
-	with (obj_player)
-	{
-		{
-			//y = other.target_y
-			//x = other.target_x
-			targetRoom = other.targetRoom
-		}
-	}
-}
+//if createdfadeout = 1
+//{
+//	with (obj_player)
+//	{
+//		{
+//			//y = other.target_y
+//			//x = other.target_x
+//			targetRoom = other.targetRoom
+//		}
+//	}
+//}
 
         //case 47:
         //    scr_player_mach1()
@@ -26,18 +26,4 @@ if createdfadeout = 1
         //    scr_player_mach3()
         //    break
 
-//}
-//with (obj_player)
-//{
-//    //y = other.target_y
-//    //x = other.target_x
-//    //targetRoom = other.targetRoom
-//	other.time2++
-//		if other.time2 > 10
-//		{
-//			targetRoom = other.targetRoom
-//			y = other.target_y
-//			x = other.target_x
-//			other.time2 = 0
-//		}
 //}

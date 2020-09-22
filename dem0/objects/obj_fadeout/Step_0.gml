@@ -5,17 +5,17 @@ if (fadealpha > 1)
 	{
 	if (room != obj_player.targetRoom)
 		room_goto(obj_player.targetRoom)
-	with obj_player
-	{
-		if place_meeting(x, y, obj_hallway)
-		{
-			with obj_hallway
-			{
-				obj_player.x = target_x
-				obj_player.y = target_y
-			}
-		}
-	}
+	//with obj_player
+	//{
+	//	if place_meeting(x, y, obj_hallway)
+	//	{
+	//		with obj_hallway
+	//		{
+	//			obj_player.x = target_x
+	//			obj_player.y = target_y
+	//		}
+	//	}
+	//}
 	//	else
 	//	{		
 	//		if place_meeting(x, y, obj_door)
@@ -44,7 +44,7 @@ else if (fadein == 1)
     fadealpha -= 0.1
 with (obj_player)
 {
-    if ((other.fadein == 1) && place_meeting(x, y, obj_door) || place_meeting(x, y, obj_doorblocked) || place_meeting(x, y, obj_keydoor))
+    if ((other.fadein == 1) && (place_meeting(x, y, obj_door) || place_meeting(x, y, obj_doorblocked) || place_meeting(x, y, obj_keydoor)))
     {
         state = 39
         image_index = 0

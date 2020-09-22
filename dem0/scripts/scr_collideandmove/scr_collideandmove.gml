@@ -70,14 +70,14 @@ i = abs(hsp)
 j = i;
 while !(i <= 0)
 {
-	//if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && (place_meeting((x + sign(hsp)), (y - 1), obj_collisionparent) && (!place_meeting((x + sign(hsp)), (y - 2), obj_collisionparent))))
-    //  y -= 2
+	if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && (place_meeting((x + sign(hsp)), (y - 1), obj_collisionparent) && (!place_meeting((x + sign(hsp)), (y - 2), obj_collisionparent))))
+		y -= 2
 	
     if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && (!place_meeting((x + sign(hsp)), (y - 1), obj_collisionparent)))
 		y--;
 	
-	//if ((!place_meeting((x + sign(hsp)), y, obj_collisionparent)) && ((!place_meeting((x + sign(hsp)), (y + 1), obj_collisionparent)) && ((!place_meeting((x + sign(hsp)), (y + 2), obj_collisionparent)) && place_meeting((x + sign(hsp)), (y + 3), obj_collisionparent))))
-	//	y += 2
+	if ((!place_meeting((x + sign(hsp)), y, obj_collisionparent)) && ((!place_meeting((x + sign(hsp)), (y + 1), obj_collisionparent)) && ((!place_meeting((x + sign(hsp)), (y + 2), obj_collisionparent)) && place_meeting((x + sign(hsp)), (y + 3), obj_collisionparent))))
+		y += 2
 			
     if ((!place_meeting((x + sign(hsp)), y, obj_collisionparent)) && ((!place_meeting((x + sign(hsp)), (y + 1), obj_collisionparent)) && place_meeting((x + sign(hsp)), (y + 2), obj_collisionparent)))
         y++;
