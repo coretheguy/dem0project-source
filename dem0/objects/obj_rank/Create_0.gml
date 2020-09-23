@@ -34,6 +34,19 @@ else if (global.minutes = 0 && global.seconds > 5 && global.seconds < 30)
 else if (global.minutes = 0 && global.seconds <= 5)
     sprite_index = spr_rankD
 }
+else if global.level = "clouds"
+{
+if (global.collect >= 4000)
+    sprite_index = spr_rankS
+else if (global.collect > 3000)
+    sprite_index = spr_rankA
+else if (global.collect > 1500)
+    sprite_index = spr_rankB
+else if (global.collect > 750)
+    sprite_index = spr_rankC
+else
+    sprite_index = spr_rankD
+}
 else
 {
 if (global.collect >= 3500)
