@@ -1791,6 +1791,14 @@
             }
         },
         {
+            "Key": "3f6745f7-afa5-4e95-96b3-667a75b65129",
+            "Value": {
+                "id": "b7891abd-bb9d-4d5d-ac71-6ab31bbd02dc",
+                "resourcePath": "objects\\obj_ballparent\\obj_ballparent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3fae5d45-1bfd-424b-b956-bd89e9a5aea1",
             "Value": {
                 "id": "0777adeb-4260-4d37-bb42-9c9657971f60",

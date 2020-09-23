@@ -1,4 +1,4 @@
-if obj_runonball.rolling = 1
+if obj_runonball.rolling = 1 || obj_runonmetalball.rolling = 1
 {
 instance_destroy()
 ds_list_add(global.saveroom, id)
