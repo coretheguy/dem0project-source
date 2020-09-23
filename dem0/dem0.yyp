@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "1178ba11-bd0f-4d42-9a2b-57277f63dc01",
+            "Value": {
+                "id": "3d464c0b-6cdf-491b-a8f9-1e4a4b4914f3",
+                "resourcePath": "rooms\\sky_john3\\sky_john3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "11fa467c-b5dd-45f8-811b-95608afb6cf7",
             "Value": {
                 "id": "0ac1516f-30fd-47ed-8cab-061c58396dea",
@@ -4316,6 +4324,14 @@
                 "id": "2fce61fb-c5f6-4e87-82b3-533be43aa1b1",
                 "resourcePath": "objects\\obj_knightdebris\\obj_knightdebris.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "940de934-3dab-4c44-8013-c756d3fc76ae",
+            "Value": {
+                "id": "4473507b-07a9-45c1-a9b0-ceaf1ec5dcc2",
+                "resourcePath": "rooms\\sky_john2\\sky_john2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
