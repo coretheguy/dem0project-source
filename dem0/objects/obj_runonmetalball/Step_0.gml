@@ -1,6 +1,6 @@
 with (obj_player)
 {
-    if (place_meeting(x, (y + 1), obj_runonball)) && ((state == 0) || ((state == 44) || ((state == 47) || (state == 48))))
+    if (place_meeting(x, (y + 1), obj_runonmetalball)) && ((state == 0) || ((state == 44) || ((state == 47) || (state == 48))))
 	{
         state = 67
 	}
