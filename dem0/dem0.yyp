@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "0de29efe-240d-454a-ab77-1a95d337a755",
+            "Value": {
+                "id": "c6078804-7b49-49d3-82e0-7a04c298956d",
+                "resourcePath": "rooms\\sky_10\\sky_10.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0dea3212-e2e5-48bc-b5d7-92384ba2913b",
             "Value": {
                 "id": "e356e7d5-c364-4aa4-81f8-c4a17deaab45",
@@ -6207,6 +6215,14 @@
             }
         },
         {
+            "Key": "ccdaa1c4-47ff-42a4-9f8a-0f0339bf3703",
+            "Value": {
+                "id": "eae44775-a3fa-4b1c-8ee2-d9ffcf8d634c",
+                "resourcePath": "objects\\obj_itsstillasecret\\obj_itsstillasecret.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cd0d0916-30c6-487c-948c-327657c0d61b",
             "Value": {
                 "id": "f12243b2-1044-4643-b836-542513ffc3a4",
@@ -7172,6 +7188,14 @@
                 "id": "83590aa8-fb26-4845-93ea-fc71269b7065",
                 "resourcePath": "scripts\\pal_swap_init_system\\pal_swap_init_system.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ef225e0b-de9b-4f3f-8df6-269906f25c76",
+            "Value": {
+                "id": "d2178686-9d20-4885-bacc-19a4070d14c3",
+                "resourcePath": "sprites\\bg_secret2\\bg_secret2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

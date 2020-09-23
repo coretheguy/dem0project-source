@@ -1,7 +1,7 @@
 audio_master_gain(0.5)
 if ((global.panic == 1))
 {
-	if global.level != "sewer" && !audio_is_playing(music_escapetheme)
+	if (global.level != "sewer" && global.level != "clouds") && !audio_is_playing(music_escapetheme)
 	{
 	audio_stop_all()
     audio_play_sound(music_escapetheme, 1, false)
@@ -10,6 +10,11 @@ if ((global.panic == 1))
 	{
 	audio_stop_all()
     audio_play_sound(music_sewerescape, 1, false)
+	}
+	if global.level == "clouds" && !audio_is_playing(music_cloudsescape)
+	{
+	audio_stop_all()
+    audio_play_sound(music_cloudsescape, 1, false)
 	}
 }
 else if (global.panic == 0)
