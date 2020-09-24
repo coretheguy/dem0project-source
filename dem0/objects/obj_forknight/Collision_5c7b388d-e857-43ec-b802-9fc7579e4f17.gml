@@ -170,6 +170,9 @@ with (obj_player)
 {
     if ((other.stun == 1) && ((other.vsp >= 0) && ((state != 51) && ((state != 35) && (state != 24)))))
     {
+					if (ds_list_find_index(global.saveroom, other.id) == -1)
+{
+	ds_list_add(global.saveroom, other.id)
         instance_destroy(other.id)
         if ((y < other.y) && (state == 48))
         {
@@ -188,6 +191,7 @@ with (obj_player)
             state = 24
             instance_create((x + (image_xscale * 60)), (y + 10), obj_punchdust)
         }
+}
     }
 }
 
