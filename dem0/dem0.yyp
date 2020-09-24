@@ -1583,6 +1583,14 @@
             }
         },
         {
+            "Key": "35a8786e-8e48-4350-9586-a4120b7cce5a",
+            "Value": {
+                "id": "a66f1914-118a-4398-8438-6ee65c8bfc34",
+                "resourcePath": "sprites\\spr_font\\spr_font.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35b137a7-4a75-480b-b41b-d6fb96881316",
             "Value": {
                 "id": "f9f441c0-c3fc-4a86-a51d-8f4aa2c514c9",
@@ -2188,6 +2196,14 @@
                 "id": "ced3aa19-af51-490e-a02a-e6201b37281d",
                 "resourcePath": "sprites\\spr_hungrypillar_happy\\spr_hungrypillar_happy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "48b3616c-03df-41c8-85fc-aee5ec6288f0",
+            "Value": {
+                "id": "d474255f-73c1-4f88-be8d-2906b986cb46",
+                "resourcePath": "views\\48b3616c-03df-41c8-85fc-aee5ec6288f0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4375,6 +4391,14 @@
             }
         },
         {
+            "Key": "9088476a-d9cd-4bb4-a586-5334607f6d5b",
+            "Value": {
+                "id": "4e57e733-10cd-4416-be65-326e441f0303",
+                "resourcePath": "objects\\obj_ranksign\\obj_ranksign.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "90f5aa60-1ce0-4fb8-9483-f96c67449288",
             "Value": {
                 "id": "26122df6-839e-474c-8990-39c6482ab9d1",
@@ -4411,6 +4435,14 @@
             "Value": {
                 "id": "00ab47cc-7a1d-4c81-b42c-3d7b8c066d69",
                 "resourcePath": "sprites\\spr_pizzakinpineapple_run\\spr_pizzakinpineapple_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "928c07f2-e527-401d-80d6-b909a4acdf03",
+            "Value": {
+                "id": "d7545b7c-26d8-48ca-8a16-557a8a824060",
+                "resourcePath": "sprites\\spr_ranksign\\spr_ranksign.yy",
                 "resourceType": "GMSprite"
             }
         },

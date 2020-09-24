@@ -43,4 +43,29 @@ with (obj_player)
         instance_create((x + random_range(15, -15)), (y + random_range(15, -15)), obj_wooddebris)
         instance_create((x + random_range(15, -15)), (y + random_range(15, -15)), obj_wooddebris)
     }
+    else if ((state == 2) || (state == 3))
+    {
+        scr_sound(sfx_metaldestroy)
+        with (instance_create(x, y, obj_knightdebris))
+            image_index = 0
+        with (instance_create(x, y, obj_knightdebris))
+            image_index = 1
+        with (instance_create(x, y, obj_knightdebris))
+            image_index = 2
+        with (instance_create(x, y, obj_knightdebris))
+            image_index = 3
+        with (instance_create(x, y, obj_knightdebris))
+            image_index = 4
+        with (instance_create(x, y, obj_knightdebris))
+            image_index = 5
+        if (x != other.x)
+            obj_player.hsp = (sign((x - other.x)) * 5)
+        else
+            obj_player.hsp = 5
+        vsp = -3
+        image_index = 0
+        obj_player.image_index = 0
+        obj_player.flash = 1
+        state = 50
+    }
 }
