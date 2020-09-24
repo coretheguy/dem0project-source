@@ -134,3 +134,10 @@ ini_write_string("Ranks", "castle", rank)
 ini_close()
 }
 
+if global.level = "sewer"
+{
+ini_open("saveData.ini")
+ini_write_string("Points", "sewer", global.collect)
+ini_close()
+}
+

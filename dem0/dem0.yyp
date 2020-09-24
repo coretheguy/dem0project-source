@@ -5767,6 +5767,14 @@
             }
         },
         {
+            "Key": "ba85a426-b384-419c-a60a-460f84ae75ca",
+            "Value": {
+                "id": "308dab37-2ddb-48de-9968-579ad25fe85d",
+                "resourcePath": "sprites\\spr_metalsmalldestroyable\\spr_metalsmalldestroyable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bae7fb33-2ef7-4640-8f2b-0459983bf29e",
             "Value": {
                 "id": "f5ffdc49-b40b-406a-ad65-5c75608345f0",
@@ -7923,6 +7931,14 @@
             "Value": {
                 "id": "1e8a6555-87fb-41eb-a7ce-72ac9a00f77b",
                 "resourcePath": "objects\\obj_key\\obj_key.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fb20bb07-0fd5-4625-9c14-957e5ffcecc9",
+            "Value": {
+                "id": "077e61c4-77f5-4d24-906b-20df55ee9dc9",
+                "resourcePath": "objects\\obj_smallmetalblock\\obj_smallmetalblock.yy",
                 "resourceType": "GMObject"
             }
         },

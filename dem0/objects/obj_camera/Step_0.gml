@@ -66,6 +66,7 @@ if (shake_mag > 0)
     if (shake_mag < 0)
         shake_mag = 0
 }
+
 if (instance_exists(obj_player) && ((obj_player.state != 14) && (obj_player.state != 33)))
 {
     target = obj_player
@@ -73,6 +74,7 @@ if (instance_exists(obj_player) && ((obj_player.state != 14) && (obj_player.stat
     __view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - __view_get(2, 0))))
     __view_set(1, 0, (target.y - (__view_get(3, 0) / 2)))
     __view_set(1, 0, clamp(__view_get(1, 0), 0, (room_height - __view_get(3, 0))))
+	__view_set(4, 0, angle)
     if (shake_mag != 0)
     {
         __view_set(0, 0, ((target.x - (__view_get(2, 0) / 2)) + irandom_range((-shake_mag), shake_mag)))

@@ -350,7 +350,7 @@ with (obj_player)
 	if combotimer = 0
 		global.combo = 0
 		
-	if room == titlescreen
+	if room == titlescreen || instance_exists(obj_rank)
 		visible = 0
 	else
 		visible = 1

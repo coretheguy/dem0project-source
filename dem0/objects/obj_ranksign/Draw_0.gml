@@ -6,11 +6,11 @@ draw_set_color(c_white)
 if place_meeting(x, y, obj_player)
 {
 	if level = "sewer"
-		draw_text(x, (y - 150), sewerrank)
+		draw_text(x, (y - 150), sewercollect)
 	if level = "time"
-		draw_text(x, (y - 150), timerank)
+		draw_text(x, (y - 150), timecollect)
 	if level = "clouds"
-		draw_text(x, (y - 150), cloudsrank)
+		draw_text(x, (y - 150), cloudscollect)
 	if level = "castle"
-		draw_text(x, (y - 150), castlerank)
+		draw_text(x, (y - 150), castlecollect)
 }
