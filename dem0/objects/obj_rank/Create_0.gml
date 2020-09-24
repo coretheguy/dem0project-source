@@ -140,4 +140,23 @@ ini_open("saveData.ini")
 ini_write_string("Points", "sewer", global.collect)
 ini_close()
 }
+if global.level = "time"
+{
+ini_open("saveData.ini")
+ini_write_string("Points", "time", global.collect)
+ini_write_string("TimeChallenge", "time", global.minutes + ":" + global.seconds)
+ini_close()
+}
+if global.level = ""
+{
+ini_open("saveData.ini")
+ini_write_string("Points", "castle", global.collect)
+ini_close()
+}
+if global.level = "clouds"
+{
+ini_open("saveData.ini")
+ini_write_string("Points", "clouds", global.collect)
+ini_close()
+}
 

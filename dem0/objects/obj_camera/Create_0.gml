@@ -19,3 +19,4 @@ global.wave = 0
 amplitude = 0
 freq = 0
 wavel = 0
+camangle = 0
