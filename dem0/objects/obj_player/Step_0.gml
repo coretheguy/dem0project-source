@@ -215,6 +215,9 @@ with (obj_player)
         case 65:
             scr_player_current()
             break
+		case 100:
+			scr_player_titlescreen()
+			break
     }
     
     if (state != 41)
@@ -346,6 +349,11 @@ with (obj_player)
 		combotimer--
 	if combotimer = 0
 		global.combo = 0
+		
+	if room == titlescreen
+		visible = 0
+	else
+		visible = 1
 }
 
 

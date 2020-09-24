@@ -27,6 +27,10 @@ else
 //    background_y[1] = (lerp(0, (room_height - background_height[0]), (view_yview[0] / (room_height - view_hview[0]))) / 6)
 //}
 // bye bye, normalT
+if room == titlescreen
+	visible = 0
+else
+	visible = 1
 if (room == timesuproom)
     timestop = 1
 if ((global.seconds == 0) && ((global.minutes == 0) && (room != timesuproom)))

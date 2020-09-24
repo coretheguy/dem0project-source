@@ -9,7 +9,7 @@ with (obj_player)
     movespeedmax = 5
     jumpstop = 0
     start_running = 1
-    state = 0
+    state = 100
     turn = 0
     jumpAnim = 1
     dashAnim = 1

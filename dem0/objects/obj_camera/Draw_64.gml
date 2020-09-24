@@ -70,6 +70,8 @@ if (obj_player.state != 33)
         }
     }
 }
+
+
 draw_set_blend_mode(0)
 
 
