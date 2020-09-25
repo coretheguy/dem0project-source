@@ -218,6 +218,9 @@ with (obj_player)
 		case 100:
 			scr_player_titlescreen()
 			break
+		case 101:
+			scr_player_fireass()
+			break
     }
     
     if (state != 41)

@@ -9,7 +9,13 @@
         "20612125-5810-44f4-a4e7-21ccc67a9b2b",
         "393156be-dfbe-4e23-a7cf-2299c4da4124",
         "8556efbe-140b-4ad8-ac66-1f8e120913a7",
-        "eb2c6601-0c80-454c-99da-8338a2f8613e"
+        "eb2c6601-0c80-454c-99da-8338a2f8613e",
+        "9e514e89-a5fc-4662-b5d2-30fa2d06d825",
+        "845f558c-5d70-4170-9b80-20365dfbeedc",
+        "bd18085c-0b2c-4fe7-baee-80c5ea8b2ca7",
+        "58eba161-2757-4594-a04c-a9677e031deb",
+        "28965455-2d1d-4750-9802-291891337f7a",
+        "3f6745f7-afa5-4e95-96b3-667a75b65129"
     ],
     "filterType": "GMObject",
     "folderName": "general",

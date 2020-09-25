@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "08d7224d-68fd-42fd-bb6d-c9aaab1f3338",
+            "Value": {
+                "id": "87e90ef2-5ef4-45e5-b59f-5a5109be9621",
+                "resourcePath": "sprites\\sprite429\\sprite429.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a0e0e6a-f6bc-429b-af55-b3a7b88fcb2b",
             "Value": {
                 "id": "87072b61-d041-4af3-a78f-f75ab518e2c0",
@@ -1055,6 +1063,14 @@
             }
         },
         {
+            "Key": "21b10ceb-bb93-482f-9608-d19a482c9f50",
+            "Value": {
+                "id": "2e327691-05ac-4263-9d2d-191899583eea",
+                "resourcePath": "sprites\\frozenvolcanobg1\\frozenvolcanobg1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "21c457e6-5f87-49b5-b990-8522d6c19f81",
             "Value": {
                 "id": "3ea21fcb-e667-4f57-9d4e-f76baffda3a2",
@@ -1079,6 +1095,14 @@
             }
         },
         {
+            "Key": "228d47b0-ef82-4d7a-904b-6581f2913b8f",
+            "Value": {
+                "id": "0d1c8e7e-a29f-4516-83e8-a85c2a732c60",
+                "resourcePath": "objects\\obj_flames\\obj_flames.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24e416b5-9d5b-45a8-b8e1-8d6d681a7766",
             "Value": {
                 "id": "0e73a7a9-2004-4797-b7e0-cd150211e5a6",
@@ -1100,6 +1124,14 @@
                 "id": "fd0080e2-7563-47fc-bfd7-0a0916a61542",
                 "resourcePath": "sprites\\bg_itsasecrettoeveryone\\bg_itsasecrettoeveryone.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "25d837e5-5a24-4f8d-a3f5-bd8443bc4566",
+            "Value": {
+                "id": "ce2a5476-29c8-4c4a-8608-6d15793be7c2",
+                "resourcePath": "sounds\\mu_volcano\\mu_volcano.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1431,6 +1463,14 @@
             }
         },
         {
+            "Key": "3079e6f9-b86a-4be9-85f6-d12029d3ccde",
+            "Value": {
+                "id": "05ca590f-31a8-40e2-b340-ec3186d6ffd1",
+                "resourcePath": "views\\3079e6f9-b86a-4be9-85f6-d12029d3ccde.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "30937775-f7ce-49b5-859f-dc2e5abcb67a",
             "Value": {
                 "id": "65cfbbe3-813e-4044-9744-d602ca4a396c",
@@ -1604,6 +1644,14 @@
                 "id": "f9f441c0-c3fc-4a86-a51d-8f4aa2c514c9",
                 "resourcePath": "objects\\obj_escapebutton_pressed\\obj_escapebutton_pressed.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "35f16c10-b7a7-40f0-ab0d-8f268c7514d5",
+            "Value": {
+                "id": "eeba5f12-87f6-444e-96f2-9dfdeb56f335",
+                "resourcePath": "sprites\\frozenvolcano\\frozenvolcano.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1967,6 +2015,14 @@
             }
         },
         {
+            "Key": "411add6a-9005-4329-8b87-ca018b74043e",
+            "Value": {
+                "id": "56e7973e-4081-4606-88d2-f5455690502b",
+                "resourcePath": "sprites\\spr_player_fireass\\spr_player_fireass.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "41652a30-7101-4328-9569-95d2c3ab3b59",
             "Value": {
                 "id": "f7869ff9-6037-442f-b0c2-c2288ec79370",
@@ -2087,6 +2143,14 @@
             }
         },
         {
+            "Key": "4425d256-624b-4e08-b326-e0a1e47bd656",
+            "Value": {
+                "id": "371b9b0b-a61e-4a55-a747-de94cf693652",
+                "resourcePath": "sprites\\sprite430\\sprite430.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "451f87fd-f676-4437-94aa-a971b870a920",
             "Value": {
                 "id": "66e01de5-ee9b-4611-94e6-5b79cef4b56a",
@@ -2180,6 +2244,14 @@
                 "id": "18c78216-5af1-4609-9e05-4b03c784e28a",
                 "resourcePath": "rooms\\castle_1\\castle_1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "47b7fa72-a5b6-48d1-8a61-0df0fb3cea98",
+            "Value": {
+                "id": "7bb96f67-0cbb-473c-bc88-e58166784c18",
+                "resourcePath": "views\\47b7fa72-a5b6-48d1-8a61-0df0fb3cea98.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3047,6 +3119,22 @@
             }
         },
         {
+            "Key": "630a5993-f5e8-4cb8-9ba1-69ae7bc90a82",
+            "Value": {
+                "id": "9ef5149b-b871-4bad-8916-21d6e257c8da",
+                "resourcePath": "objects\\obj_boilingsauce\\obj_boilingsauce.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "630f79ac-6bd6-4de0-88b4-7745824b4814",
+            "Value": {
+                "id": "7c962735-7c81-47f0-ad18-49430f231272",
+                "resourcePath": "sprites\\volcanobg5\\volcanobg5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "63317a6c-8742-4d69-a577-083b9eeba4c8",
             "Value": {
                 "id": "ea84474a-ce61-4240-89ed-ea6b52a78bda",
@@ -3879,6 +3967,14 @@
             }
         },
         {
+            "Key": "7e956b11-980a-446c-98a9-ad7fb06c33c0",
+            "Value": {
+                "id": "7e80676a-7bd3-4efc-ac15-2c35dbd012ce",
+                "resourcePath": "sprites\\frozenvolcanobg3\\frozenvolcanobg3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7eb216e2-dfd9-4433-8cd6-a383f182ad25",
             "Value": {
                 "id": "bb34e983-4659-4083-af29-8fef97ba9a98",
@@ -4084,6 +4180,14 @@
                 "id": "8631300b-a7d3-4179-9e77-7182c35c9ae2",
                 "resourcePath": "objects\\obj_runonmetalball\\obj_runonmetalball.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8477b80e-b12a-42cb-8640-85d91f973eaf",
+            "Value": {
+                "id": "36b02ff4-965c-46c6-a438-72a361ef5c07",
+                "resourcePath": "scripts\\scr_player_fireass\\scr_player_fireass.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4964,6 +5068,14 @@
                 "id": "db0d70c3-69c7-4140-835c-9d9308d7e272",
                 "resourcePath": "rooms\\trial_r5\\trial_r5.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "a441b94b-440b-4c0f-9316-273896f4bb05",
+            "Value": {
+                "id": "1451ae9c-175d-40c1-a07b-4c9bb733e326",
+                "resourcePath": "sprites\\frozenvolcanobg5\\frozenvolcanobg5.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5855,6 +5967,14 @@
             }
         },
         {
+            "Key": "bb5ef1e8-843a-4cee-9c90-c6352b7f2b71",
+            "Value": {
+                "id": "972dbbec-e04d-4d29-b605-dee69e8e94bd",
+                "resourcePath": "objects\\obj_flamesspawner\\obj_flamesspawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bb997f63-0565-431b-85ab-504b0fece5ab",
             "Value": {
                 "id": "01ee7d14-d025-4ee9-aeea-a65cd65bc434",
@@ -5883,6 +6003,14 @@
             "Value": {
                 "id": "171157db-c3ef-4a27-8837-538836dde924",
                 "resourcePath": "sprites\\spr_player_hangslide\\spr_player_hangslide.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bc2d1c84-8eff-4567-b2ec-7c5b187c7da5",
+            "Value": {
+                "id": "473f76f8-2667-4335-b617-7514dca65602",
+                "resourcePath": "sprites\\spr_player_fireassend\\spr_player_fireassend.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6423,6 +6551,14 @@
             }
         },
         {
+            "Key": "cbfbab75-ab8e-4183-adab-ad9d3c8d4416",
+            "Value": {
+                "id": "f839bf00-21e0-4abe-b127-cf8a5910f818",
+                "resourcePath": "tilesets\\volcano2\\volcano2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "cc6e76f7-5652-4215-8a67-55f8ed3cbc65",
             "Value": {
                 "id": "68480bf8-0df1-40c3-aa49-e9db940fa478",
@@ -6695,6 +6831,14 @@
             }
         },
         {
+            "Key": "d5b1f3e4-fe99-49fc-ade0-bee7d22c78db",
+            "Value": {
+                "id": "46ffe156-2e5a-49c0-b5af-4ad0b130a392",
+                "resourcePath": "sprites\\spr_player_fireassground\\spr_player_fireassground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d5e01d9a-0f91-4edf-88c6-4337dd2ca22d",
             "Value": {
                 "id": "f1da8928-dab7-4fd2-a3ad-257bdb2b9244",
@@ -6731,6 +6875,14 @@
             "Value": {
                 "id": "b56d96ab-6c35-4416-b8af-08fb152e5c44",
                 "resourcePath": "sprites\\spr_pizzagoblin_stunland\\spr_pizzagoblin_stunland.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d7448796-8591-434b-829d-60a295176b40",
+            "Value": {
+                "id": "292a95f2-16d5-4c66-b249-d11e83d071e8",
+                "resourcePath": "sprites\\sprite419\\sprite419.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6967,6 +7119,14 @@
             }
         },
         {
+            "Key": "de1fcb39-8079-4dd7-81ec-b33295441ba4",
+            "Value": {
+                "id": "84283aa5-cc9d-4fa9-b6ac-f638b4c4c322",
+                "resourcePath": "sprites\\frozenvolcanobg4\\frozenvolcanobg4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "de6bffaf-bf8a-4f52-893d-a556bd4b18a5",
             "Value": {
                 "id": "a0533368-55f2-484f-8375-69772c3a8aa9",
@@ -7188,6 +7348,14 @@
                 "id": "c9069184-a2a6-4f52-bc25-34e912cba848",
                 "resourcePath": "views\\e4ad4412-de32-4ef6-a3e7-7664cb884dd0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e4cf12e1-67bf-4c22-9e01-aa3919ec3dd5",
+            "Value": {
+                "id": "13b748d3-3f98-4668-b775-2426680227c5",
+                "resourcePath": "sprites\\frozenvolcanobg2\\frozenvolcanobg2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8039,6 +8207,14 @@
             }
         },
         {
+            "Key": "fcec9fea-90da-4554-b130-11a7c2d11874",
+            "Value": {
+                "id": "29e464ca-3d42-49ce-8a19-8f21e467d53f",
+                "resourcePath": "sprites\\spr_boilingsauce\\spr_boilingsauce.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fd06db1c-5dbf-41dd-a4a9-c18f7f19674d",
             "Value": {
                 "id": "17b9680e-99b3-424a-9804-0e660ae67fe6",
@@ -8224,6 +8400,7 @@
         "f46567e1-7799-44ac-88ae-3e16c4a06efb",
         "579980f8-5988-40c1-bab2-336935f463d3",
         "e9d147ac-79c8-4bd8-b0ed-488d9bb8222c",
+        "8477b80e-b12a-42cb-8640-85d91f973eaf",
         "1cc540e1-6186-47b0-acfc-d9011899f41e",
         "0a0e0e6a-f6bc-429b-af55-b3a7b88fcb2b",
         "e5754573-6a18-47e7-9bca-6e9fe60a17f5",
