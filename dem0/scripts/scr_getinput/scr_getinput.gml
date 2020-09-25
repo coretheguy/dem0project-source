@@ -18,3 +18,4 @@ key_chainsaw = (keyboard_check(global.key_slap) || gamepad_button_check(0, gp_sh
 key_chainsaw2 = (keyboard_check_pressed(global.key_slap) || gamepad_button_check_pressed(0, gp_shoulderr))
 key_start = (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_start))
 key_escape = (keyboard_check_pressed(vk_escape) || gamepad_button_check(0, gp_select))
+
