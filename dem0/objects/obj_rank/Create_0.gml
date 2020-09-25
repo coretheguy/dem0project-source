@@ -144,7 +144,7 @@ if global.level = "time"
 {
 ini_open("saveData.ini")
 ini_write_string("Points", "time", global.collect)
-ini_write_string("TimeChallenge", "time", global.minutes + ":" + global.seconds)
+ini_write_string("TimeChallenge", "time", string(global.minutes) + ":" + string(global.seconds))
 ini_close()
 }
 if global.level = ""
