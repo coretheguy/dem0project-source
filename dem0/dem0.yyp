@@ -3231,6 +3231,14 @@
             }
         },
         {
+            "Key": "686edbdc-d827-4fec-9c5c-0b507ead1692",
+            "Value": {
+                "id": "9dc82373-a895-461f-9cbe-24638e303a98",
+                "resourcePath": "objects\\obj_icicledebris\\obj_icicledebris.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "68dd7f6d-b5b5-4265-8deb-f1e040bb72bb",
             "Value": {
                 "id": "f0cb9e0f-bd27-4d03-9efd-6c39ecf72926",
@@ -6084,6 +6092,14 @@
                 "id": "0fa3f87c-cae4-4758-ae6f-d5fb737ac65c",
                 "resourcePath": "sounds\\sfx_golfroll\\sfx_golfroll.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "bf2aebf6-f012-473d-86da-f5d10ad1a0ef",
+            "Value": {
+                "id": "391cedab-d7ad-4d46-a3b1-bdbbf53433d9",
+                "resourcePath": "sprites\\sprite432\\sprite432.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
