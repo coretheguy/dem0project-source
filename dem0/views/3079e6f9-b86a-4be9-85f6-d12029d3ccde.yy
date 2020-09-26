@@ -6,7 +6,9 @@
     "children": [
         "630a5993-f5e8-4cb8-9ba1-69ae7bc90a82",
         "228d47b0-ef82-4d7a-904b-6581f2913b8f",
-        "bb5ef1e8-843a-4cee-9c90-c6352b7f2b71"
+        "bb5ef1e8-843a-4cee-9c90-c6352b7f2b71",
+        "71b08831-6364-4d13-ab89-6a0b064b8ee7",
+        "f73c0242-a6b8-4256-b0af-81ad7a0d6678"
     ],
     "filterType": "GMObject",
     "folderName": "volcano",
