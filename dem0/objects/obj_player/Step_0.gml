@@ -221,6 +221,9 @@ with (obj_player)
 		case 101:
 			scr_player_fireass()
 			break
+		case 102:
+			scr_player_frozen()
+			break
     }
     
     if (state != 41)
@@ -352,11 +355,6 @@ with (obj_player)
 		combotimer--
 	if combotimer = 0
 		global.combo = 0
-		
-	if room == titlescreen || instance_exists(obj_rank)
-		visible = 0
-	else
-		visible = 1
 }
 
 

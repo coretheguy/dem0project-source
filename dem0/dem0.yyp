@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "0525f32a-213e-4df2-be9f-8e814229b0ec",
+            "Value": {
+                "id": "eb33d7ee-f9ef-4624-8263-0e5eecb6c360",
+                "resourcePath": "views\\0525f32a-213e-4df2-be9f-8e814229b0ec.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0553f085-305e-431f-a597-1b519157d75d",
             "Value": {
                 "id": "c748827a-2f64-411f-b2ba-a3a4be1ff562",
@@ -252,6 +260,14 @@
                 "id": "4de24c33-2979-4664-b68e-4d9e195bc2fe",
                 "resourcePath": "scripts\\scr_player_shotgun\\scr_player_shotgun.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0757ec6f-029a-46c6-9e0d-78dc7d60c218",
+            "Value": {
+                "id": "c168d736-e5eb-41ea-9bd3-b2dec9a03587",
+                "resourcePath": "rooms\\hubroom3\\hubroom3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2679,6 +2695,14 @@
             }
         },
         {
+            "Key": "55ae27f0-f826-4cbc-a5d7-de0d9eccfe8b",
+            "Value": {
+                "id": "3923eb95-3747-4c15-a7c4-fcdab7d4dcfc",
+                "resourcePath": "sprites\\spr_fridge_open\\spr_fridge_open.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "55bbc8a4-685b-462a-b35e-3b42ff4fae57",
             "Value": {
                 "id": "96c74ea5-32c3-4997-8b7b-a5e069b218f9",
@@ -3199,6 +3223,14 @@
             }
         },
         {
+            "Key": "66714996-850d-41a2-a50c-4974aca6de5c",
+            "Value": {
+                "id": "235c8224-87d6-42ca-9f31-b439aebf2d86",
+                "resourcePath": "objects\\obj_freezerestore\\obj_freezerestore.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66849a3c-20ac-4f41-9427-fe8ba8aba442",
             "Value": {
                 "id": "f5613b46-3499-4a20-a267-924013ab4eb9",
@@ -3604,6 +3636,14 @@
                 "id": "fda7b3ac-b7f8-49d8-8745-e98517a3c81a",
                 "resourcePath": "objects\\obj_retry\\obj_retry.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "71c7d07f-fb92-4fda-a9e1-5bd43280c17b",
+            "Value": {
+                "id": "1ab06105-59a7-4fdf-9344-6f88e9ca793c",
+                "resourcePath": "sprites\\spr_fridge_closed\\spr_fridge_closed.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4255,6 +4295,14 @@
             }
         },
         {
+            "Key": "8611d80c-a30b-42f5-aeca-46fd42e2b39b",
+            "Value": {
+                "id": "f5c38b54-434c-4ef5-ac40-1f60c765205d",
+                "resourcePath": "sprites\\sprite438\\sprite438.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "86a255fe-4366-4f8e-a389-0066ae2f5f27",
             "Value": {
                 "id": "c9bea6dc-ff17-4bcc-854e-9e673a3724ed",
@@ -4887,6 +4935,14 @@
             }
         },
         {
+            "Key": "9c8f45ed-4ee7-4e79-880c-654bc5c1b79f",
+            "Value": {
+                "id": "15f7a882-2eaa-44df-a798-fdc7d82bfd99",
+                "resourcePath": "objects\\obj_freezinator\\obj_freezinator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9cd81ad5-4905-460f-baff-4c684c8b21a7",
             "Value": {
                 "id": "5bbda8ca-7ba4-4caa-ae54-ba4c7a1a6e7f",
@@ -4964,6 +5020,14 @@
                 "id": "9f8ccd48-eca7-40ea-987c-835f1c858a90",
                 "resourcePath": "views\\9e76251f-9930-4397-8497-e55ab5f51724.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9ea9a30b-98fe-4560-b4b0-df4dc8ce8ae9",
+            "Value": {
+                "id": "25410bc3-3c78-4aa8-8170-04609d032e01",
+                "resourcePath": "sprites\\spr_fridge_opening\\spr_fridge_opening.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8159,6 +8223,14 @@
             }
         },
         {
+            "Key": "f94dccd7-5ee0-4970-b2a7-9d409f866f5b",
+            "Value": {
+                "id": "68ddd9e8-d246-42fe-ae7c-66657a74a01d",
+                "resourcePath": "sounds\\music_freezer\\music_freezer.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f95326ed-70ba-4f3a-b9de-764cf0873f90",
             "Value": {
                 "id": "04bcacdb-8abb-414f-8e91-c729df468cea",
@@ -8183,6 +8255,14 @@
             }
         },
         {
+            "Key": "fa03564c-ac39-4f5b-b296-83952dd64211",
+            "Value": {
+                "id": "bd43099b-b57c-4246-aa13-e8e5e3ab8992",
+                "resourcePath": "scripts\\scr_player_frozen\\scr_player_frozen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fa2d2c59-33b4-4349-b42b-08b2e91d0020",
             "Value": {
                 "id": "b471ee1c-df82-4209-a0f9-5aadac280414",
@@ -8196,6 +8276,14 @@
                 "id": "1e8a6555-87fb-41eb-a7ce-72ac9a00f77b",
                 "resourcePath": "objects\\obj_key\\obj_key.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fac38123-cc36-4236-9fb2-6e2dc7949057",
+            "Value": {
+                "id": "0f965c6c-38f7-4357-ab8e-4e61a6ea4d04",
+                "resourcePath": "sprites\\spr_fridge_closing\\spr_fridge_closing.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8292,6 +8380,14 @@
                 "id": "8036a7e0-8394-4841-b4c2-dd712f28e7c9",
                 "resourcePath": "tilesets\\skyprops2\\skyprops2.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "fe047d38-b6c2-4fdf-8b32-b407483c9f22",
+            "Value": {
+                "id": "e36e8e12-f19d-4884-b570-0da1c2beee54",
+                "resourcePath": "sprites\\spr_player_frozen\\spr_player_frozen.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -8441,6 +8537,7 @@
         "579980f8-5988-40c1-bab2-336935f463d3",
         "e9d147ac-79c8-4bd8-b0ed-488d9bb8222c",
         "8477b80e-b12a-42cb-8640-85d91f973eaf",
+        "fa03564c-ac39-4f5b-b296-83952dd64211",
         "1cc540e1-6186-47b0-acfc-d9011899f41e",
         "0a0e0e6a-f6bc-429b-af55-b3a7b88fcb2b",
         "e5754573-6a18-47e7-9bca-6e9fe60a17f5",
