@@ -51,19 +51,25 @@ if (global.seconds > 59)
 }
 if ((global.panic == 1) && (global.minutes >= 1) && (global.minutes < 3))
 {
+	if room != rm_boss
+	{
     shake_mag = 2
     shake_mag_acc = (4 / room_speed)
 	if camangle > 0
 		camangle -= 0.01
 	if camangle = 0
 		camangle = 0
+	}
 }
 else if ((global.panic == 1) && (global.minutes < 1))
 {
+	if room != rm_boss
+	{
     shake_mag = 3
     shake_mag_acc = (5 / room_speed)
 	if camangle < 3
 		camangle += 0.01
+	}
 }
 if (shake_mag > 0)
 {
@@ -92,3 +98,47 @@ if (instance_exists(obj_player) && ((obj_player.state != 14) && (obj_player.stat
 }
 
 
+if global.frozen = 1 && global.level = "volcano"
+{
+var lay_id = layer_get_id("Backgrounds_1")
+var back_id = layer_background_get_id(lay_id)
+var lay_id2 = layer_get_id("Backgrounds_2")
+var back_id2 = layer_background_get_id(lay_id2)
+var lay_id3 = layer_get_id("Backgrounds_3")
+var back_id3 = layer_background_get_id(lay_id3)
+var lay_id4 = layer_get_id("Backgrounds_lava")
+var back_id4 = layer_background_get_id(lay_id4)
+var lay_id5 = layer_get_id("Backgrounds_smoke")
+var back_id5 = layer_background_get_id(lay_id5)
+var lay_id6 = layer_get_id("Tiles_1")
+var lay_id7 = layer_get_id("Tiles_2")
+var tiles_id1 = layer_tilemap_get_id(lay_id6)
+var tiles_id2 = layer_tilemap_get_id(lay_id7)
+	layer_background_sprite(back_id, frozenvolcanobg4)
+	layer_background_sprite(back_id2, frozenvolcanobg1)
+	layer_background_sprite(back_id3, frozenvolcanobg3)
+	layer_background_sprite(back_id4, frozenvolcanobg5)
+	layer_background_sprite(back_id5, frozenvolcanobg2)
+	tilemap_tileset(tiles_id1, volcano2)
+	tilemap_tileset(tiles_id2, volcano2_props)
+	layer_hspeed(lay_id4, 0)
+	layer_vspeed(lay_id4, 0)
+	layer_hspeed(lay_id5, 3)
+	layer_vspeed(lay_id5, 1)
+	layer_background_vtiled(back_id5, 1)
+	if audio_is_playing(mu_volcano)
+		audio_stop_sound(mu_volcano)
+	if !audio_is_playing(music_freezer)
+		audio_play_sound(music_freezer, 3, 1)
+}
+
+if room = rm_boss
+{
+	if instance_exists(obj_pepperman)
+	{
+	if camangle != 0
+		camangle -= 0.01 * obj_pepperman.image_xscale
+	}
+	if !instance_exists(obj_pepperman)
+		camangle = 0
+}

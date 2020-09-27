@@ -1,6 +1,6 @@
 draw_set_alpha(fadealpha)
 draw_set_color(c_white)
-draw_rectangle(0, 0, (view_xview[0] + view_wview[0]), (view_yview[0] + view_hview[0]), 0)
+draw_rectangle(0, 0, (__view_get(0, 0) + __view_get(2, 0)), (__view_get(1, 0) + __view_get(3, 0)), 0)
 draw_set_alpha(1)
 
 

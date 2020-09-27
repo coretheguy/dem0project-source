@@ -6,3 +6,4 @@ if global.panic = 0
 		audio_play_sound(mu_volcano, 3, 1)
 	}
 }
+global.level = "volcano"

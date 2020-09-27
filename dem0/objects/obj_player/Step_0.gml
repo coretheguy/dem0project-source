@@ -355,6 +355,11 @@ with (obj_player)
 		combotimer--
 	if combotimer = 0
 		global.combo = 0
+	if place_meeting(x, y + 1, obj_collisionparent) && bossfallout = 1
+	{
+		state = 51
+		bossfallout = 0
+	}
 }
 
 

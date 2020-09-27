@@ -1,5 +1,5 @@
 audio_master_gain(0.5)
-if ((global.panic == 1))
+if ((global.panic == 1)) && room != rm_boss
 {
 	if (global.level != "sewer" && global.level != "clouds") && !audio_is_playing(music_escapetheme)
 	{

@@ -13,6 +13,8 @@ obj_player.visible = 1
 obj_camera.visible = 1
 obj_camera.camangle = 0
 ds_list_clear(global.saveroom)
+global.frozen = 0
+global.level = ""
 with (obj_player)
 {
     alarm[0] = -1

@@ -100,7 +100,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) &
 }
 if key_jump
     input_buffer_jump = 0
-if (stompAnim == 0)
+if (stompAnim == 0) && sprite_index != spr_player_machfreefall
 {
     if (jumpAnim == 1)
     {

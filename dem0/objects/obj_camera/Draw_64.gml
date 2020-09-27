@@ -40,16 +40,20 @@ if (obj_player.state != 33)
     draw_set_font(font)
     draw_set_halign(fa_center)
     draw_set_color(c_white)
-    draw_text(190, 65, global.collect)
+	if room != rm_boss
+		draw_text(190, 65, global.collect)
 	//draw_text(190, 105, obj_player.x)
 	//draw_text(190, 145, obj_player.y)
 	//draw_text(190, 185, obj_player.state)
 	//draw_text(190, 145, global.combo)
 	//if instance_exists(obj_startgate)
 	//draw_text(190, 185, obj_startgate.time2)
+	if room != rm_boss
+	{
     if (global.key_inv == 1)
         draw_sprite(spr_key, -1, 180, 30)
     draw_sprite(spr_inv, -1, 180, 30)
+	}
     if (timestop == 0)
     {
         if (global.seconds < 10)

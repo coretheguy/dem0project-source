@@ -20,3 +20,4 @@ amplitude = 0
 freq = 0
 wavel = 0
 camangle = 0
+global.frozen = 0

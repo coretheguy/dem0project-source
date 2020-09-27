@@ -71,6 +71,7 @@ with (obj_player)
 	depth = -6
 	combotimer = 0
 	global.machsound = 1
+	bossfallout = 0
 }
 
 
