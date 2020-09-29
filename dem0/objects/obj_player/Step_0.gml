@@ -230,6 +230,26 @@ with (obj_player)
         audio_stop_sound(sfx_plane)
     if (state != 41)
         audio_stop_sound(sfx_plane)
+	if state != 15
+	{
+		audio_stop_sound(sfx_sageroll)
+		audio_stop_sound(sfx_golfroll)
+	}
+	if state != 68
+	{
+	audio_stop_sound(sfx_golfmach3)
+	audio_stop_sound(sfx_sagemach3)
+	}
+	if state != 48
+	{
+	audio_stop_sound(sfx_golfmach2)
+	audio_stop_sound(sfx_sagemach2)
+	}
+	if state != 47
+	{
+	audio_stop_sound(sfx_golfmach1)
+	audio_stop_sound(sfx_sagemach1)
+	}
     if ((state != 0) && (state != 6))
         audio_stop_sound(sfx_footsteps)
     if ((sprite_index == spr_player_idlevomit) && ((image_index > 28) && (image_index < 43)))

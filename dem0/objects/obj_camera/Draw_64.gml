@@ -54,6 +54,17 @@ if (obj_player.state != 33)
         draw_sprite(spr_key, -1, 180, 30)
     draw_sprite(spr_inv, -1, 180, 30)
 	}
+	if global.gotshotgun = 1
+	{
+		draw_sprite(spr_ammo, -1, 110, 480)
+		draw_text(180, 500, global.ammo)
+	}
+	if global.gotchainsaw = 1
+	{
+		draw_sprite(spr_ammo, -1, 110, 440)
+		draw_text(180, 460, floor(global.sawpower))
+	}
+	
     if (timestop == 0)
     {
         if (global.seconds < 10)

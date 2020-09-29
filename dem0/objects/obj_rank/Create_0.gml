@@ -1,5 +1,12 @@
 global.timerank = "none" //in case it crashes...
 rank = "none" // also prevents a crash
+ini_open("saveData.ini")
+global.sewerhighscore = ini_read_string("Points", "sewer","none")
+global.castlehighscore = ini_read_string("Points", "castle","none")
+global.timehighscore = ini_read_string("Points", "time","none")
+global.timehighscore2= ini_read_string("TimeChallenge", "time","none")
+global.cloudshighscore = ini_read_string("Points", "clouds","none")
+global.volcanohighscore = ini_read_string("Points", "volcano","none")
 
 image_speed = 0.5
 if global.level = "sewer"
@@ -112,21 +119,25 @@ if (global.collect >= 3500)
 else if (global.collect > 2500)
 {
     sprite_index = spr_rankA
+	if (("s" != ini_read_string("Ranks", "castle", "none")))
 	rank = "a"
 	}
 else if (global.collect > 2000)
 {
     sprite_index = spr_rankB
+	if (("s" != ini_read_string("Ranks", "castle", "none")) && (("a" != ini_read_string("Ranks", "castle", "none"))))
 	rank = "b"
 	}
 else if (global.collect > 1500)
 {
     sprite_index = spr_rankC
+	if (("s" != ini_read_string("Ranks", "castle", "none")) && (("a" != ini_read_string("Ranks", "castle", "none")) && (("b" != ini_read_string("Ranks", "castle", "none")))))
 	rank = "c"
 	}
 else
 {
     sprite_index = spr_rankD
+	if (("s" != ini_read_string("Ranks", "castle", "none")) && (("a" != ini_read_string("Ranks", "castle", "none")) && (("b" != ini_read_string("Ranks", "castle", "none")) && ("c" != ini_read_string("Ranks", "castle", "none")))))
 	rank = "d"
 	}
 	ini_open("saveData.ini")
@@ -134,26 +145,26 @@ ini_write_string("Ranks", "castle", rank)
 ini_close()
 }
 
-if global.level = "sewer"
+if global.level = "sewer" && (global.sewerhighscore < global.collect)
 {
 ini_open("saveData.ini")
 ini_write_string("Points", "sewer", global.collect)
 ini_close()
 }
-if global.level = "time"
+if global.level = "time" && (global.timehighscore < global.collect) && (global.timehighscore2 < (global.minutes && global.seconds))
 {
 ini_open("saveData.ini")
 ini_write_string("Points", "time", global.collect)
 ini_write_string("TimeChallenge", "time", string(global.minutes) + ":" + string(global.seconds))
 ini_close()
 }
-if global.level = ""
+if global.level = "" && (global.castlehighscore < global.collect)
 {
 ini_open("saveData.ini")
 ini_write_string("Points", "castle", global.collect)
 ini_close()
 }
-if global.level = "clouds"
+if global.level = "clouds" && (global.cloudshighscore < global.collect)
 {
 ini_open("saveData.ini")
 ini_write_string("Points", "clouds", global.collect)

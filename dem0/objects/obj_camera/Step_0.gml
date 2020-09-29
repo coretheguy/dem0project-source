@@ -1,4 +1,25 @@
 var target;
+if (obj_player.state == 24)
+{
+    if (zoomw > 640)
+        zoomw -= 0.5
+    if (zoomh > 360)
+        zoomh -= 0.5
+    camera_set_view_size(view_camera[0], zoomw, zoomh)
+}
+else
+{
+    if (zoomw < 960)
+        zoomw += 10
+    if (zoomh < 540)
+        zoomh += 10
+    if (zoomw > 960)
+        zoomw -= 10
+    if (zoomh > 540)
+        zoomh -= 10
+    camera_set_view_size(view_camera[0], zoomw, zoomh)
+}
+
 if (global.panic == 1)
     timestop = 0
 else
@@ -79,21 +100,39 @@ if (shake_mag > 0)
 }
 
 
-
 if (instance_exists(obj_player) && ((obj_player.state != 14) && (obj_player.state != 33)))
 {
     target = obj_player
-	__view_set(0, 0, (target.x - (__view_get(2, 0) / 2)))
-    __view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - __view_get(2, 0))))
+    if (obj_player.state == 68) || obj_player.state = 15
+    {
+        if (chargecamera > (obj_player.xscale * 100))
+            chargecamera -= 2
+        if (chargecamera < (obj_player.xscale * 100))
+            chargecamera += 2
+        __view_set(0, 0, ((target.x - (__view_get(2, 0) / 2)) + chargecamera))
+    }
+    else
+    {
+        if (chargecamera > 0)
+            chargecamera -= 2
+        if (chargecamera < 0)
+            chargecamera += 2
+        __view_set(0, 0, ((target.x - (__view_get(2, 0) / 2)) + chargecamera))
+    }
+	if debugcam = 0
+		__view_set(0, 0, clamp(__view_get(0, 0), 0, (room_width - __view_get(2, 0))))
     __view_set(1, 0, (target.y - (__view_get(3, 0) / 2)))
-    __view_set(1, 0, clamp(__view_get(1, 0), 0, (room_height - __view_get(3, 0))))
+	if debugcam = 0
+		__view_set(1, 0, clamp(__view_get(1, 0), 0, (room_height - __view_get(3, 0))))
 	__view_set(4, 0, camangle)
     if (shake_mag != 0)
     {
         __view_set(0, 0, ((target.x - (__view_get(2, 0) / 2)) + irandom_range((-shake_mag), shake_mag)))
-        __view_set(0, 0, clamp(__view_get(0, 0), (0 + irandom_range((-shake_mag), shake_mag)), ((room_width - __view_get(2, 0)) + irandom_range((-shake_mag), shake_mag))))
-        __view_set(1, 0, ((target.y - (__view_get(3, 0) / 2)) + irandom_range((-shake_mag), shake_mag)))
-        __view_set(1, 0, clamp(__view_get(1, 0), (0 + irandom_range((-shake_mag), shake_mag)), ((room_height - __view_get(3, 0)) + irandom_range((-shake_mag), shake_mag))))
+		if debugcam = 0
+			__view_set(0, 0, clamp(__view_get(0, 0), (0 + irandom_range((-shake_mag), shake_mag)), ((room_width - __view_get(2, 0)) + irandom_range((-shake_mag), shake_mag))))
+		__view_set(1, 0, ((target.y - (__view_get(3, 0) / 2)) + irandom_range((-shake_mag), shake_mag)))
+		if debugcam = 0	
+			__view_set(1, 0, clamp(__view_get(1, 0), (0 + irandom_range((-shake_mag), shake_mag)), ((room_height - __view_get(3, 0)) + irandom_range((-shake_mag), shake_mag))))
     }
 }
 

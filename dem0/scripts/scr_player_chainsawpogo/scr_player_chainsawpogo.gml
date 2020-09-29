@@ -30,6 +30,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((jumpstop == 0) && (jumpA
     jumpstop = 1
 	sprite_index = spr_player_chainsawpogobounce
 	instance_create(x, y, obj_pogoeffect)
+	global.sawpower -= 1
 }
 if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) || (!key_chainsaw))
 {
@@ -52,7 +53,9 @@ if place_meeting(x, (y + 1), obj_onewaywatersolid)
 	instance_create((x - (30)), (y + 40), obj_waterdrop)
     instance_create((x - (xscale * 30)), (y + 40), obj_waterdrop)
 }
-
+if global.sawpower = 0
+	global.gotchainsaw = 0
+	
 else if (floor(image_index) == 4)
     sprite_index = spr_player_chainsawpogo2
 image_speed = 0.35

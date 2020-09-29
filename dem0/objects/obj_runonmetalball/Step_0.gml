@@ -23,6 +23,21 @@ if !instance_exists(obj_metalballdetail)
 	instance_create(x, y, obj_metalballdetail)
 }
 
+if place_meeting(x, y + 1, obj_boilingsauce)
+{
+	grav = 0.05	
+}
+
+if place_meeting(x, y - 100, obj_boilingsauce)
+{
+	instance_destroy()
+	if instance_exists(obj_runmetalballspawner)
+	{
+		with obj_runmetalballspawner
+			respawn = 100
+	}
+}
+
 scr_collideandmove()
 
 

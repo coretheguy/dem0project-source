@@ -164,6 +164,21 @@ if (obj_player.instakillmove == 1)
     audio_play_sound(sfx_punch1, 1, false)
 		instance_create(x, y, obj_40)
 global.collect += 40
+	if global.zoomorshake = 2
+	{
+		obj_camera.zoomh = 430
+		obj_camera.zoomw = 750
+	}
+	if global.zoomorshake = 3
+	{
+	{
+    with(obj_camera)
+    {
+        shake_mag = 5
+        shake_mag_acc = (10 / room_speed)
+    }
+	}
+	}
 }
 }
 with (obj_player)

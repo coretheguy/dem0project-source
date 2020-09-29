@@ -1,5 +1,6 @@
 scr_input()
 key_up = (keyboard_check(global.key_up) || gamepad_button_check(0, gp_padu))
+key_up2 = (keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(0, gp_padu))
 key_right = (keyboard_check(global.key_right) || gamepad_button_check(0, gp_padr))
 key_right2 = (keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(0, gp_padr))
 key_left = (-(keyboard_check(global.key_left) || gamepad_button_check(0, gp_padl)))

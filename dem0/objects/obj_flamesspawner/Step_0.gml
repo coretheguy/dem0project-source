@@ -1,6 +1,6 @@
 if ((!instance_exists(obj_flames)) && (spawned == 0))
 {
-    alarm[0] = 150
+    alarm[0] = 100
     spawned = 1
 }
 

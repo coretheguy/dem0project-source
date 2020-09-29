@@ -84,7 +84,7 @@ if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meetin
     idle = 0
 }
 
-if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent)))
+if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.gotchainsaw = 1 && global.sawpower != 0
 {
 	state = 11
 	idle = 0
@@ -94,6 +94,24 @@ if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent)))
 	image_index = 0
 	sprite_index = spr_player_chainsaw
 	instance_create(x, y, obj_chainsawhitbox)
+}
+if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.gotchainsaw = 1 && global.sawpower = 0
+{
+	global.gotchainsaw = 0
+}
+if key_shoot && global.gotshotgun = 1 && global.ammo != 0
+{
+	idle = 0
+	landAnim = 0
+	machslideAnim = 1
+	crouchAnim = 1
+	image_index = 0
+	scr_sound(sfx_enemyhit)
+	state = 16
+}
+if key_shoot && global.gotshotgun = 1 && global.ammo = 0
+{
+	global.gotshotgun = 0
 }
 
 if (move != 0)

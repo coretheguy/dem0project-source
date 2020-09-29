@@ -72,6 +72,11 @@ with (obj_player)
 	combotimer = 0
 	global.machsound = 1
 	bossfallout = 0
+	global.zoomorshake = 1
+	global.gotshotgun = 0
+	global.gotchainsaw = 0
+	global.ammo = 10
+	global.sawpower = 100
 }
 
 

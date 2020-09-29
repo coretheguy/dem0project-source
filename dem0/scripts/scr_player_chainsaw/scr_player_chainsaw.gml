@@ -11,6 +11,7 @@ hsp = (xscale * movespeed)
 machslideAnim = 1
 move2 = (key_right2 + key_left2)
 move = (key_right + key_left)
+global.sawpower -= 0.1
 
 
 
@@ -97,6 +98,8 @@ if movespeed < 0
 {
 	mach2 = 0
 }
+if global.sawpower = 0
+	global.gotchainsaw = 0
 
 image_speed = 0.6
 scr_collideandmove()

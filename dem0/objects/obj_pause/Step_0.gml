@@ -1,5 +1,5 @@
 scr_getinput()
-if key_start
+if key_start && !instance_exists(obj_settingsmenu)
 {
     if (!pause)
     {
@@ -93,17 +93,19 @@ if (pause == 1)
     //}
 	if (key_jump && (obj_settings.selected == 1))
 	{
-		if global.machsound < 4
-		global.machsound += 1
-		if global.machsound = 4
-			global.machsound = 1
+		//if global.machsound < 4
+		//global.machsound += 1
+		//if global.machsound = 4
+		//	global.machsound = 1
 			
-		if global.machsound = 1
-			scr_sound(sfx_collect)
-		if global.machsound = 2
-			scr_sound(sfx_golfcollect)
-		if global.machsound = 3
-			scr_sound(sfx_sagecollect)
+		//if global.machsound = 1
+		//	scr_sound(sfx_collect)
+		//if global.machsound = 2
+		//	scr_sound(sfx_golfcollect)
+		//if global.machsound = 3
+		//	scr_sound(sfx_sagecollect)
+		
+		instance_create(x, y, obj_settingsmenu)
 	}
 }
 

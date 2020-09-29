@@ -16,6 +16,7 @@ if (floor(image_index) == 8)
     state = 0
 if ((shoot == 1) && (floor(image_index) == 0))
 {
+	global.ammo -= 1
     with (obj_camera)
     {
         shake_mag = 8
