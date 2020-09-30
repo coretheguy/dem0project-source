@@ -1,0 +1,2 @@
+text = "PRESS ENTER AND THEN RETRY TO PLAY THE OTHER LEVELS."
+color = c_black

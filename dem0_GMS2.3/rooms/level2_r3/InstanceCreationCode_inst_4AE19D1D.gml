@@ -1,0 +1,1 @@
+text = "i would add this door if i wasnt playing oneshot repainted"
