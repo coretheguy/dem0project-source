@@ -4,9 +4,12 @@ hsp = 0
 landAnim = 1
 if key_attack2
 {
-    state = 48
-    vsp = 0
+    state = 69
+    vsp = -4
     mach2 = 35
+	sprite_index = spr_player_mach2jump
+	instance_create(x, y, obj_machsuperjump1)
+    instance_create(x, y, obj_machsuperjump2)
 }
 if (vsp > 0)
     superslam++

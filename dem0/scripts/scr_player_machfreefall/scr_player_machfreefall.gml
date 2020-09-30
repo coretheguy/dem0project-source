@@ -39,7 +39,7 @@ else if (place_meeting((x - 1), y, obj_bumpable) && (image_xscale == -1))
     if (!audio_is_playing(sfx_bump))
         audio_play_sound(sfx_bump, 1, false)
 }
-if place_meeting(x, (y + 1), obj_collisionparent)
+if place_meeting(x, (y + 1), obj_collisionparent) && !key_attack
 {
     with (obj_camera)
     {
@@ -68,6 +68,18 @@ if place_meeting(x, (y + 1), obj_collisionparent)
             stunned = 200
         }
     }
+}
+if place_meeting(x, (y + 1), obj_collisionparent) && key_attack
+{
+    bounce = 0
+    state = 103
+    jumpstop = 0
+    image_index = 0
+    freefallstart = 0
+	sprite_index = spr_player_hanstandjump
+    audio_sound_gain(sfx_land, 0.7, 0)
+    if (!audio_is_playing(sfx_land))
+        audio_play_sound(sfx_land, 1, false)
 }
 audio_sound_gain(sfx_mach2, 0.7, 0)
 if (!audio_is_playing(sfx_mach2))

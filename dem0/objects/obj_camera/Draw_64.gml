@@ -61,7 +61,7 @@ if (obj_player.state != 33)
 	}
 	if global.gotchainsaw = 1
 	{
-		draw_sprite(spr_ammo, -1, 110, 440)
+		draw_sprite(sprite455, -1, 110, 440)
 		draw_text(180, 460, floor(global.sawpower))
 	}
 	

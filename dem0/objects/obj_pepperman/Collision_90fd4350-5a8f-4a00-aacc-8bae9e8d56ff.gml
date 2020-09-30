@@ -61,6 +61,8 @@ if (((obj_player.mach2 >= 35) || ((obj_player.state == 52) || ((obj_player.state
     hsp = (sign((x - obj_player.x)) * 4)
     vsp = -3
 	obj_camera.camangle += 0.6 * image_xscale
+	if place_meeting(x, y + 3, obj_collisionparent)
+	{
 	if hits < 2
 	{
     alarm[0] = 100
@@ -70,5 +72,6 @@ if (((obj_player.mach2 >= 35) || ((obj_player.state == 52) || ((obj_player.state
 	{
 		alarm[0] = 50
 		alarm[1] = 50
+	}
 	}
 }

@@ -224,6 +224,15 @@ with (obj_player)
 		case 102:
 			scr_player_frozen()
 			break
+		case 103:
+			scr_player_handstandjump()
+			break
+		case 104:
+			scr_player_poundprep() // lol
+			break
+		case 105:
+			scr_player_tunnel()
+			break
     }
     
     if (state != 41)

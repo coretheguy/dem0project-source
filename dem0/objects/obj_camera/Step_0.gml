@@ -52,6 +52,11 @@ if room == titlescreen
 	visible = 0
 else
 	visible = 1
+	
+if instance_exists(obj_cutscene_upstairs)
+	visible = 0
+else
+	visible = 1
 if (room == timesuproom)
     timestop = 1
 if ((global.seconds == 0) && ((global.minutes == 0) && (room != timesuproom)))

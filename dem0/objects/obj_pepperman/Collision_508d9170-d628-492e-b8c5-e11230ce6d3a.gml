@@ -1,8 +1,8 @@
 hits += 1
 if image_xscale = 1
-	hsp = 10
+	hsp = 5
 else if image_xscale = -1
-	hsp = -20
+	hsp = -5
 vsp = -20
 avoidstunlocking = 1
 
@@ -28,15 +28,9 @@ obj_player.hsp = 0
 global.panic = 0
 timestop = 1
 var lay_id1 = layer_get_id("Backgrounds_funny")
-var lay_id2 = layer_get_id("Backgrounds_01")
-var lay_id3 = layer_get_id("Backgrounds_bottomcloud")
 
 var back_id1 = layer_background_get_id(lay_id1)
-var back_id2 = layer_background_get_id(lay_id2)
-var back_id3 = layer_background_get_id(lay_id3)
 
 layer_background_change(back_id1, bg_title1)
 layer_background_alpha(back_id1, 1)
-layer_background_alpha(back_id2, 1)
-layer_background_alpha(back_id3, 0)
 }

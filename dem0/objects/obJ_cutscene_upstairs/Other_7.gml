@@ -1,9 +1,10 @@
 image_speed = 0
-room_goto_next()
+obj_player.targetRoom = targetRoom
+obj_player.x = target_x
+obj_player.y = target_y
+instance_create(x, y, obj_fadeout)
 obj_player.visible = 1
 obj_camera.visible = 1
-obj_player.player_x = 2494
-obj_player.player_y = 1041
 obj_player.state = 39
 if instance_exists(obj_pizzakinshroom)
     obj_pizzakinshroom.visible = 1

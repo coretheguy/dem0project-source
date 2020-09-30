@@ -24,16 +24,16 @@ if (charging == 1)
         image_xscale = -1
     if (!place_meeting((x - 50), (y + 3), obj_wall))
         image_xscale = 1
-	if place_meeting(x + 25, y, obj_wall)
+	if place_meeting(x + 50, y, obj_wall)
 	{
-		movespeed = 4
+		hsp = -8
 		image_xscale = -1
 	}
-	if place_meeting(x - 25, y, obj_wall)
-	{
-		movespeed = 4
-		image_xscale = 1
-	}
+	//if place_meeting(x - 50, y, obj_wall)
+	//{
+	//	movespeed = 4
+	//	image_xscale = 1
+	//}
     if (chargingdown == 0)
     {
         if (movespeed < 12) && hits < 2
@@ -78,7 +78,8 @@ scr_collideandmove()
 if avoidstunlocking = 1 && place_meeting(x, y + 1, obj_collisionparent)
 {
 	stunned = 0
-	image_xscale = image_xscale
+	if image_xscale = -1
+		image_xscale = -1
 	flash = 0
 	alarm[1] = 50
 	avoidstunlocking = 0
@@ -102,8 +103,9 @@ if (collectdrop != 0)
         drop = 1
     }
 }
-if place_meeting(x, y, obj_outsidepeproom)
-	stunned = 1
-
+//if place_meeting(x, y, obj_outsidepeproom)
+//{
+//	stunned = 1
+//}
 
 		
