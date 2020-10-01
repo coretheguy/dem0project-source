@@ -951,6 +951,14 @@
             }
         },
         {
+            "Key": "1ac51e79-78c6-486b-82a4-6d27d41d51e3",
+            "Value": {
+                "id": "6adc386e-40ab-47ab-8059-0d0ab04ebe60",
+                "resourcePath": "sprites\\spr_pausebg\\spr_pausebg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b0030a6-84a9-48ed-828e-2a72f935a4d5",
             "Value": {
                 "id": "77f438ff-a66d-44e2-89fe-03b0da18e07e",

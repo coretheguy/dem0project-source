@@ -7,6 +7,7 @@ global.timehighscore = ini_read_string("Points", "time","none")
 global.timehighscore2= ini_read_string("TimeChallenge", "time","none")
 global.cloudshighscore = ini_read_string("Points", "clouds","none")
 global.volcanohighscore = ini_read_string("Points", "volcano","none")
+ini_close()
 
 image_speed = 0.5
 if global.level = "sewer"

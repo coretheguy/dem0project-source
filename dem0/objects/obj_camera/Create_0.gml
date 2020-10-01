@@ -1,6 +1,7 @@
 n = 0
 image_speed = 0.35
 alarm[1] = 60
+depth = -950
 global.seconds = 40
 global.minutes = 3
 angle = 0
@@ -22,4 +23,4 @@ wavel = 0
 camangle = 0
 global.frozen = 0
 chargecamera = 0
-debugcam = 1
+debugcam = 0

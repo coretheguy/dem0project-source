@@ -9,7 +9,7 @@ if (((!key_down) && ((!place_meeting((x + 27), (y - 32), obj_collisionparent)) &
     machhitAnim = 1
     state = 48
 }
-if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
+if ((place_meeting((x + 1), y, obj_collisionparent) && (xscale == 1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
 {
     scr_sound(sfx_superimpact)
     with (obj_camera)
@@ -43,7 +43,7 @@ if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) && (!place_meetin
     if (!audio_is_playing(sfx_bump))
         audio_play_sound(sfx_bump, 1, false)
 }
-if ((place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
+if ((place_meeting((x - 1), y, obj_collisionparent) && (xscale == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes)))
 {
     scr_sound(sfx_superimpact)
     with (obj_camera)
