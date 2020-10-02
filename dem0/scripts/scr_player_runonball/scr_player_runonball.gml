@@ -1,9 +1,6 @@
 scr_getinput()
 move = (key_left + key_right)
-if (!key_attack)
-    hsp = (xscale * movespeed)
-else
-    hsp = (xscale * movespeed)
+hsp = (xscale * movespeed)
 jumpstop = 0
 vsp = obj_player.vsp
 if (!place_meeting(x, (y + 1), obj_runonball) || !place_meeting(x, (y + 1), obj_runonmetalball))

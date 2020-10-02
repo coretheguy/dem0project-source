@@ -6727,6 +6727,14 @@
             }
         },
         {
+            "Key": "c2631fba-d9a1-4d2d-bb25-554715691a18",
+            "Value": {
+                "id": "bb966e56-9368-412d-8351-4d8dede46f95",
+                "resourcePath": "sprites\\spr_current2\\spr_current2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2c2f27f-a8ce-4ab3-9295-804d246c541f",
             "Value": {
                 "id": "713c8c7f-a296-4dd1-92b2-76224b36e81d",

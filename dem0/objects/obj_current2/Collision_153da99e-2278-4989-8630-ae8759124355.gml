@@ -1,4 +1,5 @@
-obj_player.state = 65
+if obj_player.state != 65
+	obj_player.state = 65
 with obj_player
 {
 	hurted = 0
