@@ -63,7 +63,7 @@ while !(i <= 0)
     }
     else
         vsp = 0;
-	break; // not in original code put prevents the game from crashing
+	break; // crash prevention
 }
 
 i = abs(hsp)
@@ -92,7 +92,7 @@ while !(i <= 0)
     }
     else
         hsp = 0;
-	break; // not in original code put prevents the game from crashing
+	break; // crash prevention
 }
 
 if vsp < 20 // gravity cap

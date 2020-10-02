@@ -1,5 +1,5 @@
 scr_getinput()
-mach2 = 0
+
 move = (key_left + key_right)
 if (!place_meeting(x, (y + 1), obj_collisionparent))
     hsp = (move * movespeed)

@@ -5,37 +5,7 @@ if (fadealpha > 1)
 	{
 	if (room != obj_player.targetRoom)
 		room_goto(obj_player.targetRoom)
-	//with obj_player
-	//{
-	//	if place_meeting(x, y, obj_hallway)
-	//	{
-	//		with obj_hallway
-	//		{
-	//			obj_player.x = target_x
-	//			obj_player.y = target_y
-	//		}
-	//	}
-	//}
-	//	else
-	//	{		
-	//		if place_meeting(x, y, obj_door)
-	//		{
-	//			with obj_door
-	//			{
-	//				obj_player.x = target_x
-	//				obj_player.y = target_y
-	//			}	
-	//		}
-	//		if place_meeting(x, y, obj_keydoor)
-	//		{
-	//			with obj_keydoor
-	//			{
-	//				obj_player.x = target_x
-	//				obj_player.y = target_y
-	//			}
-	//		}
-	//	}
-	//}
+// there was some obsolete code here, but it's gone now...
 	}
 }
 if (fadein == 0)

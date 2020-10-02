@@ -24,7 +24,7 @@ if obj_exit.selected = 1
 	obj_cursor.y = obj_exit.y - 15
 }
 
-if selecting < 4 && key_down2 && !instance_exists(obj_keyconfig)
+if selecting < 5 && key_down2 && !instance_exists(obj_keyconfig)
 	selecting += 1
 
 if selecting > 1 && key_up2 && !instance_exists(obj_keyconfig)
@@ -87,10 +87,24 @@ if selecting = 4 && key_jump && !instance_exists(obj_keyconfig)
 		depth = -1001
 }
 
+if selecting = 5 && key_jump
+{
+	if global.newdoors != 2
+		global.newdoors = 2
+	else if global.newdoors != 1
+		global.newdoors = 1
+}
+
 if selecting = 4
 {
 	obj_cursor.x = __view_get(0, 0) + 320
 	obj_cursor.y = __view_get(1, 0) + 300
+}
+
+if selecting = 5
+{
+	obj_cursor.x = __view_get(0, 0) + 320
+	obj_cursor.y = __view_get(1, 0) + 340
 }
 
 if key_jump && obj_exit.selected = 1
@@ -98,6 +112,7 @@ if key_jump && obj_exit.selected = 1
 	ini_open("saveData.ini")
 	ini_write_string("Settings", "machsound", global.machsound)
 	ini_write_string("Settings", "zoomorshake", global.zoomorshake)
+	ini_write_string("Settings", "newdoors", global.newdoors)
 	ini_close()
 	instance_destroy()
 	instance_destroy(obj_cursor)

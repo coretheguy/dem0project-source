@@ -74,6 +74,7 @@ with (obj_player)
 	ini_open("saveData.ini")
 	global.setting_machsound = ini_read_string("Settings", "machsound", 1)
 	global.setting_zoomorshake = ini_read_string("Settings", "zoomorshake", 1)
+	global.setting_newdoors = ini_read_string("Settings", "newdoors", 1)
 	if global.setting_machsound = 1
 		global.machsound = 1
 	else if global.setting_machsound = 2
@@ -86,11 +87,22 @@ with (obj_player)
 		global.zoomorshake = 2
 	else if global.setting_zoomorshake = 3
 		global.zoomorshake = 3
+	if global.setting_newdoors = 1
+		global.newdoors = 1
+	else if global.setting_newdoors = 2
+		global.newdoors = 2
 	ini_close()
 	global.gotshotgun = 0
 	global.gotchainsaw = 0
 	global.ammo = 10
 	global.sawpower = 100
+	targetDoor = "A"
+	hallway = 0
+	box = 0
+	hallwaydirection = 0
+	lastroom_x = 0
+	lastroom_y = 0
+	lastroom = 0
 }
 
 

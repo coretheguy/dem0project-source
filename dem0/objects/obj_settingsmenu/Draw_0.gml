@@ -29,5 +29,11 @@ if global.zoomorshake = 2
 if global.zoomorshake = 3
 	draw_text(__view_get(0, 0) + 480, __view_get(1, 0) + 240, "ENEMY INSTAKILL: SHAKE")
 	
+if global.newdoors = 1
+	draw_text(__view_get(0, 0) + 480, __view_get(1, 0) + 320, "SAGE DOORS: OFF")
+if global.newdoors = 2
+	draw_text(__view_get(0, 0) + 480, __view_get(1, 0) + 320, "SAGE DOORS: ON")
+
+	
 draw_text(__view_get(0, 0) + 480, __view_get(1, 0) + 280, "KEY CONFIG")
 }

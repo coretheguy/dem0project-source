@@ -12,7 +12,7 @@ if ((obj_player.state == 0) && (obj_player.key_up && (((global.key_inv == 1)) &&
 }
 if (floor(image_index) == 2)
     image_speed = 0
-if ((floor(obj_player.image_index) == (obj_player.image_number - 1)) && (obj_player.state == 42))
+if ((floor(obj_player.image_index) == (obj_player.image_number - 1)) && (obj_player.state == 42)) && global.newdoors = 1
 {
     with (obj_player)
     {
@@ -35,3 +35,25 @@ if ((floor(obj_player.image_index) == (obj_player.image_number - 1)) && (obj_pla
 		}
     }
 }
+
+if ((floor(obj_player.image_index) == (obj_player.image_number - 1)) && (obj_player.state == 42)) && global.newdoors = 2
+{
+	with obj_player
+	{
+		obj_player.targetDoor = other.targetDoor
+        obj_player.targetRoom = other.targetRoom
+		if (!instance_exists(obj_fadeout))
+            instance_create(x, y, obj_fadeout)
+	}
+}
+
+if place_meeting(x, y, obj_doorA)
+    targetDoor = "A"
+if place_meeting(x, y, obj_doorB)
+    targetDoor = "B"
+if place_meeting(x, y, obj_doorC)
+    targetDoor = "C"
+if place_meeting(x, y, obj_doorD)
+    targetDoor = "D"
+if place_meeting(x, y, obj_doorE)
+    targetDoor = "E"

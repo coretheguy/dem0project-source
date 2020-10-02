@@ -23,4 +23,4 @@ wavel = 0
 camangle = 0
 global.frozen = 0
 chargecamera = 0
-debugcam = 0
+debugcam = 1
