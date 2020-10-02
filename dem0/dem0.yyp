@@ -3447,6 +3447,14 @@
             }
         },
         {
+            "Key": "613f22c8-6bd4-4c05-8c82-1c72cce8eb6c",
+            "Value": {
+                "id": "c8afbd59-3260-4ff6-9279-d652d4bc9020",
+                "resourcePath": "objects\\obj_verticalhallway\\obj_verticalhallway.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "61ae90c2-6696-428f-8b6f-e37702e16e2b",
             "Value": {
                 "id": "6b112742-5ac7-4f11-8570-972142a20a91",

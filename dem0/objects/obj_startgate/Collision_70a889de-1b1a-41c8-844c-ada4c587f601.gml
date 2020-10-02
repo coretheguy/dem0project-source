@@ -7,6 +7,7 @@ with (obj_player)
 		sprite_index = spr_player_entergate
 		image_speed = 0.35
         state = 56
+		obj_player.targetDoor = other.targetDoor
     }
 }
 

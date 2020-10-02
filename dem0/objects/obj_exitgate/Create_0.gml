@@ -1,4 +1,6 @@
 image_speed = 0
+targetDoor = "A"
+
 global.timerank = "none" //in case it crashes...
 rank = "none" // also prevents a crash
 ini_open("saveData.ini")

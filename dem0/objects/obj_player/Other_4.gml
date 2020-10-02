@@ -8,9 +8,13 @@ if (targetDoor == "A")
         x = (obj_doorA.x + 32)
     else
         x = (obj_doorA.x + 16)
-    y = (obj_doorA.y - 14)
+    if pitfall = 1
+		y = obj_doorA.y + 50 * hallwaydirection
+	else
+		y = (obj_doorA.y - 14)
     hallway = 0
     box = 0
+	pitfall = 0
 }
 if (targetDoor == "B")
 {
@@ -20,9 +24,13 @@ if (targetDoor == "B")
         x = (obj_doorB.x + 32)
     else
         x = (obj_doorB.x + 16)
-    y = (obj_doorB.y - 14)
+    if pitfall = 1
+		y = obj_doorB.y + 50 * hallwaydirection
+	else
+		y = (obj_doorB.y - 14)
     hallway = 0
     box = 0
+	pitfall = 0
 }
 if (targetDoor == "C")
 {
@@ -32,9 +40,13 @@ if (targetDoor == "C")
         x = (obj_doorC.x + 32)
     else
         x = (obj_doorC.x + 16)
-    y = (obj_doorC.y - 14)
+	if pitfall = 1
+		y = obj_doorC.y + 50 * hallwaydirection
+	else
+		y = (obj_doorC.y - 14)
     hallway = 0
     box = 0
+	pitfall = 0
 }
 if (targetDoor == "D")
 {
@@ -44,9 +56,13 @@ if (targetDoor == "D")
         x = (obj_doorD.x + 32)
     else
         x = (obj_doorD.x + 16)
-    y = (obj_doorD.y - 14)
+    if pitfall = 1
+		y = obj_doorD.y + 50 * hallwaydirection
+	else
+		y = (obj_doorD.y - 14)
     hallway = 0
     box = 0
+	pitfall = 0
 }
 if (targetDoor == "E")
 {
@@ -56,8 +72,12 @@ if (targetDoor == "E")
         x = (obj_doorE.x + 32)
     else
         x = (obj_doorE.x + 16)
-    y = (obj_doorE.y - 14)
+    if pitfall = 1
+		y = obj_doorE.y + 50 * hallwaydirection
+	else
+		y = (obj_doorE.y - 14)
     hallway = 0
     box = 0
+	pitfall = 0
 }
 }
