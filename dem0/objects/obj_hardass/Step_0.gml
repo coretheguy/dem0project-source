@@ -34,5 +34,19 @@ if (place_meeting((x + 8), y, obj_player) && ((obj_player.image_xscale == -1) &&
     if (!audio_is_playing(sfx_bump))
         audio_play_sound(sfx_bump, 1, false)
 }
+
+if (place_meeting(x + 8, y, obj_player) || place_meeting(x - 8, y, obj_player)) && obj_player.state = 102
+{
+	ds_list_add(global.saveroom, id)
+	instance_destroy()
+	with (instance_create(x, y, obj_trashdead))
+	{
+	    hsp = (sign((x - obj_player.x)) * 2)
+	    image_xscale = (-sign((x - obj_player.x)))
+	    vsp = -5
+	}
+	instance_create(x, y, obj_bangeffect)
+	instance_create(x, y, obj_bigcollect)
+}
 scr_collideandmove()
 

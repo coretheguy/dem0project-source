@@ -55,3 +55,27 @@ global.collect += 10
 }
 
 
+if (place_meeting(x + 1, y, obj_player) || place_meeting(x - 1, y, obj_player)) && obj_player.state = 102
+{
+		if (ds_list_find_index(global.saveroom, id) == -1)
+{
+	ds_list_add(global.saveroom, id)
+    instance_destroy()
+    instance_create(x, y, obj_slimedead)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    instance_create((x + 16), y, obj_slimedebris)
+    audio_sound_gain(sfx_enemyhit, 0.7, 0)
+    audio_play_sound(sfx_enemyhit, 1, false)
+	instance_create(x, y, obj_10)
+global.collect += 10
+}
+}
+

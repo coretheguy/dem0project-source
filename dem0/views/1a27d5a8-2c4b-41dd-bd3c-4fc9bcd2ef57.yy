@@ -42,7 +42,8 @@
         "ccdaa1c4-47ff-42a4-9f8a-0f0339bf3703",
         "f96010ce-d08f-46e4-b797-1a7806d6d2f9",
         "7cef8cbc-9a3d-4096-b743-252c36118c08",
-        "c945d5b7-fa49-4a48-860b-54dc10b55678"
+        "c945d5b7-fa49-4a48-860b-54dc10b55678",
+        "bed50cb4-b0fd-4b3d-aa8f-b24827200ee9"
     ],
     "filterType": "GMObject",
     "folderName": "effect",

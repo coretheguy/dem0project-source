@@ -148,6 +148,8 @@ var lay_id = layer_get_id("Backgrounds_1")
 var back_id = layer_background_get_id(lay_id)
 var lay_id2 = layer_get_id("Backgrounds_2")
 var back_id2 = layer_background_get_id(lay_id2)
+var lay_id2alt = layer_get_id("Backgrounds_Ground2")
+var back_id2alt = layer_background_get_id(lay_id2alt)
 var lay_id3 = layer_get_id("Backgrounds_3")
 var back_id3 = layer_background_get_id(lay_id3)
 var lay_id4 = layer_get_id("Backgrounds_lava")
@@ -160,6 +162,7 @@ var tiles_id1 = layer_tilemap_get_id(lay_id6)
 var tiles_id2 = layer_tilemap_get_id(lay_id7)
 	layer_background_sprite(back_id, frozenvolcanobg4)
 	layer_background_sprite(back_id2, frozenvolcanobg1)
+	layer_background_sprite(back_id2alt, frozenvolcanobg1)
 	layer_background_sprite(back_id3, frozenvolcanobg3)
 	layer_background_sprite(back_id4, frozenvolcanobg5)
 	layer_background_sprite(back_id5, frozenvolcanobg2)
@@ -172,8 +175,14 @@ var tiles_id2 = layer_tilemap_get_id(lay_id7)
 	layer_background_vtiled(back_id5, 1)
 	if audio_is_playing(mu_volcano)
 		audio_stop_sound(mu_volcano)
-	if !audio_is_playing(music_freezer)
+	if !audio_is_playing(music_freezer) && global.panic = 0 && room != rank_room
 		audio_play_sound(music_freezer, 3, 1)
+		
+if global.panic = 1
+{
+	layer_hspeed(lay_id5, 6)
+	layer_vspeed(lay_id5, 2)
+}
 }
 
 if room = rm_boss

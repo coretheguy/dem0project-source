@@ -14,11 +14,15 @@
         "deda203c-fa6c-456b-85be-2ce3fb8bc21e",
         "6032f8d0-c5bf-4a58-bae2-40dfb6ff45ee",
         "10a699b2-fc3e-458d-8d33-cb04845cb60b",
+        "96f67a84-71ad-4ea4-b511-2db94e4de630",
         "aa7b4295-8415-4412-b994-e7bd6f903b9c",
         "7f3a6444-07dd-4d25-ae44-16b158883a8f",
         "9c6dd8e9-2163-4c16-b28f-740cd0465b6a",
         "2534e85b-bc72-44c4-ab39-769cb71611fa",
-        "ef225e0b-de9b-4f3f-8df6-269906f25c76"
+        "ef225e0b-de9b-4f3f-8df6-269906f25c76",
+        "0f8526f1-10fd-407f-a2a6-ce5f658a1df3",
+        "0d36d9ef-a54d-4353-b281-491954ca7b72",
+        "0af73a99-7d3d-4215-9ed7-2abb5277e8c5"
     ],
     "filterType": "GMSprite",
     "folderName": "sky",

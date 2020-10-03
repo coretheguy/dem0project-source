@@ -1,9 +1,9 @@
 scr_getinput()
 if place_meeting(x, y, obj_timesup)
 {
-    scr_sound(54)
-    scr_sound(19)
-    scr_sound(42)
+    scr_sound(sfx_punch1)
+    scr_sound(sfx_freefallland)
+    scr_sound(va_hurt1)
     state = 33
     alarm[10] = 5
     vsp = -8
@@ -15,6 +15,7 @@ if (room == timesuproom)
 {
     obj_player.x = 480
     obj_player.y = 270
+	targetDoor = "A"
 }
 if (floor(image_index) == 9)
     image_speed = 0

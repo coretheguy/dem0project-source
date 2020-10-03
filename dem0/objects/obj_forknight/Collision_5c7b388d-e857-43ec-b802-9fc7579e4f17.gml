@@ -210,4 +210,47 @@ with (obj_player)
     }
 }
 
+if (obj_player.state = 102)
+{
+				if (ds_list_find_index(global.saveroom, id) == -1)
+{
+	ds_list_add(global.saveroom, id)
+	with (instance_create(x, y, obj_forknightdead))
+		{
+			hsp = obj_player.hsp
+			vsp = -10
+		}
+    instance_destroy()
+    instance_create(x, y, obj_explosioneffect)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    instance_create(x, y, obj_baddiegibs)
+    audio_sound_gain(sfx_enemyhit, 0.7, 0)
+    audio_play_sound(sfx_enemyhit, 1, false)
+		    audio_sound_gain(sfx_punch1, 0.7, 0)
+    audio_play_sound(sfx_punch1, 1, false)
+		instance_create(x, y, obj_40)
+global.collect += 40
+	if global.zoomorshake = 2
+	{
+		obj_camera.zoomh = 430
+		obj_camera.zoomw = 750
+	}
+	if global.zoomorshake = 3
+	{
+	{
+    with(obj_camera)
+    {
+        shake_mag = 5
+        shake_mag_acc = (10 / room_speed)
+    }
+	}
+	}
+}
+}
+
 

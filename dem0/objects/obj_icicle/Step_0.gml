@@ -1,4 +1,4 @@
-if obj_player.x > x && obj_player.x < x + 32
+if obj_player.x > x && obj_player.x < x + 32 && obj_player.y > y
 {
 	if falltimer = 0
 	{

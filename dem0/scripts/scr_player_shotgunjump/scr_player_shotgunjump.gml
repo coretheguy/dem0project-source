@@ -1,6 +1,7 @@
 var box, ID, ID4, ID2, ID3, ID5;
 scr_getinput()
 hsp = (xscale * movespeed)
+move = (key_left + key_right)
 if ((place_meeting((x + 1), y, obj_bumpable) && (xscale == 1)) || (place_meeting((x - 1), y, obj_bumpable) && (xscale == -1)))
     movespeed = 0
 if (move == 0)
@@ -51,6 +52,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 5) &
 }
 if ((shoot == 1) && (floor(image_index) == 0))
 {
+	global.ammo -= 1
     with (obj_camera)
     {
         shake_mag = 8
@@ -62,26 +64,26 @@ if ((shoot == 1) && (floor(image_index) == 0))
     ID = instance_create((x + (xscale * 5)), y, obj_shotgunbullet)
     ID.hspeed = (xscale * -2)
     ID.vspeed = 20
-    ID.sprite_index = spr_shotgunbulletdown
+    ID.sprite_index = spr_lowbullet
     ID.image_angle = (xscale * -4)
     ID4 = instance_create((x + (xscale * 5)), y, obj_shotgunbullet)
     ID4.hspeed = (xscale * -1)
     ID4.vspeed = 20
-    ID4.sprite_index = spr_shotgunbulletdown
+    ID4.sprite_index = spr_lowbullet
     ID4.image_angle = (xscale * -2)
     ID2 = instance_create((x + (xscale * 5)), y, obj_shotgunbullet)
     ID2.vspeed = 20
-    ID2.sprite_index = spr_shotgunbulletdown
+    ID2.sprite_index = spr_lowbullet
     ID3 = instance_create((x + (xscale * 5)), y, obj_shotgunbullet)
     ID3.hspeed = (xscale * 2)
     ID3.vspeed = 20
-    ID3.sprite_index = spr_shotgunbulletdown
+    ID3.sprite_index = spr_lowbullet
     ID3.image_angle = (xscale * 4)
     ID5 = instance_create((x + (xscale * 5)), y, obj_shotgunbullet)
     ID5.hspeed = (xscale * 1)
     ID5.vspeed = 20
     ID5.image_angle = (xscale * 2)
-    ID5.sprite_index = spr_shotgunbulletdown
+    ID5.sprite_index = spr_lowbullet
     shoot = 0
 }
 if key_jump

@@ -30,7 +30,7 @@ if ((xscale == -1) && (move == 1))
     momemtum = 0
     movespeed = 0
 }
-if key_down2
+if key_down2 && global.gotshotgun = 0
 {
     if (vsp < 0.5)
         vsp /= 2
@@ -127,7 +127,15 @@ if (stompAnim == 1)
 if (move != 0)
     xscale = move
 	
-if ((key_chainsaw))
+if key_down && global.gotshotgun = 1
+{
+	sprite_index = spr_player_shotgunjump1
+	state = 8
+	vsp = -10
+	scr_sound(sfx_enemyhit)
+}
+	
+if key_chainsaw && global.gotchainsaw = 1
 {
 	state = 11
 	idle = 0

@@ -111,6 +111,34 @@ else
 ini_write_string("Ranks", "clouds", global.rank)
 ini_close()
 }
+else if global.level = "volcano"
+{
+	ini_open("saveData.ini")
+	if global.collect > 2000
+		global.rank = "s"
+	else if global.collect > 1500
+	{
+		if (("s" != ini_read_string("Ranks", "volcano", "none")))
+			global.rank = "a"
+	}
+	else if global.collect > 1000
+	{
+		if (("s" != ini_read_string("Ranks", "volcano", "none")) && ("a" != ini_read_string("Ranks", "volcano", "none")))
+			global.rank = "b"
+	}
+	else if global.collect > 500
+	{
+		if (("s" != ini_read_string("Ranks", "volcano", "none")) && ("a" != ini_read_string("Ranks", "volcano", "none")) && ("b" != ini_read_string("Ranks", "volcano", "none")))
+			global.rank = "c"
+	}
+	else
+	{
+		if (("s" != ini_read_string("Ranks", "volcano", "none")) && ("a" != ini_read_string("Ranks", "volcano", "none")) && ("b" != ini_read_string("Ranks", "volcano", "none")) && ("c" != ini_read_string("Ranks", "volcano", "none")))	
+			global.rank = "d"
+	}
+	ini_write_string("Ranks", "volcano", global.rank)
+	ini_close()
+}
 else
 {
 ini_open("saveData.ini")
@@ -158,6 +186,10 @@ ini_write_string("Points", "castle", global.collect)
 if global.level = "clouds" && (global.cloudshighscore < global.collect)
 {
 ini_write_string("Points", "clouds", global.collect)
+}
+if global.level = "volcano" && (global.volcanohighscore < global.collect)
+{
+ini_write_string("Points", "volcano", global.collect)
 }
 ini_close()
 

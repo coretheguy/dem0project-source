@@ -1,3 +1,4 @@
+ds_list_add(global.saveroom, id)
 instance_destroy()
 with (instance_create(x, y, obj_trashdead))
 {

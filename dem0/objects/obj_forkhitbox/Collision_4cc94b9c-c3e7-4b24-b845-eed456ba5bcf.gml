@@ -1,5 +1,7 @@
 with (obj_player)
 {
+	if state != 102
+	{
     if ((state == 2) || (state == 3))
     {
         scr_sound(sfx_metaldestroy)
@@ -71,4 +73,5 @@ with (obj_player)
             vsp = -5
         }
     }
+	}
 }

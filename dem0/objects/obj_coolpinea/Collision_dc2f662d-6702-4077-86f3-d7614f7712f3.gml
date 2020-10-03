@@ -139,7 +139,7 @@ global.collect += 40
     audio_play_sound(sfx_enemyhit, 1, false)
 }
 }
-if (obj_player.instakillmove == 1)
+if (obj_player.instakillmove == 1) || obj_player.state = 102
 {
 			if (ds_list_find_index(global.saveroom, id) == -1)
 {

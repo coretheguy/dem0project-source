@@ -1,7 +1,7 @@
 audio_master_gain(0.5)
 if ((global.panic == 1)) && room != rm_boss
 {
-	if (global.level != "sewer" && global.level != "clouds") && !audio_is_playing(music_escapetheme)
+	if (global.level != "sewer" && global.level != "clouds" && global.level != "volcano") && !audio_is_playing(music_escapetheme)
 	{
 	audio_stop_all()
     global.curplaying = audio_play_sound(music_escapetheme, 1, false)
@@ -15,6 +15,11 @@ if ((global.panic == 1)) && room != rm_boss
 	{
 	audio_stop_all()
     global.curplaying = audio_play_sound(music_cloudsescape, 1, false)
+	}
+	if global.level = "volcano" && !audio_is_playing(mu_freezerescape)
+	{
+	audio_stop_all()
+    global.curplaying = audio_play_sound(mu_freezerescape, 1, false)
 	}
 }
 else if (global.panic == 0)

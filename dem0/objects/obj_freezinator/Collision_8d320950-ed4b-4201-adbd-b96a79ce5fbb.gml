@@ -18,6 +18,9 @@ if obj_player.state = 100
 
 if opentimer = 50
 {
+	obj_player.mach2 = 0
+	obj_player.attacking = 1
+	obj_player.instakillmove = 1
 	obj_player.visible = 1
 	obj_player.state = 102
 	obj_player.image_index = 0

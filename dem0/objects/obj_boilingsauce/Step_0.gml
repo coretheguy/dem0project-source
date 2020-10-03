@@ -21,5 +21,15 @@ if place_meeting(x, y - 1, obj_player) && obj_player.state = 102
 {
 	instance_destroy()
 	instance_create(x, y + 32, obj_ice)
+	if image_xscale > 1
+	{
+		with instance_create(x + 32, y, obj_boilingsauce)
+			image_xscale = other.image_xscale - 1
+	}
+	ds_list_add(global.saveroom, id)
 }
 
+if global.frozen = 1
+	sprite_index = spr_frozenboilingsauce
+else
+	sprite_index = spr_boilingsauce

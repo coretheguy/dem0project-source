@@ -42,6 +42,11 @@ if (place_meeting(x, (y - 1), obj_player) && ((obj_player.vsp > 0) && ((obj_play
 if (place_meeting(x, (y + 1), obj_player) && (obj_player.state == 41))
     instance_destroy()
 	
+if place_meeting(x + 3, y, obj_player) && obj_player.state = 102
+	instance_destroy()
+if place_meeting(x - 3, y, obj_player) && obj_player.state = 102
+	instance_destroy()
+	
 if (place_meeting((x - 1), y, obj_player) && (obj_player.sprite_index == spr_player_barrelroll))
     instance_destroy()
 if (place_meeting((x + 1), y, obj_player) && (obj_player.sprite_index == spr_player_barrelroll))

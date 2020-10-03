@@ -14,7 +14,9 @@
         "9c8f45ed-4ee7-4e79-880c-654bc5c1b79f",
         "66714996-850d-41a2-a50c-4974aca6de5c",
         "ddb0c104-cc52-4086-b316-c7ecbba96f2b",
-        "64273cb2-e633-433f-984f-36d746260de6"
+        "64273cb2-e633-433f-984f-36d746260de6",
+        "2af84ab5-06a1-4b5f-98de-dc8b799362f0",
+        "324dfb98-a981-4852-8faf-bd12b1a995e6"
     ],
     "filterType": "GMObject",
     "folderName": "volcano",

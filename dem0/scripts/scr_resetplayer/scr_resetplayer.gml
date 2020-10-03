@@ -93,4 +93,9 @@ with (obj_player)
     bombpephitwall = 0
     idleanim = 0
     momemtum = 0
+	targetDoor = "A"
+	hallway = 0
+	pitfall = 0
+	box = 0
+	hallwaydirection = 0
 }
