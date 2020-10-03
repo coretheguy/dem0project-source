@@ -78,3 +78,23 @@ if (cloudsrank == "c")
 if (cloudsrank == "d")
     image_index = 4
 }
+if level = "volcano"
+{
+ini_open("saveData.ini")
+volcanorank = ini_read_string("Ranks", "volcano", "none")
+ini_close()
+if (volcanorank == "none")
+    visible = 0
+else
+    visible = 1
+if (volcanorank == "s")
+    image_index = 0
+if (volcanorank == "a")
+    image_index = 1
+if (volcanorank == "b")
+    image_index = 2
+if (volcanorank == "c")
+    image_index = 3
+if (volcanorank == "d")
+    image_index = 4
+}

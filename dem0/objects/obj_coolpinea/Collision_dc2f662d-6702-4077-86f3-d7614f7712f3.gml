@@ -1,4 +1,4 @@
-if ((stun == 0) && ((obj_player.y >= y + 10) && ((obj_player.attacking == 0) && ((obj_player.state != 51) && ((obj_player.state != 50) && ((obj_player.state != 35) && ((!(vsp < 0)) && (obj_player.instakillmove == 0) && obj_player.state != 64 && obj_player.state != 2 && obj_player.state != 3)))))))
+if ((stun == 0) && ((obj_player.y >= y + 10) && ((obj_player.attacking == 0) && ((obj_player.state != 51) && ((obj_player.state != 50) && ((obj_player.state != 35) && ((!(vsp < 0)) && (obj_player.instakillmove == 0) && obj_player.state != 64 && obj_player.state != 2 && obj_player.state != 3 && obj_player.state != 102)))))))
 {
     obj_player.image_index = 0
     obj_player.state = 50
@@ -29,7 +29,7 @@ if ((stun == 0) && ((obj_player.y >= y + 10) && ((obj_player.attacking == 0) && 
     if (!audio_is_playing(sfx_superjump))
         audio_play_sound(sfx_superjump, 1, false)
 }
-if ((obj_player.y < y) && ((obj_player.state != 51) && ((obj_player.attacking == 0) && ((obj_player.state != 35) && ((obj_player.state != 50) && ((!(vsp < 0)) && (obj_player.instakillmove == 0) && obj_player.state != 2 && obj_player.state != 3))))))
+if ((obj_player.y < y) && ((obj_player.state != 51) && ((obj_player.attacking == 0) && ((obj_player.state != 35) && ((obj_player.state != 50) && ((!(vsp < 0)) && (obj_player.instakillmove == 0) && obj_player.state != 2 && obj_player.state != 3 && obj_player.state != 102))))))
 {
     if (x != other.x)
     {
