@@ -4,8 +4,7 @@ draw_set_halign(fa_center)
 draw_set_color(c_white)
 
 //background
-draw_rectangle_color(0, 0, room_width, room_height, color, color, color, color, 0)
-draw_sprite_tiled(spr_secretwall2, 0, x, y)
+//draw_sprite_tiled(spr_secretwall2, 0, x, y)
 vspeed = 1
 hspeed = -1
 

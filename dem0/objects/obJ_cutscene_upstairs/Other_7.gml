@@ -2,6 +2,7 @@ image_speed = 0
 obj_player.targetRoom = targetRoom
 obj_player.x = target_x
 obj_player.y = target_y
+obj_player.targetDoor = "A"
 instance_create(x, y, obj_fadeout)
 obj_player.visible = 1
 obj_camera.visible = 1

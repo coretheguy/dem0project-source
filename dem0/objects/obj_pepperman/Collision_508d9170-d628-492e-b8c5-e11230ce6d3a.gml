@@ -1,9 +1,6 @@
 hits += 1
-if image_xscale = 1
-	hsp = 5
-else if image_xscale = -1
-	hsp = -5
-vsp = -20
+x = random_range(173, 743)
+y = -91
 avoidstunlocking = 1
 
 if hits = 4
