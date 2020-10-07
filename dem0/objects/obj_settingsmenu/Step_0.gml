@@ -7,7 +7,6 @@ if createdthings = 0
 	selecting = 1
 	createdthings = 1
 }
-instance_deactivate_object(obj_pause)
 
 if instance_exists(obj_keyconfig)
 	obj_exit.visible = 0
@@ -16,7 +15,8 @@ else
 
 if selecting = 1
 	obj_exit.selected = 1
-else obj_exit.selected = 0
+else
+	obj_exit.selected = 0
 
 if obj_exit.selected = 1
 {
@@ -117,5 +117,4 @@ if key_jump && obj_exit.selected = 1
 	instance_destroy()
 	instance_destroy(obj_cursor)
 	instance_destroy(obj_exit)
-	instance_activate_object(obj_pause)
 }

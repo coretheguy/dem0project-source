@@ -18,7 +18,7 @@ if key_start && !instance_exists(obj_settingsmenu)
 		audio_resume_all()
     }
 }
-if (pause == 1)
+if (pause == 1 && !instance_exists(obj_settingsmenu))
 {
     //if (key_right2 && (obj_exit.selected == 0) && obj_settings.selected = 0 && obj_retry.selected = 1)
     //{
