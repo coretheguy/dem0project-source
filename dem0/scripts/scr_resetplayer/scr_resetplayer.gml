@@ -98,4 +98,6 @@ with (obj_player)
 	pitfall = 0
 	box = 0
 	hallwaydirection = 0
+	global.gotchainsaw = 0
+	global.gotshotgun = 0
 }

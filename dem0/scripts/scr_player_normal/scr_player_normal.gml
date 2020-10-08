@@ -95,8 +95,15 @@ if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.
 	sprite_index = spr_player_chainsaw
 	instance_create(x, y, obj_chainsawhitbox)
 }
-if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.gotchainsaw = 1 && global.sawpower = 0
+if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.gotchainsaw = 1 && global.sawpower = 1
 {
+	with instance_create(x, y, obj_coolpineadead)
+		{
+			hsp = -3 * obj_player.xscale
+			vsp = -5
+			sprite_index = spr_chainsawused
+		}
+	state = 0
 	global.gotchainsaw = 0
 }
 if key_shoot && global.gotshotgun = 1 && global.ammo != 0
@@ -111,6 +118,12 @@ if key_shoot && global.gotshotgun = 1 && global.ammo != 0
 }
 if key_shoot && global.gotshotgun = 1 && global.ammo = 0
 {
+	with instance_create(x, y, obj_coolpineadead)
+		{
+			hsp = -3 * obj_player.xscale
+			vsp = -5
+			sprite_index = spr_shotgunused
+		}
 	global.gotshotgun = 0
 }
 

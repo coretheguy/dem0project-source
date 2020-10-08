@@ -180,7 +180,8 @@ if (grabbed == 1)
 }
 if (grabbed == 0)
 {
-    sprite_index = spr_coolpineadead
+	if sprite_index = spr_coolpineastun
+		sprite_index = spr_coolpineadead
     if place_meeting((x + floor(hsp)), y, obj_null)
     {
         x = floor(x)

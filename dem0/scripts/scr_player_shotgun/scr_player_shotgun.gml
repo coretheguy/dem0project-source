@@ -14,6 +14,19 @@ crouchslideAnim = 1
 crouchAnim = 1
 if (floor(image_index) == 8)
     state = 0
+	
+if floor(image_index) == 8 && global.ammo = 0
+{
+	state = 0
+	with instance_create(x, y, obj_coolpineadead)
+		{
+			hsp = -3 * obj_player.xscale
+			vsp = -5
+			sprite_index = spr_shotgunused
+		}
+	global.gotshotgun = 0
+}
+	
 if ((shoot == 1) && (floor(image_index) == 0))
 {
 	global.ammo -= 1

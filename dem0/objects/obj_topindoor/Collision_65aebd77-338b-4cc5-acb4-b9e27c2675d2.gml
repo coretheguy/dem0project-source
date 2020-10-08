@@ -6,6 +6,7 @@ with (obj_player)
         other.visited = 1
         image_index = 0
         state = 56
+		targetDoor = other.targetDoor
         instance_create(x, y, obj_fadeout)
     }
 	if state = 56

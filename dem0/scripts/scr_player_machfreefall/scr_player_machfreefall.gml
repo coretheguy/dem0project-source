@@ -39,7 +39,7 @@ else if (place_meeting((x - 1), y, obj_bumpable) && (image_xscale == -1))
     if (!audio_is_playing(sfx_bump))
         audio_play_sound(sfx_bump, 1, false)
 }
-if place_meeting(x, (y + 1), obj_collisionparent) && !key_attack
+if place_meeting(x, (y + 1), obj_collisionparent) && !key_jump2
 {
     with (obj_camera)
     {
@@ -69,7 +69,7 @@ if place_meeting(x, (y + 1), obj_collisionparent) && !key_attack
         }
     }
 }
-if place_meeting(x, (y + 1), obj_collisionparent) && key_attack
+if place_meeting(x, (y + 1), obj_collisionparent) && key_jump2
 {
     bounce = 0
     state = 103

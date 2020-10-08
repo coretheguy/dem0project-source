@@ -90,6 +90,19 @@ if key_jump
     input_buffer_jump = 0
 if ((sprite_index == spr_player_shotgunjump1) && (floor(image_index) == 3))
     sprite_index = spr_player_shotgunjump2
+	
+if place_meeting(x, (y + 1), obj_collisionparent) && global.ammo = 0
+{
+	state = 0
+	with instance_create(x, y, obj_coolpineadead)
+		{
+			hsp = -3 * obj_player.xscale
+			vsp = -5
+			sprite_index = spr_shotgunused
+		}
+	global.gotshotgun = 0
+}
+
 if (move != 0)
     xscale = move
 image_speed = 0.35

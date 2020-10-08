@@ -389,6 +389,8 @@ with (obj_player)
 		state = 51
 		bossfallout = 0
 	}
+	
+
 }
 
 

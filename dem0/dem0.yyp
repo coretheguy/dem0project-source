@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "10174f52-4232-47eb-b304-d3996bdee441",
+            "Value": {
+                "id": "d3b6cb0b-da49-479f-b3cc-1f4dd838481d",
+                "resourcePath": "sprites\\spr_shotgunused\\spr_shotgunused.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1037e815-e519-40fb-b936-44674169ba84",
             "Value": {
                 "id": "391b7f16-8b93-465c-81a0-391a24de79d6",
@@ -1363,6 +1371,14 @@
             "Value": {
                 "id": "14337f83-f941-4a4a-ab79-fabbba8d4f98",
                 "resourcePath": "sprites\\spr_player_ladder\\spr_player_ladder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "26b626d4-b85b-4eaa-bc2f-05ec072df581",
+            "Value": {
+                "id": "f12dd20f-8fce-4dfe-9711-fd5533274f08",
+                "resourcePath": "sprites\\spr_chainsawused\\spr_chainsawused.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2252,6 +2268,14 @@
                 "id": "265d8015-4e0c-4b65-899a-202083fcd54c",
                 "resourcePath": "scripts\\scr_player_skateboard\\scr_player_skateboard.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3dd5ddd9-3525-4222-af96-794a071a4138",
+            "Value": {
+                "id": "6327cfcb-4bdd-4b5b-adc1-02fc9f3e0efc",
+                "resourcePath": "sprites\\EaKI0WqWAAAAwSw\\EaKI0WqWAAAAwSw.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -7268,6 +7292,14 @@
                 "id": "8f143283-9eea-4b2e-8f23-aabaf8ee067f",
                 "resourcePath": "objects\\obj_skateboarddebris2\\obj_skateboarddebris2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c94a266c-423c-4b59-88f0-2eb5b8f64257",
+            "Value": {
+                "id": "cfb8e02c-1d32-4469-8748-75a4a5815c34",
+                "resourcePath": "sprites\\spr_piraneappledead\\spr_piraneappledead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

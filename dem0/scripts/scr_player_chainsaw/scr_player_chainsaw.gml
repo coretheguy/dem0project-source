@@ -99,7 +99,16 @@ if movespeed < 0
 	mach2 = 0
 }
 if global.sawpower = 0
+{
+	state = 49
 	global.gotchainsaw = 0
+	with instance_create(x, y, obj_coolpineadead)
+		{
+			hsp = -3 * obj_player.xscale
+			vsp = -5
+			sprite_index = spr_chainsawused
+		}
+}
 
 image_speed = 0.6
 scr_collideandmove()
