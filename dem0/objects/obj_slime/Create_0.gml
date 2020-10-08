@@ -7,3 +7,5 @@ bounce = 0
 ministun = 0
 stun = 0
 alarm[0] = 150
+baddieid = id
+important = 0

@@ -1631,6 +1631,14 @@
             }
         },
         {
+            "Key": "2efeacb0-c268-4c16-adbc-c777a4bfbbc4",
+            "Value": {
+                "id": "d4789eff-adff-49f2-a598-c1b443acd720",
+                "resourcePath": "objects\\obj_ballgoal\\obj_ballgoal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2f08e019-5a68-484f-950c-de7a1a50ad19",
             "Value": {
                 "id": "7db2ecd0-858f-4c59-be1c-d3fe3849aedf",
@@ -1659,6 +1667,14 @@
             "Value": {
                 "id": "4bb67d4f-b40d-4daf-8e3c-2e7abd8d3b63",
                 "resourcePath": "sprites\\spr_pizzakintomato_underwater\\spr_pizzakintomato_underwater.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2fb70e97-c1b3-4feb-baa3-8d9985d59825",
+            "Value": {
+                "id": "fae414cc-cc61-41aa-b0d3-f0c7f56ff5c3",
+                "resourcePath": "sprites\\spr_pizzaball_walk\\spr_pizzaball_walk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2116,6 +2132,14 @@
                 "id": "5b6a0e1c-9ffd-4fc0-af6f-2eafb70b4388",
                 "resourcePath": "scripts\\scr_player_punch\\scr_player_punch.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "39daf84b-a385-4870-965e-2e0598208946",
+            "Value": {
+                "id": "494ee7f2-44be-477f-aff3-40b1e9ef901f",
+                "resourcePath": "objects\\obj_nerdblock\\obj_nerdblock.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3324,6 +3348,14 @@
                 "id": "60746696-e681-4cd1-831f-452c681001c4",
                 "resourcePath": "objects\\obj_pepgoblindead\\obj_pepgoblindead.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5a067386-345a-40e3-9586-d94994825065",
+            "Value": {
+                "id": "8aefa34b-789f-4f01-a864-e18f7eb5f1e4",
+                "resourcePath": "sprites\\spr_pizzaball_stun\\spr_pizzaball_stun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4871,6 +4903,14 @@
             }
         },
         {
+            "Key": "852d618c-443a-43ff-a639-e0ae8452a0a8",
+            "Value": {
+                "id": "98a379f7-6931-46ef-a21d-a46a5843909f",
+                "resourcePath": "objects\\obj_baddiespawner\\obj_baddiespawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8556efbe-140b-4ad8-ac66-1f8e120913a7",
             "Value": {
                 "id": "c9159cc2-2c37-4cb4-b11f-d414abd8e55a",
@@ -5036,6 +5076,14 @@
                 "id": "374a83c7-8559-4379-b7a9-9951a7748b87",
                 "resourcePath": "views\\8a01092c-5169-4a59-939e-00f64a95248b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8a236f8c-7e60-490e-9a8d-f2fe1ad3f6df",
+            "Value": {
+                "id": "170270e0-c228-434f-8838-ba9b3a18ff20",
+                "resourcePath": "objects\\obj_pizzaball\\obj_pizzaball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7215,6 +7263,14 @@
             }
         },
         {
+            "Key": "c8134897-9f34-48ee-bc15-24e598e2f404",
+            "Value": {
+                "id": "fed27310-d807-41c3-9768-27ce3b8345e0",
+                "resourcePath": "views\\c8134897-9f34-48ee-bc15-24e598e2f404.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c8368cea-c496-4f81-8379-10c31aa1cf85",
             "Value": {
                 "id": "1004d8d5-df9b-44c7-806b-fa43bd5c3fc3",
@@ -9267,6 +9323,14 @@
             "Value": {
                 "id": "0f965c6c-38f7-4357-ab8e-4e61a6ea4d04",
                 "resourcePath": "sprites\\spr_fridge_closing\\spr_fridge_closing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fad7dd08-ee19-4a0a-a8e5-cc4d5ad2cabe",
+            "Value": {
+                "id": "2b9ea0f3-a02e-443c-a4a6-3ac90c4356d4",
+                "resourcePath": "sprites\\spr_baddiespawner\\spr_baddiespawner.yy",
                 "resourceType": "GMSprite"
             }
         },

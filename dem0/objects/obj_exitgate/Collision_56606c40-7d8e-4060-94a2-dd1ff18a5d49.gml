@@ -80,10 +80,10 @@ else if (global.minutes = 0 && global.seconds <= 5)
 }
 ini_write_string("Ranks", "time", global.timerank)
 ini_close()
-ini_open("saveData.ini")
 }
 else if global.level = "clouds"
 {
+	ini_open("saveData.ini")
 if (global.collect >= 4000)
 {
 	global.rank = "s"

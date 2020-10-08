@@ -2,8 +2,10 @@ if obj_runonball.rolling = 1 || obj_runonmetalball.rolling = 1
 {
 instance_destroy()
 ds_list_add(global.saveroom, id)
+	if important = 0
+	{
 instance_create(x, y, obj_40)
-global.collect += 40
+global.collect += 40}
 		with (instance_create(x, y, obj_pepgoblindead))
 	{
 		hsp = obj_player.xscale * 10

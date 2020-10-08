@@ -9,7 +9,9 @@
         "5611313d-c0ee-4566-ae44-3a8f0fd70135",
         "d8529f82-1797-4027-9a3d-5b5820bb9007",
         "6ad87d39-f844-41d4-be0c-4264946d1c53",
-        "05bc4825-7690-4d29-b581-7e7bb8cbd2fe"
+        "05bc4825-7690-4d29-b581-7e7bb8cbd2fe",
+        "852d618c-443a-43ff-a639-e0ae8452a0a8",
+        "8a236f8c-7e60-490e-9a8d-f2fe1ad3f6df"
     ],
     "filterType": "GMObject",
     "folderName": "baddie",

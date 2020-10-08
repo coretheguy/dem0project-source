@@ -7,3 +7,5 @@ stun = 0
 roam = 0
 bounce = 0
 alarm[0] = 150
+baddieid = id
+important = 0

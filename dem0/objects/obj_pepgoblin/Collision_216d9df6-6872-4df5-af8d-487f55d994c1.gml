@@ -163,8 +163,11 @@ if (obj_player.instakillmove == 1) || obj_player.state = 102
     audio_play_sound(sfx_enemyhit, 1, false)
 	audio_sound_gain(sfx_punch1, 0.7, 0)
     audio_play_sound(sfx_punch1, 1, false)
+		if important = 0
+	{
 	instance_create(x, y, obj_40)
 global.collect += 40
+	}
 
 	if global.zoomorshake = 2
 	{
