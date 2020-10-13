@@ -42,6 +42,8 @@ if (obj_player.state != 33)
     draw_set_color(c_white)
 	if room != rm_boss
 		draw_text(190, 65, global.collect)
+	if instance_exists(obj_pizzaball)
+		draw_text(120, 160, global.golfhit)
 	//draw_text(190, 105, obj_player.x)
 	//draw_text(190, 145, obj_player.y)
 	//draw_text(190, 185, obj_player.state)
@@ -85,7 +87,6 @@ if (obj_player.state != 33)
         }
     }
 }
-
 
 draw_set_blend_mode(0)
 

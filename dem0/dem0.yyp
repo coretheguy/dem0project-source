@@ -5919,6 +5919,14 @@
             }
         },
         {
+            "Key": "a513ef2d-8b6d-48f7-a343-ac6f81f21e3c",
+            "Value": {
+                "id": "51fbf94b-dee3-4c00-afc1-46c6a7d4c789",
+                "resourcePath": "sprites\\spr_ballgoal\\spr_ballgoal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a528655e-7e5c-4a85-ba4f-6be9ff61761f",
             "Value": {
                 "id": "0a6ef1d4-1cc2-4133-ae6d-663d4e93606a",
@@ -8295,6 +8303,14 @@
             }
         },
         {
+            "Key": "e22fd446-ee90-4065-877b-5441d276385a",
+            "Value": {
+                "id": "b204252b-4218-44c4-93ae-e73496ed83e9",
+                "resourcePath": "objects\\obj_rainbowtext\\obj_rainbowtext.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e281759a-db9c-4c2b-9306-f2d372613d2d",
             "Value": {
                 "id": "d7b8f3b6-ff83-457a-8b27-06d132774caf",
@@ -8644,6 +8660,14 @@
                 "id": "6b05ccc5-7e5e-4bef-b1fe-c8ae08b1fb89",
                 "resourcePath": "scripts\\scr_player_mach2\\scr_player_mach2.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ebdda99f-45ed-4e2a-ab72-0eb573433379",
+            "Value": {
+                "id": "cd8b8fcb-a383-4b54-964a-5b11651191b7",
+                "resourcePath": "sprites\\yousuck\\yousuck.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

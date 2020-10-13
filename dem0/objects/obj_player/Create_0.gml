@@ -104,7 +104,8 @@ with (obj_player)
 	lastroom_y = 0
 	lastroom = 0
 	pitfall = 0
-	global.rank = "none"
+	global.golfhit = 0
+	global.rank = "d"
 }
 
 
