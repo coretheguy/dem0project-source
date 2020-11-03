@@ -19,8 +19,11 @@ if obj_player.state == 56
 		if other.time2 > 120
 		{
 			targetRoom = other.targetRoom
+			if global.newdoors = 1
+			{
 			y = other.target_y
 			x = other.target_x
+			}
 			other.time2 = 0
 		}
 		if other.time2 > 110

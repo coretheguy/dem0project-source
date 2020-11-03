@@ -1,150 +1,75 @@
-if (obj_player.state != 24) && obj_player.state = 47 || obj_player.state = 48 || obj_player.state = 68
+stunned = 200
+if (place_meeting(x, y, obj_player) && ((state == 82) && (obj_player.state == 0)) && obj_player.state != 6)
+{
+    instance_create((x + (obj_player.xscale * 40)), y, obj_punchdust)
+    other.state = 6
+    other.movespeed = 0
+    state = 85
+}
+else
+{
+    with (obj_player)
     {
-		sprite_index = spr_pizzaball_stun
-		hsp = 0
-		stun = 1
-		obj_player.state = 24
-        x = (obj_player.x + (obj_player.xscale * 20))
-        y = obj_player.y
-        if (x != obj_player.x)
-            image_xscale = sign((obj_player.x - x))
-    }
-if (obj_player.state == 25)
-    {
-        x = (obj_player.x + (obj_player.xscale * 20))
-        y = obj_player.y
-        if (floor(obj_player.image_index) == 3)
+        if ((y < other.y) && ((attacking == 0) && ((state == 36) || (state == 10))))
         {
-            with (obj_camera)
+            if ((other.state != 84) && (key_jump2 && (vsp > 0)))
             {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
+                audio_play_sound(sfx_boing, 1, false)
+                sprite_index = spr_player_stompprep
+                image_index = 0
+                stompAnim = 1
+                vsp = -14
+                state = 36
+                instance_create(x, y, obj_bangeffect)
+                other.state = 84
+                other.stunned = 200
+                other.image_index = 0
             }
-            y = obj_player.y
-            hsp = (obj_player.xscale * 20)
-            vsp = -5
+        }
+        if ((y < other.y) && (sprite_index == spr_player_facestomp))
+        {
+            if ((other.state != 84) && (vsp > 0))
+            {
+                image_index = 0
+                facestompAnim = 1
+                vsp = -7
+                instance_create(x, y, obj_bangeffect)
+                other.state = 84
+                other.stunned = 200
+                other.image_index = 0
+            }
+        }
+        if (other.flying == 0)
+        {
+            if ((!place_meeting(x, (y + 1), obj_collisionparent)) && ((state == 48) || ((state == 68) || (state == 15))))
+            {
+                hsp = ((-xscale) * 4)
+                vsp = -4
+                if (x != other.x)
+                    other.image_xscale = (-sign((other.x - x)))
+                other.state = 77
+                instance_create(x, y, obj_bangeffect)
+                image_index = 0
+                state = 35
+                other.stunned = 200
+            }
+        }
+        if (((state == 48) || ((state == 68) || ((state == 15) || ((state == 52) || (state == 21))))) && (place_meeting(x, (y + 1), obj_collisionparent) && (other.flying == 0)))
+        {
+            if (x != other.x)
+                other.image_xscale = (-sign((other.x - x)))
+            other.hsp = (sign((other.x - x)) * 5)
+            image_index = 0
             instance_create(x, y, obj_bangeffect)
-			global.golfhit += 1
+            machpunchAnim = 1
+            if ((state != 68) && (state != 15))
+                other.vsp = -10
+            if ((state == 68) || (state == 15))
+                other.vsp = -18
+            other.state = 81
+            other.stunned = 200
         }
     }
-    if (obj_player.state == 27)
-    {
-        x = obj_player.x
-        y = (obj_player.y - 40)
-        if (floor(obj_player.image_index) == 3)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            instance_create(x, y, obj_bangeffect)
-            vsp = -20
-			global.golfhit += 1
-        }
-    }
-    if (obj_player.state == 26)
-    {
-        x = (obj_player.x - (obj_player.xscale * 20))
-        y = obj_player.y
-        if (floor(obj_player.image_index) == 3)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            obj_player.vsp = -5
-            hsp = (-(obj_player.xscale * 20))
-            vsp = -5
-            instance_create(x, y, obj_bangeffect)
-			global.golfhit += 1
-        }
-    }
-    if (obj_player.state == 28)
-    {
-        x = obj_player.x
-        y = (obj_player.y + 30)
-        if (floor(obj_player.image_index) == 3)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            obj_player.vsp = -5
-            instance_create(x, y, obj_bangeffect)
-            vsp = -4
-            hsp = (obj_player.xscale * 4)
-			global.golfhit += 1
-        }
-    }
-    if (obj_player.state == 29)
-    {
-        x = obj_player.x
-        y = (obj_player.y - 40)
-        if (floor(obj_player.image_index) == 1)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            instance_create(x, y, obj_bangeffect)
-            vsp = -4
-            hsp = (obj_player.xscale * 4)
-			global.golfhit += 1
-        }
-    }
-    if (obj_player.state == 20)
-    {
-        x = obj_player.x
-        y = (obj_player.y + 30)
-        if (floor(obj_player.image_index) == 4)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            instance_create(x, y, obj_bangeffect)
-            vsp = -4
-			 hsp = (obj_player.xscale * 4)
-			 global.golfhit += 1
-        }
-    }
-    if (obj_player.state == 21)
-    {
-        x = obj_player.x
-        y = (obj_player.y + 30)
-        if (floor(obj_player.image_index) == 4)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            instance_create(x, y, obj_bangeffect)
-            vsp = -4
-            hsp = (obj_player.xscale * 4)
-			global.golfhit += 1
-        }
-    }
-    if (obj_player.state == 19)
-    {
-        x = obj_player.x
-        y = (obj_player.y - 40)
-        if (floor(obj_player.image_index) == 3)
-        {
-            with (obj_camera)
-            {
-                shake_mag = 10
-                shake_mag_acc = (30 / room_speed)
-            }
-            y = obj_player.y
-            hsp = (obj_player.xscale * 10)
-            vsp = -5
-            instance_create(x, y, obj_bangeffect)
-			global.golfhit += 1
-        }
-    }
+}
+
+

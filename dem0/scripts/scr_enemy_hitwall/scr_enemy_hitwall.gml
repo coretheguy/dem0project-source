@@ -2,7 +2,7 @@ vsp = 0
 hsp = 0
 sprite_index = hitwallspr
 image_speed = 0.35
-if (floor(image_index) == 2)
+if (floor(image_index) == image_number - 1)
 {
     hsp = (image_xscale * random_range(1, 4))
     sprite_index = stunfallspr

@@ -1,2 +1,1 @@
-roam = 1
-stun = 0
+roaming = 1

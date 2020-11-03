@@ -2,7 +2,7 @@ vsp = 0
 hsp = 0
 sprite_index = hitceillingspr
 image_speed = 0.35
-if (floor(image_index) == 2)
+if (floor(image_index) == image_number - 1)
 {
     sprite_index = stunfalltransspr
     state = 81

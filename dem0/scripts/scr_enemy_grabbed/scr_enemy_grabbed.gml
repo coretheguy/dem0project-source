@@ -28,6 +28,8 @@ if place_meeting(x, y, obj_player)
         hsp = ((-image_xscale) * 7)
         vsp = -4
         instance_create((x + (obj_player.xscale * 10)), y, obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 25) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce >= 20)))
     {
@@ -42,6 +44,8 @@ if place_meeting(x, y, obj_player)
         hsp = ((-image_xscale) * 20)
         straightthrow = 1
         instance_create((x + (obj_player.xscale * 10)), y, obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 26) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce < 20)))
     {
@@ -52,6 +56,8 @@ if place_meeting(x, y, obj_player)
         hsp = ((-image_xscale) * 5)
         vsp = -4
         instance_create((obj_player.x + ((-obj_player.xscale) * 40)), obj_player.y, obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 26) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce >= 20)))
     {
@@ -67,6 +73,8 @@ if place_meeting(x, y, obj_player)
         hsp = ((-image_xscale) * 20)
         straightthrow = 1
         instance_create((obj_player.x + ((-obj_player.xscale) * 40)), obj_player.y, obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 19) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce < 20)))
     {
@@ -75,6 +83,8 @@ if place_meeting(x, y, obj_player)
         state = 81
         hsp = ((-image_xscale) * 7)
         vsp = -8
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 19) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce >= 20)))
     {
@@ -88,6 +98,8 @@ if place_meeting(x, y, obj_player)
         state = 81
         hsp = ((-image_xscale) * 10)
         vsp = -12
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 28) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce < 20)))
     {
@@ -97,6 +109,8 @@ if place_meeting(x, y, obj_player)
         state = 81
         vsp = -4
         instance_create(obj_player.x, (obj_player.y + 46), obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 28) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce >= 20)))
     {
@@ -111,6 +125,8 @@ if place_meeting(x, y, obj_player)
         state = 81
         vsp = -8
         instance_create(obj_player.x, (obj_player.y + 46), obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 27) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce < 20)))
     {
@@ -120,6 +136,8 @@ if place_meeting(x, y, obj_player)
         state = 81
         vsp = -10
         instance_create(obj_player.x, (obj_player.y - 40), obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 27) && ((floor(obj_player.image_index) == 2) && (obj_player.throwforce >= 20)))
     {
@@ -134,6 +152,8 @@ if place_meeting(x, y, obj_player)
         state = 81
         vsp = -20
         instance_create(obj_player.x, (obj_player.y - 40), obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
     if ((obj_player.state == 20) && (obj_player.slamming == 0))
     {
@@ -149,6 +169,8 @@ if place_meeting(x, y, obj_player)
         hsp = ((-image_xscale) * 10)
         vsp = -8
         instance_create(x, y, obj_bangeffect)
+		if object_index = obj_pizzaball
+			global.golfhit += 1
     }
 }
 sprite_index = grabbedspr

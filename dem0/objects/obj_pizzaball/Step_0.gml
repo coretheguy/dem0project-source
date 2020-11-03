@@ -1,60 +1,55 @@
-if (vsp < 30)
-    vsp += grav
-image_speed = 0.35
-if ((stun == 0) && (ministun == 0))
+switch state
 {
-    hsp = (image_xscale * movespeed)
-    sprite_index = spr_pizzaball_walk
-    if ((place_meeting((x + 10), y, obj_bumpable) || place_meeting((x + 10), y, obj_destructibles)) && (image_xscale == 1))
-        image_xscale = -1
-    if ((place_meeting((x - 10), y, obj_bumpable) || place_meeting((x - 10), y, obj_destructibles)) && (image_xscale == -1))
-        image_xscale = 1
-    if (!place_meeting((x + 15), (y + 3), obj_bumpable))
-        image_xscale = -1
-    if (!place_meeting((x - 15), (y + 3), obj_bumpable))
-        image_xscale = 1
-}
-if (stun == 1)
-{
-    hitbox = 0
-    if (place_meeting((x + 1), y, obj_bumpable) && (image_xscale == -1))
-    {
-        hsp *= -1
-        image_xscale *= -1
-    }
-    if (place_meeting((x - 1), y, obj_bumpable) && (image_xscale == 1))
-    {
-        hsp *= -1
-        image_xscale *= -1
-    }
-    sprite_index = spr_pizzaball_stun
-    if (place_meeting(x, (y + 1), obj_bumpable) && (vsp > 0))
-        hsp = 0
+    case 72:
+        scr_enemy_idle()
+        break
+    case 74:
+        scr_enemy_turn()
+        break
+    case 75:
+        scr_enemy_hitceilling()
+        break
+    case 76:
+        scr_enemy_hitwall()
+        break
+    case 77:
+        scr_enemy_rolling()
+        break
+    case 78:
+        scr_enemy_walk()
+        break
+    case 80:
+        scr_enemy_land()
+        break
+    case 81:
+        scr_enemy_hit()
+        break
+    case 82:
+        scr_enemy_stun()
+        break
+    case 83:
+        scr_enemy_recovery()
+        break
+    case 84:
+        scr_enemy_stomped()
+        break
+    case 85:
+        scr_enemy_grabbed()
+        break
 }
 
-if obj_player.state != 24 && stun = 1
-{
-	alarm[0] = 150
-}
-if (ministun == 1)
-{
-    hitbox = 0
-    if (place_meeting((x + 1), y, obj_bumpable) && (image_xscale == -1))
-    {
-        hsp *= -1
-        image_xscale *= -1
-    }
-    if (place_meeting((x - 1), y, obj_bumpable) && (image_xscale == 1))
-    {
-        hsp *= -1
-        image_xscale *= -1
-    }
-    sprite_index = spr_pizzaball_stun
-    image_index = 0
-    image_speed = 0
-    if (place_meeting(x, (y + 1), obj_bumpable) && (vsp > 0))
-        hsp = 0
-}
+if ((state != 81) && ((state != 76) && ((state != 85) && ((state != 75) && (state != 77)))))
+    flying = 0
 else
-    image_speed = 0.35
-scr_collideandmove()
+    flying = 1
+
+if (state != 81)
+    straightthrow = 0
+if (state != 85)
+    depth = 0
+	
+if collectdrop = 0
+	ds_list_add(global.saveroom, id)
+	
+
+

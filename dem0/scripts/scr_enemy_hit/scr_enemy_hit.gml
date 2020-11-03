@@ -6,15 +6,15 @@ if (place_meeting(x, (y - 1), obj_enemiesbumpable) && ((sprite_index == flyingsp
 }
 if (straightthrow == 1)
     vsp = 0
-if ((vsp < 0) && ((floor(image_index) != 2) && (sprite_index != flyingspr)))
+if ((vsp < 0) && ((floor(image_index) != image_number - 1) && (sprite_index != flyingspr)))
     sprite_index = hitspr
 else if (vsp < 0)
     sprite_index = flyingspr
 else if (sprite_index == flyingspr)
     sprite_index = stunfalltransspr
-else if ((floor(image_index) == 4) && (sprite_index == stunfalltransspr))
+else if ((floor(image_index) == image_number - 1) && (sprite_index == stunfalltransspr))
     sprite_index = stunfallspr
-if (place_meeting(x, (y + 1), obj_enemiesbumpable) && sprite_index != flyingspr && sprite_index != hitspr && vsp != 0)
+if (place_meeting(x, (y + 1), obj_enemiesbumpable) /*&& sprite_index != flyingspr && sprite_index != hitspr*/ && vsp != 0)
 {
     instance_create(x, y, obj_landcloud)
     state = 82

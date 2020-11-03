@@ -1,7 +1,7 @@
 hsp = 0
 sprite_index = stompedspr
 image_speed = 0.35
-if (floor(image_index) == 3)
+if (floor(image_index) == image_number - 1)
 {
     sprite_index = stunlandspr
     state = 82
