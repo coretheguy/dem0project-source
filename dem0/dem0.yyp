@@ -1991,6 +1991,14 @@
             }
         },
         {
+            "Key": "36d14327-501c-4663-8fea-f8a14cfc86eb",
+            "Value": {
+                "id": "8fa5d131-4bb2-42df-bdcb-f722f3b8562b",
+                "resourcePath": "sprites\\frozenvolcanoescape5\\frozenvolcanoescape5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "36f53890-bd1b-4a9f-a367-b30de2f5f559",
             "Value": {
                 "id": "1125da7b-6179-41fa-ab53-8865a667b11d",
@@ -3615,6 +3623,14 @@
             }
         },
         {
+            "Key": "61b11ad0-30df-4cb5-a3cb-2b9bf541cfac",
+            "Value": {
+                "id": "4cf98572-a8ea-4375-bbf5-64c0781813e1",
+                "resourcePath": "sprites\\frozenvolcanoescape1\\frozenvolcanoescape1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "626f6dcd-d602-4a9d-855c-c48869f1d29c",
             "Value": {
                 "id": "8432f6db-decc-4b79-985b-92ab8acedcde",
@@ -4140,6 +4156,14 @@
                 "id": "f49b3470-935e-43aa-8515-e8742dff691a",
                 "resourcePath": "objects\\obj_barrel\\obj_barrel.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6f583c0b-7d44-4de6-930b-5d937d6da57f",
+            "Value": {
+                "id": "31d19f36-5406-474f-a78e-a8ba546c7276",
+                "resourcePath": "sprites\\frozenvolcanoescape4\\frozenvolcanoescape4.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4956,6 +4980,14 @@
                 "id": "c9bea6dc-ff17-4bcc-854e-9e673a3724ed",
                 "resourcePath": "objects\\obj_swordstone\\obj_swordstone.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "86bfe4a8-6f18-4696-8158-0f77f54b9e71",
+            "Value": {
+                "id": "538a4cf2-ec0d-4699-9dea-03daee974e70",
+                "resourcePath": "scripts\\scr_solid\\scr_solid.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7055,6 +7087,14 @@
             }
         },
         {
+            "Key": "bfc9e210-d56e-4603-bb80-d8d9e4830d77",
+            "Value": {
+                "id": "8215b48e-33f1-401c-bb23-33f9dd66c9f0",
+                "resourcePath": "rooms\\golf_room2\\golf_room2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "bfe233e6-d63e-4204-9582-b9af5b2b2559",
             "Value": {
                 "id": "6409b9e6-15e4-410d-bcda-4c05c6f22848",
@@ -8543,6 +8583,14 @@
             }
         },
         {
+            "Key": "e6223be9-2de8-43c2-96cd-9a083d8216b7",
+            "Value": {
+                "id": "8512007e-5423-4906-a2e3-aad3c76ac5cb",
+                "resourcePath": "sprites\\frozenvolcanoescape3\\frozenvolcanoescape3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e636f3c0-fcc1-48ce-8076-40bb5e1754ab",
             "Value": {
                 "id": "fdba3569-c083-4447-b901-036b0feda5a3",
@@ -9746,7 +9794,8 @@
         "f933366f-940a-4651-a69c-6d89c09ffea9",
         "7b36ef6a-3e4d-49e6-854a-ef5e4d0b0d16",
         "ad1bb1fc-457f-47d2-b832-41ccf68a5729",
-        "d9c45aee-a56d-4108-b6e0-cecf5f840323"
+        "d9c45aee-a56d-4108-b6e0-cecf5f840323",
+        "86bfe4a8-6f18-4696-8158-0f77f54b9e71"
     ],
     "tutorial": ""
 }

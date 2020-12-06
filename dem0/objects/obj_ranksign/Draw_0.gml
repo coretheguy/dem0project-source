@@ -16,4 +16,6 @@ if place_meeting(x, y, obj_player)
 		draw_text(x + 48, (y - 50), cloudscollect)
 	if level = "castle"
 		draw_text(x + 48, (y - 50), castlecollect)
+	if level = "volcano"
+		draw_text(x + 48, (y - 50), volcanocollect)
 }

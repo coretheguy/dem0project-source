@@ -280,7 +280,7 @@ with (obj_player)
         attacking = 1
     else
         attacking = 0
-    if ((state == 68) || ((state == 13) || ((state == 52) || ((state == 20) || ((state == 21) || ((state == 41) || ((state == 15) || ((state == 18) || (state == 29)))))))))
+    if ((state == 68) || ((state == 13) || ((state == 52) || ((state == 20) || ((state == 21) || ((state == 41) || ((state == 15) || ((state == 18) || (state == 29) || state = 11 || state = 7))))))))
         instakillmove = 1
     else
         instakillmove = 0
@@ -313,7 +313,7 @@ with (obj_player)
         ladderbuffer = 0
     if (state != 36)
         stompAnim = 0
-    if (((state == 68) || ((state == 15) || ((state == 21) || ((state == 41) || (state == 18))))) && (!instance_exists(obj_mach3effect)))
+    if (((state == 68) || ((state == 15) || ((state == 21) || ((state == 41) || (state == 18) || state = 11 || state = 7)))) && (!instance_exists(obj_mach3effect)))
     {
         toomuchalarm1 = 6
         instance_create(x, y, obj_mach3effect)
@@ -321,7 +321,7 @@ with (obj_player)
     if (toomuchalarm1 > 0)
     {
         toomuchalarm1 -= 1
-        if ((toomuchalarm1 <= 0) && ((state == 68) || ((state == 15) || ((state == 41) || (state == 18)))))
+        if ((toomuchalarm1 <= 0) && ((state == 68) || ((state == 15) || ((state == 41) || (state == 18) || state = 11 || state = 7))))
         {
             instance_create(x, y, obj_mach3effect)
             toomuchalarm1 = 6

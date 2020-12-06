@@ -16,7 +16,11 @@
         "de1fcb39-8079-4dd7-81ec-b33295441ba4",
         "35f16c10-b7a7-40f0-ab0d-8f268c7514d5",
         "c15be652-cb23-4f0c-853e-932dabadb4f6",
-        "7a566aea-457b-4745-8a72-3ab21961dce1"
+        "7a566aea-457b-4745-8a72-3ab21961dce1",
+        "36d14327-501c-4663-8fea-f8a14cfc86eb",
+        "61b11ad0-30df-4cb5-a3cb-2b9bf541cfac",
+        "e6223be9-2de8-43c2-96cd-9a083d8216b7",
+        "6f583c0b-7d44-4de6-930b-5d937d6da57f"
     ],
     "filterType": "GMSprite",
     "folderName": "volcano",
