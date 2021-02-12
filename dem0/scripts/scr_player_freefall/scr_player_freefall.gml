@@ -17,7 +17,7 @@ else
     superslam = 0
 if (superslam > 30)
     state = 21
-if (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1), obj_destructibles)))
+if (grounded && (!place_meeting(x, (y + 1), obj_destructibles)))
 {
     state = 55
     jumpAnim = 1

@@ -4,7 +4,7 @@ mach2 = 100
 machslideAnim = 1
 move = (key_right + key_left)
 movespeed = 12
-if (((!key_down) && ((!place_meeting((x + 27), (y - 32), obj_collisionparent)) && ((!place_meeting((x - 27), (y - 32), obj_collisionparent)) && ((!place_meeting(x, (y - 32), obj_collisionparent)) && ((!place_meeting(x, (y - 16), obj_collisionparent)) && key_attack))))) || (!place_meeting(x, (y + 1), obj_collisionparent)))
+if (((!key_down) && ((!place_meeting((x + 27), (y - 32), obj_collisionparent)) && ((!place_meeting((x - 27), (y - 32), obj_collisionparent)) && ((!place_meeting(x, (y - 32), obj_collisionparent)) && ((!place_meeting(x, (y - 16), obj_collisionparent)) && key_attack))))) || (!grounded))
 {
     machhitAnim = 1
     state = 48
@@ -65,7 +65,7 @@ if ((place_meeting((x - 1), y, obj_collisionparent) && (xscale == -1)) && (!plac
     if (!audio_is_playing(sfx_bump))
         audio_play_sound(sfx_bump, 1, false)
 }
-if place_meeting(x, (y + 1), obj_collisionparent)
+if grounded
     sprite_index = spr_player_machroll
 if (floor(image_index) == 0)
     flash = 1
@@ -83,7 +83,7 @@ if sprite_index != spr_player_machroll && (audio_is_playing(sfx_golfroll) || aud
 	audio_stop_sound(sfx_golfroll)
 	audio_stop_sound(sfx_sageroll)
 }
-if ((!instance_exists(obj_cloudeffect)) && (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1), obj_water))))
+if ((!instance_exists(obj_cloudeffect)) && (grounded && (!place_meeting(x, (y + 1), obj_water))))
     instance_create(x, (y + 43), obj_cloudeffect)
 image_speed = 0.6
 scr_collideandmove()

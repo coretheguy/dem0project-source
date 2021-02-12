@@ -3,7 +3,7 @@ if ((!key_jump2) && ((jumpstop == 0) && ((vsp < 0.5) && (stompAnim == 0))))
     vsp /= 2
     jumpstop = 1
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0))
+if (grounded && (vsp > 0))
     jumpstop = 0
 mach2 = 0
 landAnim = 0
@@ -55,7 +55,7 @@ if (place_meeting((x - 1), y, obj_collisionparent) && ((xscale == -1) && ((hsp !
     bombpephitwall += 1
     xscale *= -1
 }
-if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && (hsp != 0)))
+if (key_jump && (grounded && (hsp != 0)))
     vsp = -9
 if (movespeed < 4)
     image_speed = 0.35
@@ -63,12 +63,12 @@ else if ((movespeed > 4) && (movespeed < 8))
     image_speed = 0.45
 else
     image_speed = 0.6
-if ((hsp != 0) && place_meeting(x, (y + 1), obj_collisionparent))
+if ((hsp != 0) && grounded)
 {
     audio_sound_gain(sfx_mach1, 0.7, 0)
     if (!audio_is_playing(sfx_mach1))
         audio_play_sound(sfx_mach1, 1, false)
 }
-if ((!instance_exists(obj_dashcloud)) && (place_meeting(x, (y + 1), obj_collisionparent) && (hsp != 0)))
+if ((!instance_exists(obj_dashcloud)) && (grounded && (hsp != 0)))
     instance_create(x, y, obj_dashcloud)
 scr_collideandmove()

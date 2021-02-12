@@ -6,32 +6,32 @@ machslideAnim = 1
 move = (key_right + key_left)
 movespeed = 20
 crouchslideAnim = 1
-if ((input_buffer_jump < 5) && (place_meeting(x, (y + 1), obj_collisionparent) && ((!((move == 1) && (image_xscale == -1))) && (!((move == -1) && (image_xscale == 1))))))
+if ((input_buffer_jump < 5) && (grounded && ((!((move == 1) && (image_xscale == -1))) && (!((move == -1) && (image_xscale == 1))))))
     vsp = -6
 if key_jump
     input_buffer_jump = 0
-if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
+if ((!key_attack) && grounded)
 {
     flash = 0
     state = 49
     image_index = 0
     mach2 = 35
 }
-if (((move == -1) && (image_xscale == 1)) && place_meeting(x, (y + 1), obj_collisionparent))
+if (((move == -1) && (image_xscale == 1)) && grounded)
 {
     flash = 0
     state = 49
     image_index = 0
     mach2 = 35
 }
-if (((move == 1) && (image_xscale == -1)) && place_meeting(x, (y + 1), obj_collisionparent))
+if (((move == 1) && (image_xscale == -1)) && grounded)
 {
     flash = 0
     state = 49
     image_index = 0
     mach2 = 35
 }
-if (key_down && place_meeting(x, (y + 1), obj_collisionparent))
+if (key_down && grounded)
 {
     instance_create(x, y, obj_jumpdust)
     flash = 0
@@ -101,7 +101,7 @@ if (place_meeting((x - 1), y, obj_bumpable) && (image_xscale == -1))
     if (!audio_is_playing(sfx_bump))
         audio_play_sound(sfx_bump, 1, false)
 }
-if (key_down2 && (!place_meeting(x, (y + 1), obj_collisionparent)))
+if (key_down2 && (!grounded))
 {
     vsp = -4
     state = 69
@@ -127,7 +127,7 @@ else
     flash = 0
 if (floor(image_index) == 0)
     instance_create(x, y, obj_mach3effect)
-if ((!instance_exists(obj_dashcloud)) && (place_meeting(x, (y + 1), obj_collisionparent) && (!place_meeting(x, (y + 1), obj_water))))
+if ((!instance_exists(obj_dashcloud)) && (grounded && (!place_meeting(x, (y + 1), obj_water))))
     instance_create(x, y, obj_dashcloud)
 image_speed = 0.35
 scr_collideandmove()

@@ -19,3 +19,4 @@ global.minutes = 2
 global.seconds = 0
 collectdrop = 0
 victory = 0
+grounded = false

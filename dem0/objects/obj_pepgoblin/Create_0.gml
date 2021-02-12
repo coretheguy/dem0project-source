@@ -6,3 +6,4 @@ ministun = 0
 stun = 0
 baddieid = id
 important = 0
+grounded = false

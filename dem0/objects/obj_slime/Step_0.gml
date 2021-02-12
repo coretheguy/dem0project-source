@@ -6,16 +6,16 @@ if (!place_meeting(x, (y + 1), obj_collisionparent))
 }
 if ((roam == 1) && (bounce == 0))
 {
-    if place_meeting(x, (y + 1), obj_enemiesbumpable)
+    if grounded
         hsp = (image_xscale * movespeed)
     sprite_index = spr_slimemove
     if (place_meeting((x + 5), y, obj_enemiesbumpable) && (image_xscale == 1))
         image_xscale = -1
     if (place_meeting((x - 5), y, obj_enemiesbumpable) && (image_xscale == -1))
         image_xscale = 1
-    if (!place_meeting((x + 15), (y + 3), obj_enemiesbumpable))
+    if (!scr_solid(x + 15, y + 3))
         image_xscale = -1
-    if (!place_meeting((x - 15), (y + 3), obj_enemiesbumpable))
+    if (!scr_solid(x - 15, y + 3))
         image_xscale = 1
 }
 if ((roam == 0) && (bounce == 0))

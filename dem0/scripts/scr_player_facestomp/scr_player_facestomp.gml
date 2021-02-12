@@ -24,7 +24,7 @@ if (vsp > 15)
     state = 52
     superslam = 0
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((!place_meeting(x, (y + 1), obj_destructibles)) && (vsp > 0)))
+if (grounded && ((!place_meeting(x, (y + 1), obj_destructibles)) && (vsp > 0)))
 {
 	if global.machsound = 1
     scr_sound(sfx_facestomp)

@@ -27,3 +27,4 @@ recoveryspr = spr_pizzaball_walk
 stompedspr = spr_pizzaball_stun
 grabbedspr = spr_pizzaball_stun
 state = 72
+grounded = false

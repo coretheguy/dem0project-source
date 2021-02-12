@@ -30,7 +30,7 @@ if (place_meeting(x, (y - 1), obj_collisionparent) && ((jumpstop == 0) && (jumpA
     vsp = grav
     jumpstop = 1
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0))
+if (grounded && (vsp > 0))
 {
     if key_attack
         landAnim = 0
@@ -45,7 +45,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0))
     if (!audio_is_playing(sfx_land))
         audio_play_sound(sfx_land, 1, false)
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
+if (grounded && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
 {
     vsp = -9
     state = 36

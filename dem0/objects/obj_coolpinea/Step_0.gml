@@ -15,9 +15,9 @@ if ((stun == 0) && (ministun == 0))
         image_xscale = -1
     if ((place_meeting((x - 5), y, obj_bumpable) || place_meeting((x - 5), y, obj_destructibles)) && (image_xscale == -1))
         image_xscale = 1
-    if (!place_meeting((x + 15), (y + 3), obj_bumpable))
+    if (!scr_solid(x + 15, y + 3))
         image_xscale = -1
-    if (!place_meeting((x - 15), (y + 3), obj_bumpable))
+    if (!scr_solid(x - 15, y + 3))
         image_xscale = 1
 }
 if (stun == 1)
@@ -34,7 +34,7 @@ if (stun == 1)
         image_xscale *= -1
     }
     sprite_index = spr_coolpineastun
-    if (place_meeting(x, (y + 1), obj_bumpable) && (vsp > 0))
+    if (grounded && (vsp > 0))
         hsp = 0
 }
 if (ministun == 1)
@@ -53,7 +53,7 @@ if (ministun == 1)
     sprite_index = spr_coolpineastun
     image_index = 0
     image_speed = 0
-    if (place_meeting(x, (y + 1), obj_bumpable) && (vsp > 0))
+    if (grounded && (vsp > 0))
         hsp = 0
 }
 else

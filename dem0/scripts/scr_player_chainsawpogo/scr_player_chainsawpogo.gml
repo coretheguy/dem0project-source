@@ -24,7 +24,7 @@ if (place_meeting(x, (y - 1), obj_collisionparent) && ((jumpstop == 0) && (jumpA
     vsp = grav
     jumpstop = 1
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((jumpstop == 0) && (jumpAnim == 1)))
+if (grounded && ((jumpstop == 0) && (jumpAnim == 1)))
 {
     vsp = -13
     jumpstop = 1
@@ -32,7 +32,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((jumpstop == 0) && (jumpA
 	instance_create(x, y, obj_pogoeffect)
 	global.sawpower -= 1
 }
-if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) || (!key_chainsaw))
+if ((grounded && (vsp > 0)) || (!key_chainsaw))
 {
     state = 36
     jumpAnim = 0

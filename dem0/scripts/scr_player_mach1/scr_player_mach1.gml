@@ -18,7 +18,7 @@ if (movespeed <= 8)
 machhitAnim = 0
 crouchslideAnim = 1
 hsp = floor((xscale * movespeed))
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == 1) && (move == -1)))
+if (grounded && ((xscale == 1) && (move == -1)))
 {
     momemtum = 0
     mach2 = 0
@@ -26,7 +26,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == 1) && (move ==
     image_index = 0
     xscale = -1
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == -1) && (move == 1)))
+if (grounded && ((xscale == -1) && (move == 1)))
 {
     momemtum = 0
     mach2 = 0
@@ -34,7 +34,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == -1) && (move =
     image_index = 0
     xscale = 1
 }
-if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && key_attack))
+if (key_jump && grounded && key_attack)
 {
     momemtum = 1
     vsp = -9
@@ -42,7 +42,7 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && key_attack))
     jumpAnim = 1
     image_index = 0
 }
-if place_meeting(x, (y + 1), obj_collisionparent)
+if grounded
 {
     if (mach2 < 35)
         mach2++
@@ -52,14 +52,14 @@ if place_meeting(x, (y + 1), obj_collisionparent)
         instance_create(x, y, obj_jumpdust)
     }
 }
-if (!place_meeting(x, (y + 1), obj_collisionparent))
+if (!grounded)
 {
     momemtum = 1
     state = 36
     jumpAnim = 0
     image_index = 0
 }
-if ((!key_attack) && place_meeting(x, (y + 1), obj_collisionparent))
+if ((!key_attack) && grounded)
 {
     state = 0
     image_index = 0

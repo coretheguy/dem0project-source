@@ -1,40 +1,40 @@
 scr_getinput()
 move = (key_left + key_right)
 hsp = (move * movespeed)
-if (key_attack && (place_meeting(x, (y + 1), obj_collisionparent) && ((!(place_meeting((x + 1), y, obj_collisionparent) && ((xscale == 1) && (!place_meeting((x + xscale), y, obj_slopes))))) && (!(place_meeting((x - 1), y, obj_collisionparent) && ((xscale == -1) && (!place_meeting((x + xscale), y, obj_slopes))))))))
+if (key_attack && (grounded && ((!(scr_solid(x + 1, y) && ((xscale == 1) && (!place_meeting((x + xscale), y, obj_slopes))))) && (!(scr_solid(x - 1, y) && ((xscale == -1) && (!place_meeting((x + xscale), y, obj_slopes))))))))
 {
     jumpAnim = 1
     state = 47
     movespeed = 0
     image_index = 0
 }
-if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && ((xscale == 1) && ((move == 1) && (!place_meeting((x + 1), y, obj_slopes)))))
+if (scr_solid(x + sign(hsp), y) && ((xscale == 1) && ((move == 1) && (!place_meeting((x + 1), y, obj_slopes)))))
     movespeed = 0
-if (place_meeting((x + sign(hsp)), y, obj_collisionparent) && ((xscale == -1) && ((move == -1) && (!place_meeting((x - 1), y, obj_slopes)))))
+if (scr_solid(x + sign(hsp), y) && ((xscale == -1) && ((move == -1) && (!place_meeting((x - 1), y, obj_slopes)))))
     movespeed = 0
 jumpstop = 0
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == 1) && (move == -1)))
+if (grounded && ((xscale == 1) && (move == -1)))
 {
     machslideAnim = 1
     landAnim = 0
     image_index = 0
     movespeed = 0
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == -1) && (move == 1)))
+if (grounded && ((xscale == -1) && (move == 1)))
 {
     machslideAnim = 1
     landAnim = 0
     image_index = 0
     movespeed = 0
 }
-if ((!place_meeting(x, (y + 1), obj_collisionparent)) && (!key_jump))
+if ((!grounded) && (!key_jump))
 {
     jumpAnim = 0
     state = 36
     machslideAnim = 1
     image_index = 0
 }
-if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && (key_up && ((!key_down) && ((!key_attack) && (move == 0))))))
+if (key_jump && (grounded && (key_up && ((!key_down) && ((!key_attack) && (move == 0))))))
 {
     vsp = -12
     state = 10
@@ -46,7 +46,7 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && (key_up && ((
 	else
 	audio_play_sound(sfx_golfjump, 1, false)
 }
-if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && ((sprite_index != spr_player_Sjumpprep) && (input_buffer_jump >= 8)))))
+if (key_jump && (grounded && ((!key_down) && ((sprite_index != spr_player_Sjumpprep) && (input_buffer_jump >= 8)))))
 {
     vsp = -9
     state = 36
@@ -58,7 +58,7 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) 
 	else
 	audio_play_sound(sfx_golfjump, 1, false)
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
+if (grounded && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
 {
     stompAnim = 0
     vsp = -9
@@ -74,7 +74,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) &
 	else
 	audio_play_sound(sfx_golfjump, 1, false)
 }
-if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meeting(x, (y - 3), obj_collisionparent))
+if ((key_down && grounded) || place_meeting(x, (y - 3), obj_collisionparent))
 {
     state = 44
     machslideAnim = 1
@@ -84,7 +84,7 @@ if ((key_down && place_meeting(x, (y + 1), obj_collisionparent)) || place_meetin
     idle = 0
 }
 
-if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.gotchainsaw = 1 && global.sawpower != 0
+if ((key_chainsaw && grounded)) && global.gotchainsaw = 1 && global.sawpower != 0
 {
 	state = 11
 	idle = 0
@@ -95,7 +95,7 @@ if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.
 	sprite_index = spr_player_chainsaw
 	instance_create(x, y, obj_chainsawhitbox)
 }
-if ((key_chainsaw && place_meeting(x, (y + 1), obj_collisionparent))) && global.gotchainsaw = 1 && global.sawpower = 1
+if ((key_chainsaw && grounded)) && global.gotchainsaw = 1 && global.sawpower = 1
 {
 	with instance_create(x, y, obj_coolpineadead)
 		{

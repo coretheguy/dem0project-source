@@ -6,7 +6,7 @@ mach2 = 0
 bounce = 0
 jumpAnim = 1
 dashAnim = 1
-if place_meeting(x, (y + 1), obj_collisionparent)
+if grounded
     landAnim = 0
 else
     landAnim = 1
@@ -23,18 +23,18 @@ turning = 0
 if instance_exists(obj_hook)
     obj_hook.hooked = 0
 alarm[5] = 2
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((hurtbounce == 2) && (vsp > 0)))
+if (grounded && ((hurtbounce == 2) && (vsp > 0)))
 {
     start_running = 1
     alarm[4] = 14
     hsp = 0
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((hurtbounce == 1) && (vsp > 0)))
+if (grounded && ((hurtbounce == 1) && (vsp > 0)))
 {
     hurtbounce = 2
     vsp = -3
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((hurtbounce == 0) && (vsp > 0)))
+if (grounded && ((hurtbounce == 0) && (vsp > 0)))
 {
     hurtbounce = 1
     vsp = -5

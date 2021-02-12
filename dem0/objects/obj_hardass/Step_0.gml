@@ -1,11 +1,11 @@
 if (vsp < 12)
     vsp += grav
 image_speed = 0.35
-if place_meeting(x, (y + 1), obj_collisionparent)
+if grounded
     sprite_index = spr_trash
 else
     sprite_index = spr_trash_bump
-if place_meeting(x, (y + 1), obj_wall)
+if grounded
 {
     hsp = 0
     bounce = 0

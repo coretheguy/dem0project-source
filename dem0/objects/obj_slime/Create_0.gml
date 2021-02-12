@@ -9,3 +9,4 @@ stun = 0
 alarm[0] = 150
 baddieid = id
 important = 0
+grounded = false

@@ -9,7 +9,7 @@ if ((xscale == 1) && (move == -1))
     movespeed = 0
 if ((xscale == -1) && (move == 1))
     movespeed = 0
-if ((!place_meeting(x, (y + 1), obj_collisionparent)) && (!key_jump))
+if ((!grounded) && (!key_jump))
 {
     jumpAnim = 0
     state = 45
@@ -17,7 +17,7 @@ if ((!place_meeting(x, (y + 1), obj_collisionparent)) && (!key_jump))
     crouchAnim = 1
     image_index = 0
 }
-if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!place_meeting(x, (y - 16), obj_collisionparent)) && (!place_meeting(x, (y - 32), obj_collisionparent)))))
+if (key_jump && (grounded && ((!place_meeting(x, (y - 16), obj_collisionparent)) && (!place_meeting(x, (y - 32), obj_collisionparent)))))
 {
     vsp = -9.2
     state = 45
@@ -29,7 +29,7 @@ if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((!place_meet
     if (!audio_is_playing(sfx_jump))
         audio_play_sound(sfx_jump, 1, false)
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && ((!place_meeting(x, (y - 16), obj_collisionparent)) && ((!place_meeting(x, (y - 32), obj_collisionparent)) && (!key_jump)))))
+if (grounded && ((!key_down) && ((!place_meeting(x, (y - 16), obj_collisionparent)) && ((!place_meeting(x, (y - 32), obj_collisionparent)) && (!key_jump)))))
 {
     state = 0
     movespeed = 0

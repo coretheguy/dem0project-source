@@ -16,7 +16,7 @@ else
 	if ((move != 0) && (movespeed < 4))
 		movespeed += 0.25
 }
-if ((place_meeting((x + 1), y, obj_collisionparent) && (move == 1)) || ((place_meeting((x - 1), y, obj_collisionparent) && (move == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes))))
+if ((scr_solid(x + 1, y) && (move == 1)) || ((scr_solid(x - 1, y) && (move == -1)) && (!place_meeting((x + sign(hsp)), y, obj_slopes))))
     movespeed = 0
 if ((xscale == 1) && (move == -1))
 {
@@ -44,12 +44,12 @@ if ((!key_jump2) && ((jumpstop == 0) && ((vsp < 0.5) && (stompAnim == 0))))
 }
 if (ladderbuffer > 0)
     ladderbuffer--
-if (place_meeting(x, (y - 1), obj_collisionparent) && ((jumpstop == 0) && (jumpAnim == 1)))
+if (scr_solid(x, y - 1) && ((jumpstop == 0) && (jumpAnim == 1)))
 {
     vsp = grav
     jumpstop = 1
 }
-if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && (key_attack && (momemtum == 1)))
+if ((grounded && (vsp > 0)) && (key_attack && (momemtum == 1)))
 {
     landAnim = 0
     state = 47
@@ -65,7 +65,7 @@ if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && (key_attack
 	if (!audio_is_playing(sfx_newstep) && global.machsound != 1)
 	    audio_play_sound(sfx_newstep, 1, false)
 }
-if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && ((!key_attack) || (momemtum == 0)))
+if ((grounded && (vsp > 0)) && ((!key_attack) || (momemtum == 0)))
 {
     if key_attack
         landAnim = 0
@@ -82,7 +82,7 @@ if ((place_meeting(x, (y + 1), obj_collisionparent) && (vsp > 0)) && ((!key_atta
 	if (!audio_is_playing(sfx_newstep) && global.machsound != 1)
 	    audio_play_sound(sfx_newstep, 1, false)
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
+if (grounded && ((input_buffer_jump < 8) && ((!key_down) && (vsp > 0))))
 {
     stompAnim = 0
     vsp = -9

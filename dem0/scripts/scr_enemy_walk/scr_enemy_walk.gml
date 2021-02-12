@@ -1,14 +1,14 @@
-if place_meeting(x, (y + 1), obj_enemiesbumpable)
+if grounded
     hsp = (image_xscale * movespeed)
 else
     hsp = 0
-if ((roaming == 0) && place_meeting(x, (y + 1), obj_enemiesbumpable))
+if ((roaming == 0) && grounded)
 {
     hsp = 0
     state = 72
     image_index = 0
 }
-if ((sprite_index == fallspr) && place_meeting(x, (y + 1), obj_enemiesbumpable))
+if ((sprite_index == fallspr) && grounded)
 {
     scr_sound(24)
     instance_create(x, y, obj_landcloud)
@@ -16,7 +16,7 @@ if ((sprite_index == fallspr) && place_meeting(x, (y + 1), obj_enemiesbumpable))
     sprite_index = landspr
     image_index = 0
 }
-if place_meeting(x, (y + 1), obj_enemiesbumpable)
+if grounded
     sprite_index = walkspr
 else
     sprite_index = fallspr
@@ -27,22 +27,22 @@ if (((place_meeting((x + 1), y, obj_enemiesbumpable) && (image_xscale == 1)) || 
     sprite_index = turnspr
     image_index = 0
 }
-if ((!place_meeting((x + 15), (y + 3), obj_enemiesbumpable)) && (image_xscale == 1))
+if ((!scr_solid(x + 15, y + 3)) && (image_xscale == 1))
 {
     hsp = 0
     state = 74
     sprite_index = turnspr
     image_index = 0
 }
-if ((!place_meeting((x - 15), (y + 3), obj_enemiesbumpable)) && (image_xscale == -1))
+if ((!scr_solid(x - 15, y + 3)) && (image_xscale == -1))
 {
     hsp = 0
     state = 74
     sprite_index = turnspr
     image_index = 0
 }
-if ((!place_meeting(x, (y + 1), obj_enemiesbumpable)) && (hsp < 0))
+if ((!grounded) && (hsp < 0))
     hsp += 0.1
-else if ((!place_meeting(x, (y + 1), obj_enemiesbumpable)) && (hsp > 0))
+else if ((!grounded) && (hsp > 0))
     hsp -= 0.1
 scr_collideandmove()

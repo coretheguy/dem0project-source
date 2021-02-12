@@ -20,11 +20,11 @@ if (stunned == 1)
 if (charging == 1)
 {
     hsp = (image_xscale * movespeed)
-    if (!place_meeting((x + 50), (y + 3), obj_wall))
+    if (!scr_solid(x + 50, y + 3))
         image_xscale = -1
-    if (!place_meeting((x - 50), (y + 3), obj_wall))
+    if (!scr_solid(x - 50, y + 3))
         image_xscale = 1
-	if place_meeting(x + 50, y, obj_wall)
+	if scr_solid(x + 50, y)
 	{
 		hsp = -8
 		image_xscale = -1
@@ -75,7 +75,7 @@ if (flash > 0)
     flash--
 scr_collideandmove()
 
-if avoidstunlocking = 1 && place_meeting(x, y + 1, obj_collisionparent)
+if avoidstunlocking = 1 && grounded
 {
 	stunned = 0
 	if image_xscale = -1

@@ -51,5 +51,7 @@ if (state != 85)
 if collectdrop = 0
 	ds_list_add(global.saveroom, id)
 	
+with instance_place(x + hsp, y + vsp, obj_destructibles)
+	instance_destroy()
 
 

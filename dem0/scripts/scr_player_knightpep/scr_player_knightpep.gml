@@ -1,10 +1,10 @@
 scr_getinput()
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((sprite_index == spr_knightpep_walk) || (sprite_index == spr_knightpep_idle)))
+if (grounded && ((sprite_index == spr_knightpep_walk) || (sprite_index == spr_knightpep_idle)))
 {
     move = (key_left + key_right)
     hsp = (move * movespeed)
 }
-else if place_meeting(x, (y + 1), obj_collisionparent)
+else if grounded
 {
     hsp = 0
     move = 0
@@ -22,15 +22,15 @@ if (((sprite_index == spr_knightpep_idle) || (sprite_index == spr_knightpep_walk
     image_index = 0
     state = 3
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == 1) && (move == -1)))
+if (grounded && ((xscale == 1) && (move == -1)))
     movespeed = 0
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((xscale == -1) && (move == 1)))
+if (grounded && ((xscale == -1) && (move == 1)))
     movespeed = 0
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((move != 0) && (sprite_index == spr_knightpep_idle)))
+if (grounded && ((move != 0) && (sprite_index == spr_knightpep_idle)))
     sprite_index = spr_knightpep_walk
-else if (place_meeting(x, (y + 1), obj_collisionparent) && ((move == 0) && (sprite_index == spr_knightpep_walk)))
+else if (grounded && ((move == 0) && (sprite_index == spr_knightpep_walk)))
     sprite_index = spr_knightpep_idle
-if (key_jump && (place_meeting(x, (y + 1), obj_collisionparent) && ((sprite_index == spr_knightpep_idle) || (sprite_index == spr_knightpep_walk))))
+if (key_jump && (grounded && ((sprite_index == spr_knightpep_idle) || (sprite_index == spr_knightpep_walk))))
 {
     image_index = 0
     sprite_index = spr_knightpep_jumpstart
@@ -45,9 +45,9 @@ if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep
         hsp = -4
     sprite_index = spr_knightpep_jump
 }
-if (((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep_jump)) || ((!place_meeting(x, (y + 1), obj_collisionparent)) && (sprite_index != spr_knightpep_jump)))
+if (((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep_jump)) || ((!grounded) && (sprite_index != spr_knightpep_jump)))
     sprite_index = spr_knightpep_fall
-if ((sprite_index == spr_knightpep_fall) && place_meeting(x, (y + 1), obj_collisionparent))
+if ((sprite_index == spr_knightpep_fall) && grounded)
 {
     scr_sound(sfx_landmetal)
     with (obj_baddie)
@@ -82,7 +82,7 @@ if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep
 if (move != 0)
     xscale = move
 image_speed = 0.35
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((hsp != 0) && (!audio_is_playing(sfx_footsteps))))
+if (grounded && ((hsp != 0) && (!audio_is_playing(sfx_footsteps))))
     scr_sound(sfx_footsteps)
 if (move != 0)
 {
@@ -108,6 +108,6 @@ if ((floor(image_index) == 9) && (sprite_index == spr_knightpep_start))
     instance_create(x, (y - 600), obj_thunder)
 if ((floor(image_index) == (image_number - 1)) && (sprite_index == spr_knightpep_thunder))
     sprite_index = spr_knightpep_idle
-if ((!instance_exists(obj_cloudeffect)) && ((!place_meeting(x, y, obj_water2)) && (place_meeting(x, (y + 1), obj_collisionparent) && ((move != 0) && ((floor(image_index) == 4) || (floor(image_index) == 10))))))
+if ((!instance_exists(obj_cloudeffect)) && ((!place_meeting(x, y, obj_water2)) && (grounded && ((move != 0) && ((floor(image_index) == 4) || (floor(image_index) == 10))))))
     instance_create(x, (y + 43), obj_cloudeffect)
 scr_collideandmove()

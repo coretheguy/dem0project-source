@@ -20,7 +20,7 @@ if (place_meeting(x, (y - 1), obj_collisionparent) && ((jumpstop == 0) && (jumpA
     vsp = grav
     jumpstop = 1
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && key_down)
+if (grounded && key_down)
 {
     state = 44
     jumpAnim = 1
@@ -33,7 +33,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && key_down)
     if (!audio_is_playing(sfx_land))
         audio_play_sound(sfx_land, 1, false)
 }
-if (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && (!place_meeting(x, (y - 16), obj_collisionparent))))
+if (grounded && ((!key_down) && (!place_meeting(x, (y - 16), obj_collisionparent))))
 {
     state = 0
     jumpAnim = 1
@@ -45,7 +45,7 @@ if (place_meeting(x, (y + 1), obj_collisionparent) && ((!key_down) && (!place_me
         instance_create(x, y, obj_landcloud)
     mask_index = spr_player_mask
 }
-if place_meeting(x, (y + 1), obj_collisionparent)
+if grounded
 {
     state = 44
     jumpAnim = 1

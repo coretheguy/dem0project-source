@@ -50,7 +50,7 @@ if ((place_meeting((x - 1), y, obj_collisionparent) && (xscale == -1)) && (!plac
         audio_play_sound(sfx_bump, 1, false)
 }
 sprite_index = spr_player_crouchslip
-if ((!instance_exists(obj_slidecloud)) && (place_meeting(x, (y + 1), obj_collisionparent) && (movespeed > 5)))
+if ((!instance_exists(obj_slidecloud)) && (grounded && (movespeed > 5)))
     instance_create(x, y, obj_slidecloud)
 image_speed = 0.35
 scr_collideandmove()
