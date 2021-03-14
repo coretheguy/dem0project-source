@@ -27,20 +27,20 @@ if (((place_meeting((x + 1), y, obj_enemiesbumpable) && (image_xscale == 1)) || 
     sprite_index = turnspr
     image_index = 0
 }
-if ((!scr_solid(x + 15, y + 3)) && (image_xscale == 1))
+if (((!scr_solid(x + image_xscale * 15, y + 3) || !place_meeting((x + (image_xscale * 15)), (y + 3), obj_onewaywall))))
 {
     hsp = 0
     state = 74
     sprite_index = turnspr
     image_index = 0
 }
-if ((!scr_solid(x - 15, y + 3)) && (image_xscale == -1))
-{
-    hsp = 0
-    state = 74
-    sprite_index = turnspr
-    image_index = 0
-}
+//if ((!scr_solid(x - 15, y + 3)) && (image_xscale == -1))
+//{
+//    hsp = 0
+//    state = 74
+//    sprite_index = turnspr
+//    image_index = 0
+//}
 if ((!grounded) && (hsp < 0))
     hsp += 0.1
 else if ((!grounded) && (hsp > 0))

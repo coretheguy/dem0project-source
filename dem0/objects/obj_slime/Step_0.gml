@@ -13,9 +13,9 @@ if ((roam == 1) && (bounce == 0))
         image_xscale = -1
     if (place_meeting((x - 5), y, obj_enemiesbumpable) && (image_xscale == -1))
         image_xscale = 1
-    if (!scr_solid(x + 15, y + 3))
+    if (!scr_solid(x + 15, y + 3)) || !place_meeting((x + 15), (y + 3), obj_onewaywall)
         image_xscale = -1
-    if (!scr_solid(x - 15, y + 3))
+    if (!scr_solid(x - 15, y + 3)) || !place_meeting((x - 15), (y + 3), obj_onewaywall)
         image_xscale = 1
 }
 if ((roam == 0) && (bounce == 0))

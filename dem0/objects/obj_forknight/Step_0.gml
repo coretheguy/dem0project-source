@@ -11,13 +11,13 @@ if ((stun == 0) && (ministun == 0))
 {
     hsp = (image_xscale * movespeed)
     sprite_index = spr_forknight
-    if (scr_solid(x + 5, y) || place_meeting((x + 5), y, obj_destructibles)) && (image_xscale == 1)
+    if ((scr_solid(x + 5, y) || place_meeting((x + 5), y, obj_destructibles)) && (image_xscale == 1))
         image_xscale = -1
-    if (scr_solid(x - 5, y) || place_meeting((x - 5), y, obj_destructibles)) && (image_xscale == -1)
+    if ((scr_solid(x - 5, y) || place_meeting((x - 5), y, obj_destructibles)) && (image_xscale == -1))
         image_xscale = 1
-    if (!scr_solid(x + 15, y + 3))
+    if (!scr_solid(x + 15, y + 3)) && (image_xscale == 1)
         image_xscale = -1
-    if (!scr_solid(x - 15, y + 3))
+    if (!scr_solid(x - 15, y + 3)) && (image_xscale == -1)
         image_xscale = 1
 }
 if (stun == 1)

@@ -11,7 +11,7 @@ if place_meeting(x, y, obj_player)
 			draw_text(x + 81, (y + 60), "CHEESY WATERWORKS")
 			break
 		case trial_start:
-			draw_text(x + 81, (y + 60), "PEPPERMAN'S TIME CHALLENGE")
+			draw_text(x + 81, (y + 60), string_hash_to_newline("PEPPERMAN'S TIME#CHALLENGE"))
 			break
 		case castle_1:
 			draw_text(x + 81, (y + 60), "PIZZA MANSION")

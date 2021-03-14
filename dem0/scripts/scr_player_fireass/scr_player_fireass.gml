@@ -9,7 +9,7 @@ if (sprite_index == spr_player_fireass)
         xscale = move
     hsp = (move * movespeed)
     movespeed = 4
-    if (place_meeting(x, y + 1, obj_collisionparent) && (vsp > 0))
+    if grounded && (vsp > 0)
     {
         movespeed = 6
         sprite_index = spr_player_fireassground

@@ -9,9 +9,9 @@ if ((stun == 0) && (ministun == 0))
         image_xscale = -1
     if ((place_meeting((x - 10), y, obj_bumpable) || place_meeting((x - 10), y, obj_destructibles)) && (image_xscale == -1))
         image_xscale = 1
-    if (!scr_solid(x + 15, y + 3))
+    if (!scr_solid(x + 15, y + 3)) || !place_meeting((x + 15), (y + 3), obj_onewaywall)
         image_xscale = -1
-    if (!scr_solid(x - 15, y + 3))
+    if (!scr_solid(x - 15, y + 3)) || !place_meeting((x - 15), (y + 3), obj_onewaywall)
         image_xscale = 1
 }
 if (stun == 1)
