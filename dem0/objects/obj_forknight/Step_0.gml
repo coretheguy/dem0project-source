@@ -11,13 +11,13 @@ if ((stun == 0) && (ministun == 0))
 {
     hsp = (image_xscale * movespeed)
     sprite_index = spr_forknight
-    if (place_meeting((x + 1), y, obj_bumpable) && image_xscale == 1) //PLEASE JUST FUCKING WORK OH MY GOD
-        image_xscale = -1
-    if (place_meeting((x - 1), y, obj_bumpable) && image_xscale == -1) //WHYYYYYYYYYYYYYYYYYYYYYYYYYY
+    if (scr_solid(x + 1, y) && image_xscale == 1) //PLEASE JUST FUCKING WORK OH MY GOD
+        image_xscale = -1 
+    if (scr_solid(x - 1, y) && image_xscale == -1) //WHYYYYYYYYYYYYYYYYYYYYYYYYYY
         image_xscale = 1
-    if ((!scr_solid(x + 15, y + 3)) || !place_meeting((x + 15), (y + 3), obj_onewaywall))
+    if ((!scr_solid(x + 15, y)) || !place_meeting((x + 15), (y), obj_onewaywall))
         image_xscale = -1
-    if ((!scr_solid(x - 15, y + 3)) || !place_meeting((x - 15), (y + 3), obj_onewaywall))
+    if ((!scr_solid(x - 15, y)) || !place_meeting((x - 15), (y), obj_onewaywall))
         image_xscale = 1
 }
 if (stun == 1)
