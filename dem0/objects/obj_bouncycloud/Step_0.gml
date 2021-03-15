@@ -9,3 +9,6 @@ with (obj_player)
         jumpAnim = 0
     }
 }
+
+if sprite_index = spr_bouncycloud_bounce && floor(image_index) = image_number - 1
+	sprite_index = spr_bouncycloud

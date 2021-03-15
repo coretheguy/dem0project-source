@@ -2087,6 +2087,14 @@
             }
         },
         {
+            "Key": "38f9386d-97f6-49fb-94f2-a872c0617a87",
+            "Value": {
+                "id": "34421a62-91e9-463a-ba23-70eaaefeb637",
+                "resourcePath": "sprites\\sprite512\\sprite512.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "390c44e8-ad69-4bea-8cd0-28789ab3ed0e",
             "Value": {
                 "id": "37cc1f0e-5994-447a-818b-fa0156f7c58b",
@@ -3107,6 +3115,14 @@
             "Value": {
                 "id": "879e3aa0-8429-45b0-afbf-512ea7986de0",
                 "resourcePath": "sprites\\spr_player_hurt\\spr_player_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5537f0be-ec2d-4c2d-af98-6800c77283f0",
+            "Value": {
+                "id": "4482f3fb-98b3-4f33-9c11-c3fb87081a05",
+                "resourcePath": "sprites\\spr_bouncycloud_bounce\\spr_bouncycloud_bounce.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5735,6 +5751,14 @@
             }
         },
         {
+            "Key": "9d510fcf-daa4-496c-bbec-4c9b2c70077e",
+            "Value": {
+                "id": "2b910d87-a778-45dd-b6cb-d8b5a12e0310",
+                "resourcePath": "rooms\\monsterchasetest\\monsterchasetest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9d7185f3-cdf5-4332-b443-c1773abc056d",
             "Value": {
                 "id": "2c3f6489-3959-4533-9a02-8ab6fea4522e",
@@ -5828,6 +5852,14 @@
                 "id": "a08a951b-2c71-4494-8c48-566a34fc885d",
                 "resourcePath": "sprites\\bg_castle3\\bg_castle3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9ff56269-7056-45a0-a178-3cd46d969c09",
+            "Value": {
+                "id": "087e9468-e77f-47a3-8168-5927f7a7d4a5",
+                "resourcePath": "objects\\obj_chasingmonsterblock\\obj_chasingmonsterblock.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -7188,6 +7220,14 @@
                 "id": "83f8be46-1a21-4599-94fa-80fd87142bb2",
                 "resourcePath": "sounds\\sfx_break\\sfx_break.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c307bb98-91c9-454b-8357-a7171fcd31d8",
+            "Value": {
+                "id": "da295ff4-1bdd-44ee-8f73-f5a2b21d4769",
+                "resourcePath": "objects\\obj_chasingmonsterdark\\obj_chasingmonsterdark.yy",
+                "resourceType": "GMObject"
             }
         },
         {
